@@ -1,20 +1,32 @@
 {
-  "asset_records": 91,
-  "unique_byte_hashes": 82,
+  "link_only_records": 5,
+  "asset_records": 152,
+  "unique_byte_hashes": 139,
   "by_source": {
-    "cosmograph": 22,
-    "obsidian": 4,
-    "cosmos-gl": 17,
     "100000-stars": 27,
-    "star-atlas": 13,
+    "cosmograph": 43,
+    "cosmos-gl": 19,
+    "ground-sky": 9,
+    "obsidian": 4,
     "owned": 1,
-    "review": 7
+    "review": 27,
+    "star-atlas": 22
   },
+  "unique_file_paths": 152,
+  "record_roles": {
+    "derived-media": 44,
+    "licensed-static-source": 11,
+    "original-media": 30,
+    "page-or-metadata-evidence": 67
+  },
+  "unique_original_media_hashes": 28,
+  "unique_derived_media_hashes": 44,
+  "derived_records": 3,
   "by_usage_scope": {
-    "reference-only": 61,
-    "reuse-cleared": 17,
+    "reference-only": 118,
+    "reuse-cleared": 19,
     "reuse-candidate": 0,
-    "blocked": 13
+    "blocked": 15
   },
   "duplicate_groups": [
     [
@@ -39,6 +51,16 @@
       ".local-captures/MOT-01/star-atlas/entry.png",
       ".local-captures/MOT-01/star-atlas/zoom-in.png",
       ".local-captures/MOT-01/star-atlas/zoom-out.png"
+    ],
+    [
+      ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/hover-node-1.cleaned.html",
+      ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selected-node-1.cleaned.html",
+      ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selected-node-2.cleaned.html",
+      ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selection-persists-away.cleaned.html"
+    ],
+    [
+      ".local-captures/R2-MOT/ground/ground-initial.css.json",
+      ".local-captures/R2-MOT/ground/sky-after-upward-drag.css.json"
     ],
     [
       ".local-captures/REF-01/obsidian-graph-page.raw.html",

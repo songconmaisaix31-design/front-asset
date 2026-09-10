@@ -1,0 +1,63 @@
+[
+  {
+    "priority": "P0-A",
+    "old_gap": "原件稳定保存和证据等级需复核",
+    "conclusion": "直接证实",
+    "evidence": [
+      "catalog/round2-baseline.json",
+      "reviews/ROUND2.md"
+    ],
+    "detail": "91条旧记录路径/哈希匹配；加载态明确降级。"
+  },
+  {
+    "priority": "P0-B",
+    "old_gap": "Cosmograph运行态DOM/CSS缺失",
+    "conclusion": "仍缺失；官方引擎补位直接证实",
+    "evidence": [
+      "references/cosmograph/parts/R2-COS/HANDOFF.md",
+      "catalog/supplemental-assets.json"
+    ],
+    "detail": "商业AI Model Atlas停在数据库连接；旧群落图有效，新运行态DOM/CSS来自cosmos.gl Actions，不能混称同站成功。"
+  },
+  {
+    "priority": "P0-C",
+    "old_gap": "节点选择未证实",
+    "conclusion": "直接证实（官方引擎示例）",
+    "evidence": [
+      ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/video/page@ada5412c81a79e3ffeb5909431c534f0.webm",
+      "reviews/ROUND2.md"
+    ],
+    "detail": "看32.463–43.476秒，节点3091→移开保持→节点3568；悬停单独效果未完全归因，空白候选命中4344，不证明清空。"
+  },
+  {
+    "priority": "P0-D",
+    "old_gap": "Star Atlas有效场景及进入镜头",
+    "conclusion": "仍缺失；官方制作来源有间接资料支持",
+    "evidence": [
+      "references/star-atlas/parts/R2-MOT/HANDOFF.md",
+      "references/star-atlas/parts/R2-REF/HANDOFF.md",
+      "catalog/round2-control-observations.json"
+    ],
+    "detail": "现场加载/营销壳，无有效进入；DEPT/Hello Monday案例只证明制作出处，Vimeo首链接普通HTTP404，未观察视频。案例亮核封面排除出推荐。"
+  },
+  {
+    "priority": "P0-E",
+    "old_gap": "地面向天空镜头",
+    "conclusion": "分段参考",
+    "evidence": [
+      ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+      "recipes/SELECTION.md"
+    ],
+    "detail": "看28–36秒，实际地平线退出；终点日间天体，不能称夜空接管。可另配旧星群尺度片，衔接仍需原创。"
+  },
+  {
+    "priority": "P0-F",
+    "old_gap": "源码入口及示例依赖断链",
+    "conclusion": "直接证实（静态，部分源码）",
+    "evidence": [
+      "references/cosmos-gl/parts/R2-SRC/SOURCE_MAP.md",
+      "catalog/source-integrity-round2.json"
+    ],
+    "detail": "固定ce35edacf94dba1f02ef2b47957e937e4c9acf17，11文件内容核对；补两个full-mesh辅助文件。核心模块完整性、依赖许可、实际集成未验证，无安装运行。"
+  }
+]

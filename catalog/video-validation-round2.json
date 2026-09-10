@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-09-10T16:38:07.379996+00:00",
+  "scope": "All unique video bytes in final asset index; unindexed aborted capture files preserved separately and not claimed decodable",
+  "tool": "Existing FFmpeg ffmpeg -v error -xerror -i FILE -f null -",
+  "results": [
+    {
+      "path": ".local-captures/CAP-02/video/page@69ae2072cd92b068e3f6c411fc9496c3.webm",
+      "sha256": "d1ceebba3df51fe65cd9ecbc9a13e8e41a9e9c20ba9800bc25f1423268f7a859",
+      "duration_seconds": 63.64,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1280x720, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    },
+    {
+      "path": ".local-captures/CAP-02/video/page@c3193c8a6525a53b285a148e65a0b7f6.webm",
+      "sha256": "c8dc871d8aa2bb5c4fe0df7b18fef421dae67ba2b9650fed3f88fc82247b78b6",
+      "duration_seconds": 93.8,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1280x720, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmograph-zoom-15s.webm",
+      "sha256": "a801cc3db630244e350c2cfcf2cad1daaaff71dc4cf5ec235837c3c07506a154",
+      "duration_seconds": 15.0,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1280x720, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-entry-to-ui-18s.webm",
+      "sha256": "3cbd2f9ee94b981a16de72edc4578745efb243fee130fb4f563064a50e9f06ea",
+      "duration_seconds": 18.0,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1440x900, SAR 1:1 DAR 8:5, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/100000-stars-motion-actions-15s.webm",
+      "sha256": "f10457dd032a84f7dc24204da47ba3304568aa8f3e960da17c0f865714c2c5c1",
+      "duration_seconds": 15.0,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1440x900, SAR 1:1 DAR 8:5, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/100000-stars-motion.webm",
+      "sha256": "0e33c2bb9c0a8a7ad7a2e7017f7c0e50eefe9068ea4259d378809e4b0616fbd0",
+      "duration_seconds": 51.24,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1440x900, SAR 1:1 DAR 8:5, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/star-atlas-motion.webm",
+      "sha256": "e872335691d03816328b3034983fd04947cd8772b2fb040e55d754ed0e3e9105",
+      "duration_seconds": 30.04,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1440x900, SAR 1:1 DAR 8:5, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    },
+    {
+      "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/video/page@ada5412c81a79e3ffeb5909431c534f0.webm",
+      "sha256": "669ded316bd87e441c8ed305b583f244e81e2297ecdd259ae96112f95e048b4e",
+      "duration_seconds": 47.6,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1280x720, SAR 1:1 DAR 16:9, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    },
+    {
+      "path": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+      "sha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+      "duration_seconds": 43.84,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1440x900, SAR 1:1 DAR 8:5, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    },
+    {
+      "path": ".local-captures/R2-MOT/star-atlas/attempt-03-enter/page@368b3489b4b8968e317584226ce7d3ec.webm",
+      "sha256": "e9ea0faed71ad6327f0e26f102ea1a125a2ef2a53e951e1965fad8cbb5ea2495",
+      "duration_seconds": 36.92,
+      "video_stream": "Stream #0:0(eng): Video: vp8, yuv420p, 1440x900, SAR 1:1 DAR 8:5, 25 fps, 25 tbr, 1k tbn, 1k tbc (default)",
+      "decode_exit": 0,
+      "errors": "",
+      "fps_note": "encoding frame rate, not measured browser rendering performance"
+    }
+  ]
+}

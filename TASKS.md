@@ -1,22 +1,33 @@
 # 唯一任务看板
 
-## 第二轮 v0.4 当前安排
+## 第二轮 v0.4 最终状态
 
 已核验基线 b89ea780，91 条旧记录文件存在且 SHA256 一致，主库稳定原件目录保留。用户取消全部 Token 及余额百分比停工线；旧规则仅历史。遵守实际服务限制，不自动购买、重置或切账号。
 
 |轨道|范围及互斥写域|模型|状态|
 |---|---|---|---|
-|R2-COS|运行态、节点交互；references/cosmograph/parts/R2-COS/；必要引擎补位同片段|Terra medium|执行中|
-|R2-MOT|Star Atlas 与地面到天空；references/star-atlas/parts/R2-MOT/、references/ground-sky/parts/R2-MOT/|Terra medium|执行中|
-|R2-SRC|固定源码入口；references/cosmos-gl/parts/R2-SRC/、reusable/cosmos-gl/ 必要补件|Luna low|执行中|
-|R2-INT|独立内容复核与整合；reviews/、recipes/|Terra medium|独立复核执行中|
-|CONTROL|根文件、catalog/、最终验收|当前模型以运行器实际为准|执行中|
+|R2-COS|运行态、节点交互；references/cosmograph/parts/R2-COS/；必要引擎补位同片段|Terra medium|已归档；范围见独立复核|
+|R2-MOT|Star Atlas 与地面到天空；references/star-atlas/parts/R2-MOT/、references/ground-sky/parts/R2-MOT/|Terra medium|已归档；范围见独立复核|
+|R2-SRC|固定源码入口；references/cosmos-gl/parts/R2-SRC/、reusable/cosmos-gl/ 必要补件|Luna low|已归档；原文已修复|
+|R2-INT|独立内容复核与整合；reviews/、recipes/|Terra medium|独立复核完成|
+|CONTROL|根文件、catalog/、最终验收|继承会话；未虚称切换|本地整合验收完成；同步见最终交付|
 
 每轨独立 Agent/worktree/branch；所有原件只写主库 .local-captures/对应任务目录。无 setup、无前端开发、无第三方项目运行。失败按证据诊断，不无理由循环。
 
 补充轨 R2-REF：Luna low，task_720f015e0a6d / ctx_9d2cc3dc6e96，独立 asset-r2-REF 工作树；仅 references/star-atlas/parts/R2-REF/ 与 references/ground-sky/parts/R2-REF/，官方案例间接资料。R2-INT task_32debf059bcf / ctx_696597792060，Terra medium 独立复核。SRC 原文修复 9cc778c；MOT 候选 2cafeae；COS 首次受阻 fdf37a9，原执行者继续官方引擎交互补位 task_374f3fc4b53a / ctx_b4b7a8d7975c，不重试数据库加载路径。
 
 运行 run_934700e178d8；基线 21a8e65。R2-COS task_388ab74e1093 / ctx_0cb08d94aba1；R2-MOT task_0688fb154f2c / ctx_b6c0346eb08c；R2-SRC task_112030c01822 / ctx_3a70d3662428。分支均为 songconmaisaix31-design/asset-r2-对应代号，独立工作树在 Orca front-asset 工作树目录。三个 model/effort 生效回执已核对；COS/SRC 回执 stalled 但实际执行已核实，未重复启动。
+
+### 第二轮最终提交与范围
+
+- COS：07f4830；主控保全原执行者已写好的元数据补充6416454（仅片段索引，原件未变），官方引擎节点3091/3568选择直接证实；空白候选4344不证明清空，商业图谱仍受阻。
+- MOT：2cafeae，上仰原片28–36秒可作分段参考；Star Atlas场景仍缺。
+- SRC：9cc778c，上游原文修复；11文件内容复核通过，运行与依赖未验证。
+- REF：1644e6d，仅官方制作案例与播放器链接；DEPT哈希单字符不一致由最终catalog保留实际值并标记片段值。
+- INT：67ca950，独立Terra medium复核及派生记录修复。Phase1/Phase2 task_32debf059bcf / task_019b1d936325；录屏实际内容已审，非单纯文件通过。
+- R2-SRC-FIX、R2-REF-MEDIA、R2-COS-INTERACT均沿原执行者与互斥工作树继续，无新管理层。部分Orca投递回执stalled撤销生命周期，但实际执行、model/effort及提交独立核实；不冒称这些回执为原生成功。
+- 原件全部保存在主库 .local-captures；工作树未删除。worker-release部分返回release_unknown/tab_not_found，未广泛终止进程；不声称Kernel清理全绿。
+- 152文件记录、139不同哈希、5链接；详情见README及catalog。主控完成后停留资产库阶段。
 
 ## 上轮历史（以下限制均已失效）
 

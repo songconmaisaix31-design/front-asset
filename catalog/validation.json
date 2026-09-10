@@ -1,9 +1,21 @@
 {
-  "canonical_asset_records": 91,
-  "schema_and_hash_match": true,
-  "public_standard_json_files_parsed": 17,
-  "sensitive_pattern_findings": [],
-  "source_comparisons_passed": 8,
-  "recommended_videos_fully_decoded": 2,
-  "scope": "Heuristic sensitive scan; JSONC deliberately retained; no third-party code execution or live production tests"
+  "checked_at": "2026-09-10T16:42:39.098505+00:00",
+  "asset_records": 152,
+  "path_hash_errors": [],
+  "baseline_original_records": 91,
+  "baseline_original_errors": [],
+  "json_errors": [],
+  "sensitive_pattern_files": [],
+  "indexed_unique_videos_fully_decoded": 10,
+  "unvalidated_indexed_videos": [],
+  "static_source_files_normalized_match": 11,
+  "capture_helper_node_syntax_checks": 4,
+  "independent_review": "reviews/ROUND2.md; Terra medium distinct from samplers",
+  "limits": "No downloaded project execution/build, no performance claim. Unindexed aborted recordings are preserved, not claimed decodable. Permission scopes are asset-specific.",
+  "file_inventory": {
+    "files": 362,
+    "format_errors": 0
+  },
+  "worker_worktrees": "COS manifest supplement preserved as6416454; other R2 worktrees clean; no worktrees deleted",
+  "public_raw_files_tracked": 0
 }

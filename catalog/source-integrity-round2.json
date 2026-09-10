@@ -1,0 +1,98 @@
+{
+  "pinned_commit": "ce35edacf94dba1f02ef2b47957e937e4c9acf17",
+  "checks": [
+    {
+      "file": "reusable/cosmos-gl/package.json",
+      "retained_original": ".local-captures/SRC-01/originals/package.json",
+      "checkout_sha256": "e53a11544501dda67094bcdff04c19d4cad4700befd2c890732a39a0101ba670",
+      "original_sha256": "a6b64eae7c8f4c22f0d0719e91948e6415ff54778e2ef2aec9a76cefabc5d237",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/README.md",
+      "retained_original": ".local-captures/SRC-01/originals/README.md",
+      "checkout_sha256": "a6b61e660fabd9df306499a2d49ce7db1b5ea136621afd1c4e954f0492c23773",
+      "original_sha256": "477b367d2f5c69df91cf6a1b146a864e8f3fe8a1aef70a7c157f9419d8dcee44",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/tsconfig.json",
+      "retained_original": ".local-captures/SRC-01/originals/tsconfig.json",
+      "checkout_sha256": "b7dcec75c606038fd3feabf24d374c5ff61d990b13dcc463856042b1fcb3efb6",
+      "original_sha256": "520223506604e78ace83fc82c56e479b896bf1d3debb3687841b5c2b4904d741",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/vite.config.ts",
+      "retained_original": ".local-captures/SRC-01/originals/vite.config.ts",
+      "checkout_sha256": "1005d59a4f9ff2ecc164a96f4cb1d8681770dc84fabcf80c15f79f3749a8889d",
+      "original_sha256": "95c23865b5e5bf6a1ebabd7053b5c19ee7e58cda68c82aa9c3e5d0d723292123",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/src/config.ts",
+      "retained_original": ".local-captures/SRC-01/originals/src/config.ts",
+      "checkout_sha256": "9e255ec37c9719f6bb149c3863e11db7159c17c75b15b44fdc15454f37d2a75d",
+      "original_sha256": "aa59cdc9a8af2a9a0eca8402edd0a816ecf6854d29efac5d0a102890b94c5e8d",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/src/index.ts",
+      "retained_original": ".local-captures/SRC-01/originals/src/index.ts",
+      "checkout_sha256": "3ddfc8aa2c71b68e273b90beb54b5b46736089ae20ebaea7c303f5c541b70364",
+      "original_sha256": "bb3548259736bef41c5adb65e8d92b68635a952d8146518075d839a5ccc05a39",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/src/stories/showcase/full-mesh.ts",
+      "retained_original": ".local-captures/SRC-01/originals/src/stories/showcase/full-mesh.ts",
+      "checkout_sha256": "75fc1e6ee2840740ff72a5f77d3d45bed38f69c39e32da6c49cc6b8774cea09f",
+      "original_sha256": "3498ab925ee44fdd67987ce0c0d0bf8a243cc51c2d30e13f966e2d9d3990790a",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/docs/picking/README.md",
+      "retained_original": ".local-captures/SRC-01/originals/docs/picking/README.md",
+      "checkout_sha256": "b29e48d314293f946ebd7c3f63dee1508234d08dfeb1a7afb5c92d648e210570",
+      "original_sha256": "0898bf643b290cae96a82a76ca5b04da777861697313975caa2bd5be73f73e8c",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/LICENCE",
+      "retained_original": ".local-captures/R2-INT/upstream-source-check/LICENCE",
+      "upstream_url": "https://raw.githubusercontent.com/cosmosgl/graph/ce35edacf94dba1f02ef2b47957e937e4c9acf17/LICENCE",
+      "checkout_sha256": "21908e420bc31a24562bed00436e2c9d684403e5326e19617f891a6bf76429de",
+      "original_sha256": "b26731c49be8775660663bf06987b38e0432519586dd577115c66ce3e17dedcf",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/src/stories/create-cosmos.ts",
+      "retained_original": ".local-captures/R2-INT/upstream-source-check/create-cosmos.ts",
+      "upstream_url": "https://raw.githubusercontent.com/cosmosgl/graph/ce35edacf94dba1f02ef2b47957e937e4c9acf17/src/stories/create-cosmos.ts",
+      "checkout_sha256": "49be3a8aa20faba6c33cf2ffa8999355a32c3050ce398d43369463ca7575dd5d",
+      "original_sha256": "7a141abbd0a93c164a3013927e7685f6d0b3cf9b34c76e72d5181428a7c5c08c",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    },
+    {
+      "file": "reusable/cosmos-gl/src/stories/generate-mesh-data.ts",
+      "retained_original": ".local-captures/R2-INT/upstream-source-check/generate-mesh-data.ts",
+      "upstream_url": "https://raw.githubusercontent.com/cosmosgl/graph/ce35edacf94dba1f02ef2b47957e937e4c9acf17/src/stories/generate-mesh-data.ts",
+      "checkout_sha256": "0f4a4b7818dde11b2fc82118b5638fc79d1cc06a85ca977f60fb3897f28ef9f1",
+      "original_sha256": "0c1442011d7d8620bd1561aa8ba41fc70ab3e88e043bd120176aa4211086ec56",
+      "byte_equal": false,
+      "content_equal_normalized_lf": true
+    }
+  ],
+  "runtime_tested": false,
+  "scope": "11 retained source/config/doc/license files; third-party imports, media and full distribution not audited"
+}

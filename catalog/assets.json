@@ -18,7 +18,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No same-state DOM/CSS captured for loaded graph; never pair as aligned evidence",
     "sha256": "a5835b493fea44fa521298773cc613983cddf93160a5ab9d6d62222fb52dce5c",
-    "bytes": 94297
+    "bytes": 94297,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-a5834a94dc89",
@@ -39,7 +40,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No same-state DOM/CSS captured for loaded graph; never pair as aligned evidence",
     "sha256": "81043de04ed4d0f0a775cfca651bd177a6a463ac2fb865b20dfc45fea9521456",
-    "bytes": 91176
+    "bytes": 91176,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-41f608901c65",
@@ -60,7 +62,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No same-state DOM/CSS captured for loaded graph; never pair as aligned evidence",
     "sha256": "736891dc08c3fba3c7e2943b013bdef977ba7e016be68d9c60dbf15d9cf866c2",
-    "bytes": 8139
+    "bytes": 8139,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "cosmograph-ai-model-atlas-default",
@@ -71,7 +74,7 @@
     "captured_at": "2026-09-10T14:25:22Z",
     "timestamp_basis": "filesystem mtime; exact capture time unverified",
     "path": ".local-captures/CAP-02/ai-model-atlas-default.png",
-    "type": "interactive-webgl-graph screenshot",
+    "type": "image/png",
     "state": "default",
     "viewport": "2363x1626 browser window; stored screenshot 786x541 at observed scale 0.332628",
     "capture_id": "cap-02-ai-model-atlas-20260910-default",
@@ -85,11 +88,13 @@
       "No 10-20 second operation recording is claimed; a screenshot sequence is not a recording."
     ],
     "sha256": "8b9c16e90e4368f75d6dae8fbcedf867a1866669d9c04348b43af1cd61a0eb98",
+    "fragment_type": "interactive-webgl-graph screenshot",
     "bytes": 720763,
     "dimensions": [
       786,
       541
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-561606f609e2",
@@ -114,7 +119,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-b83a9fd0d21d",
@@ -135,7 +141,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No same-state DOM/CSS captured for loaded graph; never pair as aligned evidence",
     "sha256": "5765691085a10e3b7914e3cc91037e3f570aeec75b487a6a144492469bd3d561",
-    "bytes": 3532
+    "bytes": 3532,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-c33a00bc1898",
@@ -160,7 +167,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-77d830b435f8",
@@ -185,7 +193,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-63b7d69288db",
@@ -206,7 +215,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No same-state DOM/CSS captured for loaded graph; never pair as aligned evidence",
     "sha256": "d1ceebba3df51fe65cd9ecbc9a13e8e41a9e9c20ba9800bc25f1423268f7a859",
-    "bytes": 436059
+    "bytes": 436059,
+    "record_role": "original-media"
   },
   {
     "id": "asset-e28e95f70168",
@@ -227,7 +237,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "Container/response files do not establish rendered behavior",
     "sha256": "c8dc871d8aa2bb5c4fe0df7b18fef421dae67ba2b9650fed3f88fc82247b78b6",
-    "bytes": 3041592
+    "bytes": 3041592,
+    "record_role": "original-media"
   },
   {
     "id": "asset-5eca83986352",
@@ -252,7 +263,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-3941d42c947a",
@@ -277,7 +289,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-8049ffc72e51",
@@ -302,7 +315,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-a0021776b914",
@@ -327,7 +341,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-8da4040e7b85",
@@ -352,7 +367,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-ece7edbf3fcc",
@@ -377,7 +393,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-d925584fb849",
@@ -407,7 +424,8 @@
       "duration_seconds": 15,
       "method": "ffmpeg temporal trim/re-encode VP8; no generated frames; original preserved",
       "sha256": "a801cc3db630244e350c2cfcf2cad1daaaff71dc4cf5ec235837c3c07506a154"
-    }
+    },
+    "record_role": "derived-media"
   },
   {
     "id": "asset-52e957d9033d",
@@ -428,7 +446,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "Container/response files do not establish rendered behavior",
     "sha256": "a7a2cb4878dfdde58bc90791d5d2fbcfc745af48a4695afabc46aa1dc032b5c9",
-    "bytes": 472
+    "bytes": 472,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-4020e149aa86",
@@ -453,7 +472,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-785a3ee846b3",
@@ -478,7 +498,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-31570ceb003e",
@@ -503,7 +524,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-c34c710516dc",
@@ -528,7 +550,8 @@
     "dimensions": [
       1280,
       720
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-a84653e97473",
@@ -553,7 +576,8 @@
     "dimensions": [
       1500,
       760
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-73046f3e6c17",
@@ -578,7 +602,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-e0d45a1a96b9",
@@ -603,7 +628,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-a7bf2452ca8e",
@@ -628,7 +654,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-c60c414c4869",
@@ -653,7 +680,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-c536f9c0de35",
@@ -678,7 +706,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-0bfb8a065be0",
@@ -703,7 +732,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-1c9b3baa40e9",
@@ -733,7 +763,8 @@
       "duration_seconds": 18,
       "method": "ffmpeg temporal trim/re-encode VP8; no generated frames; original preserved",
       "sha256": "3cbd2f9ee94b981a16de72edc4578745efb243fee130fb4f563064a50e9f06ea"
-    }
+    },
+    "record_role": "derived-media"
   },
   {
     "id": "asset-12923784137c",
@@ -754,7 +785,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "99c6e058621f3c1763bf0d450fc8c75011179190dbeebf1c4ee50d2e7fc90d02",
-    "bytes": 463
+    "bytes": 463,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-ee575dc3262e",
@@ -779,7 +811,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-c7c5bc182872",
@@ -804,7 +837,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-ed076e5ceb14",
@@ -829,7 +863,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-5b4d74fb701a",
@@ -854,7 +889,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-f7246305c221",
@@ -879,7 +915,8 @@
     "dimensions": [
       1600,
       520
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-48edf2f2033e",
@@ -904,7 +941,8 @@
     "dimensions": [
       1200,
       1040
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "mot-01-100000-stars-actions-video",
@@ -925,7 +963,8 @@
     "acquisition_status": "captured-live-local-only; derived only by trimming the 51.24s raw recording, with no generated frames",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "f10457dd032a84f7dc24204da47ba3304568aa8f3e960da17c0f865714c2c5c1",
-    "bytes": 2423696
+    "bytes": 2423696,
+    "record_role": "derived-media"
   },
   {
     "id": "asset-04ebbbc11d10",
@@ -946,7 +985,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "0e33c2bb9c0a8a7ad7a2e7017f7c0e50eefe9068ea4259d378809e4b0616fbd0",
-    "bytes": 3918300
+    "bytes": 3918300,
+    "record_role": "original-media"
   },
   {
     "id": "asset-cd6d55077b55",
@@ -971,7 +1011,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "derived-media"
   },
   {
     "id": "asset-8f680af9c6bf",
@@ -992,7 +1033,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "aa32e977283f8521677460434d41580079b7817af805fe5eece4cce9990bd0fc",
-    "bytes": 8658
+    "bytes": 8658,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-543cf01cb18c",
@@ -1013,7 +1055,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "1c8b64dfd56b4b57bf2dd091c51a091930640207301b3126c9f557a96f2901d4",
-    "bytes": 10499
+    "bytes": 10499,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-937f0fecbded",
@@ -1034,7 +1077,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "ade330b6fcd28945200655ece589054e345b21952e1467fbdaf6a2db1913141b",
-    "bytes": 189
+    "bytes": 189,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-abddd2cc6dc8",
@@ -1055,7 +1099,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "39d708f0d95552249594bf988e5d2c574edd9f6bd51ccb6f377fe8e04fba7feb",
-    "bytes": 62367
+    "bytes": 62367,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "mot-01-100000-stars-entry",
@@ -1080,7 +1125,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-bdabb81b93cc",
@@ -1101,7 +1147,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "9b3619fbacbbd37572da67bbfc3926b2aa037d4d773c042a4a1276620a50be96",
-    "bytes": 6111
+    "bytes": 6111,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-b49eff3bf6e1",
@@ -1122,7 +1169,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "ade330b6fcd28945200655ece589054e345b21952e1467fbdaf6a2db1913141b",
-    "bytes": 189
+    "bytes": 189,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-efc5d80ae345",
@@ -1143,7 +1191,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "d0887baa7d30514025cf834d06f35f7c51c07342be961e1f66822be27c5acf59",
-    "bytes": 62347
+    "bytes": 62347,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "mot-01-100000-stars-zoom-in",
@@ -1168,7 +1217,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-cbd4e8ad4934",
@@ -1189,7 +1239,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "ade330b6fcd28945200655ece589054e345b21952e1467fbdaf6a2db1913141b",
-    "bytes": 189
+    "bytes": 189,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-f30efbe07705",
@@ -1210,7 +1261,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom",
     "sha256": "513faeb276a3d30c6fa7c60b1f45e30b814bd4bc524c3cad18aedaf1a3a13278",
-    "bytes": 62496
+    "bytes": 62496,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "mot-01-100000-stars-zoom-out",
@@ -1235,7 +1287,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-efb11e4f6669",
@@ -1256,7 +1309,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "Container/response files do not establish rendered behavior",
     "sha256": "6eed31bf12bfbe66a07bb4889dc596cfff300a773f2ae91ebe1564ce589c903a",
-    "bytes": 1859
+    "bytes": 1859,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-040d0ad4c328",
@@ -1277,7 +1331,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "Container/response files do not establish rendered behavior",
     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "bytes": 0
+    "bytes": 0,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-62756e6fbcca",
@@ -1298,7 +1353,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "Container/response files do not establish rendered behavior",
     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "bytes": 0
+    "bytes": 0,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-0700419811f0",
@@ -1319,7 +1375,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "868d12273e72ee2ca10be731eaeb4fb3a999ac99e82257b4a6747552fcc123c0",
-    "bytes": 70254
+    "bytes": 70254,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-2f7b0157c803",
@@ -1340,7 +1397,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "988cda9de45087c074c087e9ab8301194ff890a33ce444e52e6a2af944755459",
-    "bytes": 72745
+    "bytes": 72745,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-de8ebc3b1ffe",
@@ -1361,7 +1419,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "d13a31e466c37b7618346e9546e31c54f017d7be6727a152d67dab255500eb19",
-    "bytes": 195
+    "bytes": 195,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-03107955543b",
@@ -1382,7 +1441,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "54312d70eafa341a06df1b54592ce2fd334a2b72fc14a9edbfca722360e41697",
-    "bytes": 81574
+    "bytes": 81574,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "mot-01-star-atlas-loading-blocked",
@@ -1407,7 +1467,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-8101289658d1",
@@ -1428,7 +1489,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "bcd03d816ee6f427d8d4bf43c9f1063e9aafaf7f794c04ca7ffc1e871d3a19de",
-    "bytes": 2464
+    "bytes": 2464,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-46b5fd82cf7e",
@@ -1449,7 +1511,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "e872335691d03816328b3034983fd04947cd8772b2fb040e55d754ed0e3e9105",
-    "bytes": 1306343
+    "bytes": 1306343,
+    "record_role": "original-media"
   },
   {
     "id": "asset-62254a9fdbbb",
@@ -1470,7 +1533,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "d13a31e466c37b7618346e9546e31c54f017d7be6727a152d67dab255500eb19",
-    "bytes": 195
+    "bytes": 195,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-081dbb682ea5",
@@ -1491,7 +1555,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "54312d70eafa341a06df1b54592ce2fd334a2b72fc14a9edbfca722360e41697",
-    "bytes": 81574
+    "bytes": 81574,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-58d62417431b",
@@ -1516,7 +1581,8 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-7aaf7f5749d5",
@@ -1537,7 +1603,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "d13a31e466c37b7618346e9546e31c54f017d7be6727a152d67dab255500eb19",
-    "bytes": 195
+    "bytes": 195,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-8965e9d0b14e",
@@ -1558,7 +1625,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "No live scene or camera behavior acquired",
     "sha256": "d243f108c1d2d90f398dafdc8fdda77af9cf4745af959e96eba101bccad9c73a",
-    "bytes": 81614
+    "bytes": 81614,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-580e0d0eb893",
@@ -1583,7 +1651,1775 @@
     "dimensions": [
       1440,
       900
-    ]
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "r2-cos-ai-model-atlas-loading-20260910",
+    "source": "Cosmograph public AI Model Atlas",
+    "source_id": "cosmograph",
+    "url": "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+    "final_url": "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+    "captured_at": "2026-09-10T16:03:07.300Z",
+    "timestamp_basis": "filesystem mtime; exact capture time unverified",
+    "path": ".local-captures/R2-COS/default.png",
+    "type": "image/png",
+    "state": "loading-establishing-database-connection-no-canvas",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "r2-cos-ai-model-atlas-default",
+    "purpose": "Bounded failure evidence for the named public graph; not visual graph reference material.",
+    "license_basis": "Third-party public page; screenshot redistribution not cleared.",
+    "usage_scope": "blocked",
+    "acquisition_status": "captured-original",
+    "gaps": [
+      "No canvas or WebGL context appeared after the bounded 180-second readiness window.",
+      "No rendered points, zoom, pan, hover, click, selection, second-node, or blank-click state is established.",
+      "The attempted continuous recording ended with the aborted run and is not a valid video asset."
+    ],
+    "sha256": "541b0afe6cb44f5fe3ce1f9a95d72e5ceb95ca99b4c8acfd594d115f542e6cb4",
+    "acquisition": "Fresh Playwright persistent context named R2-COS-attempt-2-profile; no authenticated/private browser state.",
+    "evidence_type": "Aligned browser screenshot, DOM text, critical computed CSS, and sanitized resource index; visually inspected.",
+    "usage": "Do not use in product, demo, or visual-reference selection. Retained only as private capture evidence.",
+    "fragment_type": "screenshot",
+    "bytes": 13629,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-COS-actions-i-blank-clears-selection-cleaned-html",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:36.460024+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/blank-clears-selection.cleaned.html",
+    "type": "text/html",
+    "state": "misleading historical filename: blank candidate hit node4344; no clearing proof; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:blank-clears-selection",
+    "purpose": "misleading historical filename: blank candidate hit node4344; no clearing proof; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "1b1f53e75996ba14e555686d233a557ec45b0ecbc7de79ef4d8696cb9f0cbc40",
+    "evidence_type": "rendered iframe DOM",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 17967,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-blank-clears-selection-observation-json",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:36.459025+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/blank-clears-selection.observation.json",
+    "type": "application/json",
+    "state": "misleading historical filename: blank candidate hit node4344; no clearing proof",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:blank-clears-selection",
+    "purpose": "misleading historical filename: blank candidate hit node4344; no clearing proof",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "c82ab88cbfed45556615a64a00b84134f9380f53d31c91f7469b3206fc37abe8",
+    "evidence_type": "browser state or diagnostic metadata",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 2386,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-blank-clears-selection-png",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:36.457901+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/blank-clears-selection.png",
+    "type": "image/png",
+    "state": "misleading historical filename: blank candidate hit node4344; no clearing proof",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:blank-clears-selection",
+    "purpose": "misleading historical filename: blank candidate hit node4344; no clearing proof",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "a4ec6ad200f68c9d7eb45eb19c7c9ff07a0aebb2f7aaf001a880a1305c33ce31",
+    "evidence_type": "browser screenshot",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 128669,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-COS-actions-i-default-cleaned-html",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:19.035305+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/default.cleaned.html",
+    "type": "text/html",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:default",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "25c65caf33565841f2630d56e7146c7f733e22f313a039bcd2ea1b4939168fd7",
+    "evidence_type": "rendered iframe DOM",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 17953,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-default-observation-json",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:19.030395+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/default.observation.json",
+    "type": "application/json",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:default",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "ab6fe1bb9f1d90adebdefdc93eb5efb855ca91a3a0c215deea8e553f326efa46",
+    "evidence_type": "browser state or diagnostic metadata",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 928,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-default-png",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:19.023713+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/default.png",
+    "type": "image/png",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:default",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "1f6a2c98ff93f2374d568564ed74835f15ce1f78cf06ebf7be26eb9c5dab1d04",
+    "evidence_type": "browser screenshot",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 382233,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-COS-actions-i-hover-node-1-cleaned-html",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:22.391410+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/hover-node-1.cleaned.html",
+    "type": "text/html",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:hover-node-1",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "e485feef6daed43ac016585dbd1a57bf53164511ba137129cc9bab804727c9c0",
+    "evidence_type": "rendered iframe DOM",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 17967,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-hover-node-1-observation-json",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:22.385233+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/hover-node-1.observation.json",
+    "type": "application/json",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:hover-node-1",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "64e0ecad6f26696bcb283bc74990a26599ac71a61538f3c927e44b309e238b9d",
+    "evidence_type": "browser state or diagnostic metadata",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 1251,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-hover-node-1-png",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:22.378458+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/hover-node-1.png",
+    "type": "image/png",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:hover-node-1",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "42bf246fe72df792fdaa16bf624795583a56b035f643e5c96151c37eedd3e3fb",
+    "evidence_type": "browser screenshot",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 281040,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-COS-actions-i-run-error-json",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:36.461024+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/run-error.json",
+    "type": "application/json",
+    "state": "action/official callback time log and blank-candidate failure",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:run-error",
+    "purpose": "action/official callback time log and blank-candidate failure",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "df30fbe126eea5035d8029077d9dae2d939fd704bcaffecfc3769c1dffb4e58e",
+    "evidence_type": "browser state or diagnostic metadata",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 1614,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-selected-node-1-cleaned-html",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:25.576586+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selected-node-1.cleaned.html",
+    "type": "text/html",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:selected-node-1",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "e485feef6daed43ac016585dbd1a57bf53164511ba137129cc9bab804727c9c0",
+    "evidence_type": "rendered iframe DOM",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 17967,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-selected-node-1-observation-json",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:25.571492+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selected-node-1.observation.json",
+    "type": "application/json",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:selected-node-1",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "6998090ba79a128cd6f34b1962901957598ea35094503694eae1090f23095d20",
+    "evidence_type": "browser state or diagnostic metadata",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 1520,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-selected-node-1-png",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:25.566299+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selected-node-1.png",
+    "type": "image/png",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:selected-node-1",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "ac57255763712d8dbcab2e1c29affe1f6208ea27e107514fa90e946c99fd9960",
+    "evidence_type": "browser screenshot",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 115976,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-COS-actions-i-selected-node-2-cleaned-html",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:32.716124+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selected-node-2.cleaned.html",
+    "type": "text/html",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:selected-node-2",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "e485feef6daed43ac016585dbd1a57bf53164511ba137129cc9bab804727c9c0",
+    "evidence_type": "rendered iframe DOM",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 17967,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-selected-node-2-observation-json",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:32.710544+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selected-node-2.observation.json",
+    "type": "application/json",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:selected-node-2",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "f5759c2de929d581734b3f202f6fda7b1b46cc358a414647b86eeb7639910899",
+    "evidence_type": "browser state or diagnostic metadata",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 1965,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-selected-node-2-png",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:32.704295+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selected-node-2.png",
+    "type": "image/png",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:selected-node-2",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "d488427413fb29e58a14d43483bb719223c5a16789bf0cadb8839e86462007e0",
+    "evidence_type": "browser screenshot",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 124767,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-COS-actions-i-selection-persists-away-cleaned-html",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:27.631073+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selection-persists-away.cleaned.html",
+    "type": "text/html",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:selection-persists-away",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md; frame.content rendered iframe DOM, filename does not mean cleaned response",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "e485feef6daed43ac016585dbd1a57bf53164511ba137129cc9bab804727c9c0",
+    "evidence_type": "rendered iframe DOM",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 17967,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-selection-persists-away-observation-json",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:27.623075+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selection-persists-away.observation.json",
+    "type": "application/json",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:selection-persists-away",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "568056bcf2d0f1c2e465273f7885ebdccc11c91cd25a40f075887a88436648d8",
+    "evidence_type": "browser state or diagnostic metadata",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 1723,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-COS-actions-i-selection-persists-away-png",
+    "source": "cosmograph",
+    "source_id": "cosmograph",
+    "url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:29:27.615521+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selection-persists-away.png",
+    "type": "image/png",
+    "state": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-COS-actions-i:selection-persists-away",
+    "purpose": "retained same-session evidence; independently reviewed in reviews/ROUND2.md",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "234f351eb265be80252649946d2649b53456af01fcb6c25220d8f56d46944697",
+    "evidence_type": "browser screenshot",
+    "iframe_viewport": {
+      "width": 980,
+      "height": 380
+    },
+    "supports": "engine example only; does not prove commercial Cosmograph runtime",
+    "bytes": 118803,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "r2-cos-engine-actions-continuous-video",
+    "source": "Official cosmos.gl Storybook Actions example",
+    "source_id": "cosmograph",
+    "url": "https://cosmosgl.github.io/graph/?path=/story/examples-get-started--actions",
+    "final_url": "https://cosmos.gl/?path=/story/examples-get-started--actions",
+    "captured_at": "2026-09-10T16:28:49.245Z",
+    "timestamp_basis": "filesystem mtime; exact capture time unverified",
+    "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/video/page@ada5412c81a79e3ffeb5909431c534f0.webm",
+    "type": "video/webm",
+    "state": "continuous-default-hover-two-clicks-move-away-blank-attempt",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "r2-cos-engine-actions-run-i-video",
+    "purpose": "Continuous real-operation evidence across the captured interaction sequence.",
+    "license_basis": "Third-party official public demo; redistribution not cleared.",
+    "usage_scope": "reference-only",
+    "acquisition_status": "captured-original",
+    "gaps": [
+      "The final mouse action clicked example-local point index 4344 rather than clearing selection; do not label this video as blank-clear proof."
+    ],
+    "sha256": "669ded316bd87e441c8ed305b583f244e81e2297ecdd259ae96112f95e048b4e",
+    "acquisition": "Playwright recording from a fresh isolated R2-COS engine fallback profile.",
+    "evidence_type": "ffmpeg-decodable VP8 WebM, 1280x720, 47.600 seconds; action offsets retained in per-state observations.",
+    "usage": "Internal interaction reference only; retain private original.",
+    "fragment_type": "video",
+    "bytes": 3922640,
+    "record_role": "original-media"
+  },
+  {
+    "id": "cos-preliminary-frame-0",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:30:16.805115+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 0s",
+    "path": ".local-captures/R2-INT/derivedframes/cos/cos-0.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "3eae5c183768cd5f18aa48cfa66ffb2f4d9de104e15b52377cf863e7d2e5c817",
+    "originalpath": ".local-captures/R2-COS/enginefallback/actions-run-20260911/video/page@24da9b6a13bc144a6bfa4701ae3c4cb0.webm",
+    "originalsha256": "c7011bd7086820a5d57576c60e07cbf43829a0e759356381404fdaf549517641",
+    "bytes": 4346,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "cos-preliminary-frame-20",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:30:16.885945+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 20s",
+    "path": ".local-captures/R2-INT/derivedframes/cos/cos-20.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "d7d171fbd7235fc968e748a227d75249f0281f36fcaefc5e433597639f73d706",
+    "originalpath": ".local-captures/R2-COS/enginefallback/actions-run-20260911/video/page@24da9b6a13bc144a6bfa4701ae3c4cb0.webm",
+    "originalsha256": "c7011bd7086820a5d57576c60e07cbf43829a0e759356381404fdaf549517641",
+    "bytes": 163318,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "cos-preliminary-frame-35",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:30:16.996186+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 35s",
+    "path": ".local-captures/R2-INT/derivedframes/cos/cos-35.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "f4e2d0ebe58b345b8e7a69c1ed4cede96e371394f99f8dc6f09c2a402401e0c0",
+    "originalpath": ".local-captures/R2-COS/enginefallback/actions-run-20260911/video/page@24da9b6a13bc144a6bfa4701ae3c4cb0.webm",
+    "originalsha256": "c7011bd7086820a5d57576c60e07cbf43829a0e759356381404fdaf549517641",
+    "bytes": 368497,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "cos-preliminary-frame-40",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:30:17.131419+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 40s",
+    "path": ".local-captures/R2-INT/derivedframes/cos/cos-40.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "03b2313e806f133c3d937744b8b6beabf8a5ead91949248f66bb054ccaeb20e6",
+    "originalpath": ".local-captures/R2-COS/enginefallback/actions-run-20260911/video/page@24da9b6a13bc144a6bfa4701ae3c4cb0.webm",
+    "originalsha256": "c7011bd7086820a5d57576c60e07cbf43829a0e759356381404fdaf549517641",
+    "bytes": 674530,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "cos-preliminary-frame-44",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:30:17.249558+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 44s",
+    "path": ".local-captures/R2-INT/derivedframes/cos/cos-44.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "4e2aec785e4ea14e129feffcc457c68aa3d52e78fc91f68ce8d92a6a67c755b2",
+    "originalpath": ".local-captures/R2-COS/enginefallback/actions-run-20260911/video/page@24da9b6a13bc144a6bfa4701ae3c4cb0.webm",
+    "originalsha256": "c7011bd7086820a5d57576c60e07cbf43829a0e759356381404fdaf549517641",
+    "bytes": 618953,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-00",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:28:56.060368+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 0s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-00.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "be3798f88cd7ac8edfb8ca869952da94b30c7ec714154297e65378fa08dd5090",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 5967,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-21",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:28:56.164292+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 21s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-21.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "87a2b006713e2b5408bba1bff6d996eb61ca7c90a97f89c88db4fdb8cb1c9ac5",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 80444,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-28",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:36:19.479750+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 28s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-28.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "49bc41d882d57ff0b7f9db21b6d8f063bafe02033773c8695c6db0c93c17f41f",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 290395,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-30",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:29:34.804030+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 30s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-30.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "da1c854c221513db00ea522f7a8439fad294046ab54b5114bcb289e8355ba66f",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 302996,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-32",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:36:19.548702+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 32s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-32.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "8e23158d25a41eeeaf6fa3d88ef42e6b18cca746e56d1e35969b08c574a5c9c1",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 291850,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-34",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:29:35.477358+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 34s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-34.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "f46898a635f7b9de2b17ddb2cbfc20d71c47380fbdfee02f3a064ec1bff995ac",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 301132,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-36",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:36:19.614555+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 36s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-36.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "49dad16006cd43b105835c4987ef5a8f8c76e25b472bdda6f705ff0a06401be3",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 299063,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-38",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:29:36.066101+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 38s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-38.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "c27b63526973eab2b42a6a6ab1c5925534a264ebc1a0309258fe1a1d80a53368",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 333182,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-40",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:36:19.688821+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 40s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-40.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "66e690711781d87af985a586085ae6c5b6dbf0773c292634f7562d81f75bcc59",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 333046,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-42",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:36:19.755008+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 42s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-42.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "ce9b16c887bdce847550a1fe38f9c0c1b5460898794cf1711ff234a5817ee218",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 319613,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "mot-frame-43",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:28:56.393887+00:00",
+    "timestamp_basis": "ffmpeg requested source offset 43s",
+    "path": ".local-captures/R2-INT/derivedframes/mot/mot-43.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "6f394147430561b5332a6965c5a0450fa28526a081ff40e169af71514b9a18d4",
+    "originalpath": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "originalsha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "bytes": 319581,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "round2-contact-sheet",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:37:13.012508+00:00",
+    "timestamp_basis": "review composition on 2026-09-11; embedded sources retain their own capture metadata",
+    "path": ".local-captures/R2-INT/reference-contact-sheet.png",
+    "type": "image/png",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "9009790f76cf66523a1035a6996a02a96bb35433c1c2ad4cc77fd935ff879003",
+    "derivation": {
+      "sources": [
+        {
+          "path": ".local-captures/REF-01/hero-original.png",
+          "sha256": "4fc6838cfef7cc802264728b222c97e4090acc882aecfdb6f9cec1a315bb6825"
+        },
+        {
+          "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/default.png",
+          "sha256": "1f6a2c98ff93f2374d568564ed74835f15ce1f78cf06ebf7be26eb9c5dab1d04"
+        },
+        {
+          "path": ".local-captures/INT-02/cosmograph-080s.png",
+          "sha256": "ab2488da241c29c26d97a64e0ac53b3f1daaf5a8be2c1dabd300ad7b4679166c"
+        },
+        {
+          "path": ".local-captures/R2-COS/enginefallback/actions-run-20260911-i/selected-node-1.png",
+          "sha256": "ac57255763712d8dbcab2e1c29affe1f6208ea27e107514fa90e946c99fd9960"
+        },
+        {
+          "path": ".local-captures/R2-INT/derivedframes/mot/mot-28.png",
+          "sha256": "49bc41d882d57ff0b7f9db21b6d8f063bafe02033773c8695c6db0c93c17f41f"
+        }
+      ]
+    },
+    "bytes": 909383,
+    "dimensions": [
+      1800,
+      1320
+    ],
+    "record_role": "derived-media"
+  },
+  {
+    "id": "upstream-create-cosmos-raw",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:10:37.283095+00:00",
+    "timestamp_basis": "direct pinned upstream raw-byte retrieval",
+    "path": ".local-captures/R2-INT/upstream-source-check/create-cosmos.ts",
+    "type": "video/vnd.dlna.mpeg-tts",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "7a141abbd0a93c164a3013927e7685f6d0b3cf9b34c76e72d5181428a7c5c08c",
+    "originalpath": "https://raw.githubusercontent.com/cosmosgl/graph/ce35edacf94dba1f02ef2b47957e937e4c9acf17/src/stories/create-cosmos.ts",
+    "originalsha256": "7a141abbd0a93c164a3013927e7685f6d0b3cf9b34c76e72d5181428a7c5c08c",
+    "bytes": 2247,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "upstream-generate-mesh-data-raw",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:10:39.834327+00:00",
+    "timestamp_basis": "direct pinned upstream raw-byte retrieval",
+    "path": ".local-captures/R2-INT/upstream-source-check/generate-mesh-data.ts",
+    "type": "video/vnd.dlna.mpeg-tts",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "0c1442011d7d8620bd1561aa8ba41fc70ab3e88e043bd120176aa4211086ec56",
+    "originalpath": "https://raw.githubusercontent.com/cosmosgl/graph/ce35edacf94dba1f02ef2b47957e937e4c9acf17/src/stories/generate-mesh-data.ts",
+    "originalsha256": "0c1442011d7d8620bd1561aa8ba41fc70ab3e88e043bd120176aa4211086ec56",
+    "bytes": 3860,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "upstream-licence-raw",
+    "source": "review",
+    "source_id": "review",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:10:13.773864+00:00",
+    "timestamp_basis": "direct pinned upstream raw-byte retrieval",
+    "path": ".local-captures/R2-INT/upstream-source-check/LICENCE",
+    "type": "text/plain",
+    "state": "retained static evidence",
+    "viewport": null,
+    "capture_id": "retained-review",
+    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "license_basis": "No redistribution clearance; local-only reference",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Container/response files do not establish rendered behavior",
+    "sha256": "b26731c49be8775660663bf06987b38e0432519586dd577115c66ce3e17dedcf",
+    "originalpath": "https://raw.githubusercontent.com/cosmosgl/graph/ce35edacf94dba1f02ef2b47957e937e4c9acf17/LICENCE",
+    "originalsha256": "b26731c49be8775660663bf06987b38e0432519586dd577115c66ce3e17dedcf",
+    "bytes": 1085,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-ground-ground-initial-css-json",
+    "source": "ground-sky",
+    "source_id": "ground-sky",
+    "url": "https://stellarium-web.org/",
+    "final_url": "https://stellarium-web.org/",
+    "captured_at": "2026-09-10T15:56:15.676489+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/ground/ground-initial.css.json",
+    "type": "application/json",
+    "state": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-ground:ground-initial",
+    "purpose": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "eaf64fe38f32fe61fde05558b522a0d0fdfe257a5380cac874ebc0b24fb36705",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 1070,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-ground-ground-initial-dom-json",
+    "source": "ground-sky",
+    "source_id": "ground-sky",
+    "url": "https://stellarium-web.org/",
+    "final_url": "https://stellarium-web.org/",
+    "captured_at": "2026-09-10T15:56:15.590214+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/ground/ground-initial.dom.json",
+    "type": "application/json",
+    "state": "ground/horizon upward-view segment; daylight, not stellar takeover; summarized DOM inspection only, not full rendered HTML",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-ground:ground-initial",
+    "purpose": "ground/horizon upward-view segment; daylight, not stellar takeover; summarized DOM inspection only, not full rendered HTML",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "41f6ce5ccce3942d7fc0a3e7cacda1044c37f967e68c54f0a10ac6463b35c787",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 835,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-ground-ground-initial-png",
+    "source": "ground-sky",
+    "source_id": "ground-sky",
+    "url": "https://stellarium-web.org/",
+    "final_url": "https://stellarium-web.org/",
+    "captured_at": "2026-09-10T15:56:15.426549+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/ground/ground-initial.png",
+    "type": "image/png",
+    "state": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-ground:ground-initial",
+    "purpose": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "9e81bc33681f36377f4753d40c260f11d4a015740f39905447622a7622e47111",
+    "evidence_type": "browser screenshot",
+    "bytes": 172023,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "r2-mot-stellarium-ground-to-upward-continuous",
+    "source": "Stellarium Web",
+    "source_id": "ground-sky",
+    "url": "https://stellarium-web.org/",
+    "final_url": "https://stellarium-web.org/",
+    "captured_at": "2026-09-10T15:57:05Z",
+    "timestamp_basis": "filesystem mtime; exact capture time unverified",
+    "path": ".local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm",
+    "type": "video/webm",
+    "state": "ground-to-upward-continuous; no stellar-takeover",
+    "viewport": "1440x900; DPR 1; 43.84 seconds",
+    "capture_id": "R2-MOT-ground/R2-MOT-ground-page-01",
+    "purpose": "Unmodified official-demo recording of the action from visible ground/horizon through upward drag until ground exits.",
+    "license_basis": "Public official demo observation; redistribution permission was not verified.",
+    "usage_scope": "reference-only",
+    "acquisition_status": "captured-live-local-only",
+    "gaps": "This is an actual movement clip, not a fake composite, but cannot prove an upward transition where stars take over because the captured default time was daylight.",
+    "sha256": "4fbde7368dd47ec106bcd30efa88f1da61a4cbe45113bd47fed14a780ff13e5a",
+    "evidence_type": "unmodified same-session browser recording",
+    "usage": "Reference action evidence only; no composite or derivative was made.",
+    "url_query_affecting_content": null,
+    "bytes": 1461934,
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-MOT-ground-session-json",
+    "source": "ground-sky",
+    "source_id": "ground-sky",
+    "url": "https://stellarium-web.org/",
+    "final_url": "https://stellarium-web.org/",
+    "captured_at": "2026-09-10T15:57:05.201187+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/ground/session.json",
+    "type": "application/json",
+    "state": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-ground:session",
+    "purpose": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "8469c6ac3f6fa4cdec3ba97b7dbfdfb509ab2511f814c706f3cb1c212d553588",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 2651,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-ground-sky-after-upward-drag-css-json",
+    "source": "ground-sky",
+    "source_id": "ground-sky",
+    "url": "https://stellarium-web.org/",
+    "final_url": "https://stellarium-web.org/",
+    "captured_at": "2026-09-10T15:56:26.847525+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/ground/sky-after-upward-drag.css.json",
+    "type": "application/json",
+    "state": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-ground:sky-after-upward-drag",
+    "purpose": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "eaf64fe38f32fe61fde05558b522a0d0fdfe257a5380cac874ebc0b24fb36705",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 1070,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-ground-sky-after-upward-drag-dom-json",
+    "source": "ground-sky",
+    "source_id": "ground-sky",
+    "url": "https://stellarium-web.org/",
+    "final_url": "https://stellarium-web.org/",
+    "captured_at": "2026-09-10T15:56:26.764592+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/ground/sky-after-upward-drag.dom.json",
+    "type": "application/json",
+    "state": "ground/horizon upward-view segment; daylight, not stellar takeover; summarized DOM inspection only, not full rendered HTML",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-ground:sky-after-upward-drag",
+    "purpose": "ground/horizon upward-view segment; daylight, not stellar takeover; summarized DOM inspection only, not full rendered HTML",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "c86c5e6b0904e67503e56b7ec131fa8b353998200c4017b29e941cb8b1be2363",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 835,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-ground-sky-after-upward-drag-png",
+    "source": "ground-sky",
+    "source_id": "ground-sky",
+    "url": "https://stellarium-web.org/",
+    "final_url": "https://stellarium-web.org/",
+    "captured_at": "2026-09-10T15:56:26.678216+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/ground/sky-after-upward-drag.png",
+    "type": "image/png",
+    "state": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-ground:sky-after-upward-drag",
+    "purpose": "ground/horizon upward-view segment; daylight, not stellar takeover",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "98fac79585634ef748157a2ab6d9fb4404deca8bac1608952ef624485608ee16",
+    "evidence_type": "browser screenshot",
+    "bytes": 191713,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-MOT-star-atlas-attempt03-after-enter-css-json",
+    "source": "star-atlas",
+    "source_id": "star-atlas",
+    "url": "https://experience.staratlas.com/",
+    "final_url": "https://experience.staratlas.com/",
+    "captured_at": "2026-09-10T16:00:15.778867+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/star-atlas/attempt-03-enter/after-enter.css.json",
+    "type": "application/json",
+    "state": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-star-atlas-attempt03:after-enter",
+    "purpose": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "77d208e37589bfe11ecf9cb868a795be87f8fe655d20eb84799a40802bee87fd",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 357,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-star-atlas-attempt03-after-enter-dom-json",
+    "source": "star-atlas",
+    "source_id": "star-atlas",
+    "url": "https://experience.staratlas.com/",
+    "final_url": "https://experience.staratlas.com/",
+    "captured_at": "2026-09-10T16:00:15.336103+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/star-atlas/attempt-03-enter/after-enter.dom.json",
+    "type": "application/json",
+    "state": "loading/marketing-shell diagnostic only; no valid experience scene; summarized DOM inspection only, not full rendered HTML",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-star-atlas-attempt03:after-enter",
+    "purpose": "loading/marketing-shell diagnostic only; no valid experience scene; summarized DOM inspection only, not full rendered HTML",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "94bc32c647760afbd266121cf48672f648c1d27c12d405e7fb2382d4c6d593bf",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 1302,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-star-atlas-attempt03-after-enter-png",
+    "source": "star-atlas",
+    "source_id": "star-atlas",
+    "url": "https://experience.staratlas.com/",
+    "final_url": "https://experience.staratlas.com/",
+    "captured_at": "2026-09-10T16:00:14.919437+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/star-atlas/attempt-03-enter/after-enter.png",
+    "type": "image/png",
+    "state": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-star-atlas-attempt03:after-enter",
+    "purpose": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "41526e69fa090070f86fa0408c00d363dc244a1ad77eba3ecd4dfb8956092f14",
+    "evidence_type": "browser screenshot",
+    "bytes": 160148,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-MOT-star-atlas-attempt03-entry-css-json",
+    "source": "star-atlas",
+    "source_id": "star-atlas",
+    "url": "https://experience.staratlas.com/",
+    "final_url": "https://experience.staratlas.com/",
+    "captured_at": "2026-09-10T16:00:03.943631+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/star-atlas/attempt-03-enter/entry.css.json",
+    "type": "application/json",
+    "state": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-star-atlas-attempt03:entry",
+    "purpose": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 2,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-star-atlas-attempt03-entry-dom-json",
+    "source": "star-atlas",
+    "source_id": "star-atlas",
+    "url": "https://experience.staratlas.com/",
+    "final_url": "https://experience.staratlas.com/",
+    "captured_at": "2026-09-10T16:00:03.927495+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/star-atlas/attempt-03-enter/entry.dom.json",
+    "type": "application/json",
+    "state": "loading/marketing-shell diagnostic only; no valid experience scene; summarized DOM inspection only, not full rendered HTML",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-star-atlas-attempt03:entry",
+    "purpose": "loading/marketing-shell diagnostic only; no valid experience scene; summarized DOM inspection only, not full rendered HTML",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "75e3b3213bec4e241d246d5af39fbcfeb1c1db53319e78a435fb835f593541e7",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 297,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "R2-MOT-star-atlas-attempt03-entry-png",
+    "source": "star-atlas",
+    "source_id": "star-atlas",
+    "url": "https://experience.staratlas.com/",
+    "final_url": "https://experience.staratlas.com/",
+    "captured_at": "2026-09-10T16:00:03.883906+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/star-atlas/attempt-03-enter/entry.png",
+    "type": "image/png",
+    "state": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-star-atlas-attempt03:entry",
+    "purpose": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "944db6c0c140dcb41a3ba352558c40a556ae49dfb86f4e7de1b9ac3adcbd5e03",
+    "evidence_type": "browser screenshot",
+    "bytes": 96156,
+    "dimensions": [
+      1440,
+      900
+    ],
+    "record_role": "original-media"
+  },
+  {
+    "id": "r2-mot-star-atlas-continuous-entry-session",
+    "source": "Star Atlas Experience",
+    "source_id": "star-atlas",
+    "url": "https://experience.staratlas.com/",
+    "final_url": "https://experience.staratlas.com/",
+    "captured_at": "2026-09-10T16:01:02Z",
+    "timestamp_basis": "filesystem mtime; exact capture time unverified",
+    "path": ".local-captures/R2-MOT/star-atlas/attempt-03-enter/page@368b3489b4b8968e317584226ce7d3ec.webm",
+    "type": "video/webm",
+    "state": "continuous-official-loading-to-marketing-shell",
+    "viewport": "1440x900; DPR 1; 36.92 seconds",
+    "capture_id": "R2-MOT-star-atlas/R2-MOT-star-atlas-page-02",
+    "purpose": "Continuous recording that establishes the observed loading-to-marketing-shell transition, not valid exploration motion.",
+    "license_basis": "Public official page observation; redistribution permission was not verified.",
+    "usage_scope": "blocked",
+    "acquisition_status": "captured-live-local-only",
+    "gaps": "No WebGL canvas appeared in entry DOM; no console/page errors or HTTP status >=400 resources were observed in this finite attempt, so the cause of the persistent loader is not proven.",
+    "sha256": "e9ea0faed71ad6327f0e26f102ea1a125a2ef2a53e951e1965fad8cbb5ea2495",
+    "evidence_type": "unmodified same-session browser recording",
+    "usage": "Local diagnostic evidence only; no derivative was created.",
+    "url_query_affecting_content": null,
+    "bytes": 3006478,
+    "record_role": "original-media"
+  },
+  {
+    "id": "R2-MOT-star-atlas-attempt03-session-json",
+    "source": "star-atlas",
+    "source_id": "star-atlas",
+    "url": "https://experience.staratlas.com/",
+    "final_url": "https://experience.staratlas.com/",
+    "captured_at": "2026-09-10T16:01:02.658086+00:00",
+    "timestamp_basis": "filesystem mtime; see aligned observation/session for recorded capture timestamps",
+    "path": ".local-captures/R2-MOT/star-atlas/attempt-03-enter/session.json",
+    "type": "application/json",
+    "state": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "devicePixelRatio": 1
+    },
+    "capture_id": "R2-MOT-star-atlas-attempt03:session",
+    "purpose": "loading/marketing-shell diagnostic only; no valid experience scene",
+    "license_basis": "Official public observation; redistribution and product copying not cleared",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired-local-only",
+    "gaps": "Canvas point/edge internals are not DOM. Exact source build of hosted runtime unverified.",
+    "sha256": "449b06a8ee078704c14e18050859c22cc29c077efc37e624ea555f0fc0a2267d",
+    "evidence_type": "browser state or diagnostic metadata",
+    "bytes": 2729,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "r2-ref-spaceengine-ground-to-space-capability",
+    "source": "SpaceEngine official website",
+    "source_id": "ground-sky",
+    "url": "https://spaceengine.org/",
+    "final_url": "https://spaceengine.org/",
+    "captured_at": "2026-09-10T16:11:55.426784+00:00",
+    "timestamp_basis": "filesystem mtime; corrected future-dated fragment timestamp, exact capture time unknown",
+    "path": ".local-captures/R2-REF/ground-sky/spaceengine-official.html",
+    "type": "text/html",
+    "state": "official-capability-claim",
+    "viewport": null,
+    "capture_id": "R2-REF-http-spaceengine-home-01",
+    "purpose": "Official source states seamless transition from a planet surface to distant galaxies; optional secondary ground-to-space reference only, not a captured demonstration.",
+    "license_basis": "Official FAQ states non-commercial use of SpaceEngine videos/screenshots requires citation; this HTML capture is retained for reference and no media is redistributed.",
+    "usage_scope": "reference-only",
+    "acquisition_status": "public HTML response captured locally",
+    "gaps": "No video or screenshot captured; no verified transition timestamp; claim remains untested runtime evidence.",
+    "sha256": "8fe829e5bb90db8493cb06372e383c55b73b33bd276bf6c075f7940eb95dfd90",
+    "source_original": true,
+    "evidence_type": "official_product_capability",
+    "fragment_reported_captured_at": "2026-09-11T00:00:00Z",
+    "bytes": 105427,
+    "record_role": "page-or-metadata-evidence"
+  },
+  {
+    "id": "r2-ref-star-atlas-dept-case",
+    "source": "DEPT / Hello Monday Star Atlas production case",
+    "source_id": "star-atlas",
+    "url": "https://www.deptagency.com/en-dk/case/an-immersive-metaverse-gaming-experience/",
+    "final_url": "https://www.deptagency.com/en-dk/case/an-immersive-metaverse-gaming-experience/",
+    "captured_at": "2026-09-10T16:11:51Z",
+    "timestamp_basis": "filesystem mtime of preserved HTTP response; exact request time unavailable",
+    "path": ".local-captures/R2-REF/star-atlas/dept-star-atlas-case.html",
+    "type": "text/html",
+    "state": "official-indirect-case",
+    "viewport": null,
+    "capture_id": "R2-REF-http-dept-case-01",
+    "purpose": "Official production-studio case identifies Hello Monday (DEPT) partnership with Star Atlas and describes the immersive digital experience; indirect provenance only, not a claim that the Experience runtime or camera transition was observed.",
+    "license_basis": "Public case page; redistribution permission for page media not verified.",
+    "usage_scope": "reference-only",
+    "acquisition_status": "public HTML response captured locally",
+    "gaps": "Embedded Vimeo/media was not downloaded or visually inspected; no verified timestamps; no runtime interaction or actual Experience scene evidence.",
+    "sha256": "1c6b6923b1ff2bdc1bada5ce80243d96bf2c65d48fd0dc9f99cb2b68571138bc",
+    "source_original": true,
+    "evidence_type": "official_production_case",
+    "fragment_reported_sha256": "1c6d6923b1ff2bdc1bada5ce80243d96bf2c65d48fd0dc9f99cb2b68571138bc",
+    "integrity_note": "Fragment hash differs from current retained file; final index hashes actual bytes. See reviews/ROUND2.md for newline/provenance assessment; this is not an assertion of original byte identity.",
+    "bytes": 141037,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-d66d8c0bc8ea",
@@ -1608,7 +3444,8 @@
     "dimensions": [
       1672,
       941
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-c2b14c6a1d35",
@@ -1629,7 +3466,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "Container/response files do not establish rendered behavior",
     "sha256": "c42f5c254e304f2825732d2261dbacb7fdbccc68e03502e184bda0c5c04945bd",
-    "bytes": 3978
+    "bytes": 3978,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-c85c73a8e467",
@@ -1650,7 +3488,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "Container/response files do not establish rendered behavior",
     "sha256": "484762099916d54d08b4f7335eeaa9dee7f1783664a232eb3b4459a8bb5d8cfc",
-    "bytes": 1624
+    "bytes": 1624,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-36c5c8b1f6a2",
@@ -1671,7 +3510,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "Container/response files do not establish rendered behavior",
     "sha256": "e4f91d3a533f20864ecdff6c256667e650c9750d9bebf610d3bc90fcef86a34c",
-    "bytes": 2779
+    "bytes": 2779,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-33827942ea65",
@@ -1692,7 +3532,8 @@
     "acquisition_status": "acquired-local-only",
     "gaps": "Container/response files do not establish rendered behavior",
     "sha256": "c42f5c254e304f2825732d2261dbacb7fdbccc68e03502e184bda0c5c04945bd",
-    "bytes": 3978
+    "bytes": 3978,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "REF-02-obsidian-graph-view",
@@ -1717,7 +3558,8 @@
     "dimensions": [
       1989,
       1331
-    ]
+    ],
+    "record_role": "original-media"
   },
   {
     "id": "asset-a13d1e5c3738",
@@ -1738,7 +3580,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "0898bf643b290cae96a82a76ca5b04da777861697313975caa2bd5be73f73e8c",
-    "bytes": 2297
+    "bytes": 2297,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-f9219e54804c",
@@ -1759,7 +3602,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "a6b64eae7c8f4c22f0d0719e91948e6415ff54778e2ef2aec9a76cefabc5d237",
-    "bytes": 2866
+    "bytes": 2866,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-a59e9b5c06e0",
@@ -1780,7 +3624,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "477b367d2f5c69df91cf6a1b146a864e8f3fe8a1aef70a7c157f9419d8dcee44",
-    "bytes": 9006
+    "bytes": 9006,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-ce58a0ae9aba",
@@ -1801,7 +3646,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "aa59cdc9a8af2a9a0eca8402edd0a816ecf6854d29efac5d0a102890b94c5e8d",
-    "bytes": 34430
+    "bytes": 34430,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-2882634e538a",
@@ -1822,7 +3668,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "bb3548259736bef41c5adb65e8d92b68635a952d8146518075d839a5ccc05a39",
-    "bytes": 121331
+    "bytes": 121331,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-db17ceaf60dd",
@@ -1843,7 +3690,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "3498ab925ee44fdd67987ce0c0d0bf8a243cc51c2d30e13f966e2d9d3990790a",
-    "bytes": 402
+    "bytes": 402,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-6f39e9be6b6c",
@@ -1864,7 +3712,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "520223506604e78ace83fc82c56e479b896bf1d3debb3687841b5c2b4904d741",
-    "bytes": 832
+    "bytes": 832,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-0c532722fba4",
@@ -1885,7 +3734,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "95c23865b5e5bf6a1ebabd7053b5c19ee7e58cda68c82aa9c3e5d0d723292123",
-    "bytes": 1046
+    "bytes": 1046,
+    "record_role": "page-or-metadata-evidence"
   },
   {
     "id": "asset-c48ac408cfe1",
@@ -1906,28 +3756,31 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "b29e48d314293f946ebd7c3f63dee1508234d08dfeb1a7afb5c92d648e210570",
-    "bytes": 2334
+    "bytes": 2334,
+    "record_role": "licensed-static-source"
   },
   {
-    "id": "asset-b174739246de",
-    "source": "cosmos-gl",
+    "id": "cosmos-gl-licence-r2",
+    "source": "cosmosgl/graph",
     "source_id": "cosmos-gl",
     "url": "https://github.com/cosmosgl/graph/blob/ce35edacf94dba1f02ef2b47957e937e4c9acf17/LICENCE",
     "final_url": "https://raw.githubusercontent.com/cosmosgl/graph/ce35edacf94dba1f02ef2b47957e937e4c9acf17/LICENCE",
-    "captured_at": "2026-09-10T14:03:14.574810+00:00",
+    "captured_at": "2026-09-10",
     "timestamp_basis": "filesystem mtime; exact capture time unverified",
     "path": "reusable/cosmos-gl/LICENCE",
-    "type": "text/plain",
+    "type": "application/octet-stream",
     "state": "static upstream text only",
     "viewport": null,
-    "capture_id": "retained-cosmos-gl",
-    "purpose": "Source evidence; see catalog/CLOSEOUT.md for accepted scope",
+    "capture_id": "R2-SRC-static",
+    "purpose": "Upstream MIT license for copied source",
     "license_basis": "MIT: reusable/cosmos-gl/LICENCE at ce35edacf94dba1f02ef2b47957e937e4c9acf17",
     "usage_scope": "reuse-cleared",
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "21908e420bc31a24562bed00436e2c9d684403e5326e19617f891a6bf76429de",
-    "bytes": 1105
+    "fragment_type": "text",
+    "bytes": 1105,
+    "record_role": "licensed-static-source"
   },
   {
     "id": "cosmos-gl-package",
@@ -1938,7 +3791,7 @@
     "captured_at": "2026-09-10",
     "timestamp_basis": "filesystem mtime; exact capture time unverified",
     "path": "reusable/cosmos-gl/package.json",
-    "type": "json",
+    "type": "application/json",
     "state": "static upstream text only",
     "viewport": null,
     "capture_id": "SRC-01-static",
@@ -1948,7 +3801,9 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "e53a11544501dda67094bcdff04c19d4cad4700befd2c890732a39a0101ba670",
-    "bytes": 2965
+    "fragment_type": "json",
+    "bytes": 2965,
+    "record_role": "licensed-static-source"
   },
   {
     "id": "cosmos-gl-readme",
@@ -1959,7 +3814,7 @@
     "captured_at": "2026-09-10",
     "timestamp_basis": "filesystem mtime; exact capture time unverified",
     "path": "reusable/cosmos-gl/README.md",
-    "type": "md",
+    "type": "text/markdown",
     "state": "static upstream text only",
     "viewport": null,
     "capture_id": "SRC-01-static",
@@ -1969,7 +3824,9 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "a6b61e660fabd9df306499a2d49ce7db1b5ea136621afd1c4e954f0492c23773",
-    "bytes": 9163
+    "fragment_type": "md",
+    "bytes": 9163,
+    "record_role": "licensed-static-source"
   },
   {
     "id": "asset-e5829fbcf603",
@@ -1990,7 +3847,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "9e255ec37c9719f6bb149c3863e11db7159c17c75b15b44fdc15454f37d2a75d",
-    "bytes": 35311
+    "bytes": 35311,
+    "record_role": "licensed-static-source"
   },
   {
     "id": "cosmos-gl-source-index",
@@ -2001,7 +3859,7 @@
     "captured_at": "2026-09-10",
     "timestamp_basis": "filesystem mtime; exact capture time unverified",
     "path": "reusable/cosmos-gl/src/index.ts",
-    "type": "ts",
+    "type": "video/vnd.dlna.mpeg-tts",
     "state": "static upstream text only",
     "viewport": null,
     "capture_id": "SRC-01-static",
@@ -2011,7 +3869,59 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "3ddfc8aa2c71b68e273b90beb54b5b46736089ae20ebaea7c303f5c541b70364",
-    "bytes": 124057
+    "fragment_type": "ts",
+    "bytes": 124057,
+    "record_role": "licensed-static-source"
+  },
+  {
+    "id": "cosmos-gl-create-cosmos-r2",
+    "source": "cosmosgl/graph",
+    "source_id": "cosmos-gl",
+    "url": "https://github.com/cosmosgl/graph/blob/ce35edacf94dba1f02ef2b47957e937e4c9acf17/src/stories/create-cosmos.ts",
+    "final_url": "https://raw.githubusercontent.com/cosmosgl/graph/ce35edacf94dba1f02ef2b47957e937e4c9acf17/src/stories/create-cosmos.ts",
+    "captured_at": "2026-09-10",
+    "timestamp_basis": "filesystem mtime; exact capture time unverified",
+    "path": "reusable/cosmos-gl/src/stories/create-cosmos.ts",
+    "type": "video/vnd.dlna.mpeg-tts",
+    "state": "static upstream text only",
+    "viewport": null,
+    "capture_id": "R2-SRC-static",
+    "purpose": "Minimal dependency of full-mesh showcase",
+    "license_basis": "MIT: reusable/cosmos-gl/LICENCE at ce35edacf94dba1f02ef2b47957e937e4c9acf17",
+    "usage_scope": "reuse-cleared",
+    "acquisition_status": "acquired; partial source subset",
+    "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
+    "sha256": "49be3a8aa20faba6c33cf2ffa8999355a32c3050ce398d43369463ca7575dd5d",
+    "fragment_type": "ts",
+    "fragment_reported_sha256": "7A141ABBD0A93C164A3013927E7685F6D0B3CF9B34C76E72D5181428A7C5C08C",
+    "integrity_note": "Fragment hash differs from current retained file; final index hashes actual bytes. See reviews/ROUND2.md for newline/provenance assessment; this is not an assertion of original byte identity.",
+    "bytes": 2316,
+    "record_role": "licensed-static-source"
+  },
+  {
+    "id": "cosmos-gl-generate-mesh-data-r2",
+    "source": "cosmosgl/graph",
+    "source_id": "cosmos-gl",
+    "url": "https://github.com/cosmosgl/graph/blob/ce35edacf94dba1f02ef2b47957e937e4c9acf17/src/stories/generate-mesh-data.ts",
+    "final_url": "https://raw.githubusercontent.com/cosmosgl/graph/ce35edacf94dba1f02ef2b47957e937e4c9acf17/src/stories/generate-mesh-data.ts",
+    "captured_at": "2026-09-10",
+    "timestamp_basis": "filesystem mtime; exact capture time unverified",
+    "path": "reusable/cosmos-gl/src/stories/generate-mesh-data.ts",
+    "type": "video/vnd.dlna.mpeg-tts",
+    "state": "static upstream text only",
+    "viewport": null,
+    "capture_id": "R2-SRC-static",
+    "purpose": "Minimal dependency of full-mesh showcase",
+    "license_basis": "MIT: reusable/cosmos-gl/LICENCE at ce35edacf94dba1f02ef2b47957e937e4c9acf17",
+    "usage_scope": "reuse-cleared",
+    "acquisition_status": "acquired; partial source subset",
+    "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
+    "sha256": "0f4a4b7818dde11b2fc82118b5638fc79d1cc06a85ca977f60fb3897f28ef9f1",
+    "fragment_type": "ts",
+    "fragment_reported_sha256": "0C1442011D7D8620BD1561AA8BA41FC70AB3E88E043BD120176AA4211086EC56",
+    "integrity_note": "Fragment hash differs from current retained file; final index hashes actual bytes. See reviews/ROUND2.md for newline/provenance assessment; this is not an assertion of original byte identity.",
+    "bytes": 3981,
+    "record_role": "licensed-static-source"
   },
   {
     "id": "asset-3914aad1d85d",
@@ -2032,7 +3942,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "75fc1e6ee2840740ff72a5f77d3d45bed38f69c39e32da6c49cc6b8774cea09f",
-    "bytes": 415
+    "bytes": 415,
+    "record_role": "licensed-static-source"
   },
   {
     "id": "asset-f8e7ae747844",
@@ -2053,7 +3964,8 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "b7dcec75c606038fd3feabf24d374c5ff61d990b13dcc463856042b1fcb3efb6",
-    "bytes": 869
+    "bytes": 869,
+    "record_role": "licensed-static-source"
   },
   {
     "id": "asset-40aba4f1f514",
@@ -2074,6 +3986,7 @@
     "acquisition_status": "acquired; partial source subset",
     "gaps": "Clearance covers original file text with MIT notice only; dependencies, referenced media and complete runnable integration unverified",
     "sha256": "1005d59a4f9ff2ecc164a96f4cb1d8681770dc84fabcf80c15f79f3749a8889d",
-    "bytes": 1086
+    "bytes": 1086,
+    "record_role": "licensed-static-source"
   }
 ]

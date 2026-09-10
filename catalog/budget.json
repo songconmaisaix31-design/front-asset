@@ -1,12 +1,12 @@
 {
-  "status": "round 2 active",
+  "status": "round 2 archived; no frontend development",
   "token_limits_enabled": false,
   "model_policy": {
     "deterministic": "local tools",
     "extraction": "gpt-5.6-luna low",
     "browser": "gpt-5.6-terra low or medium according to difficulty",
     "complex_escalation": "Astra only for a concrete unresolved complex issue",
-    "current_coordinator": "gpt-6-astra high inherited active session; no live-switch capability used"
+    "current_coordinator": "Inherited active session; no independently verified live-model switch. No claim of downgrade."
   },
   "quota_protection": {
     "enabled": false,
@@ -14,11 +14,11 @@
   },
   "latest_observed_quota": {
     "source": "orca account list rateLimits.codex",
-    "updated_at_epoch_ms": 1789055030827,
-    "weekly_remaining_percent": 18,
+    "updated_at_epoch_ms": 1789058370805,
+    "weekly_remaining_percent": 13,
     "weekly_reset_epoch_ms": 1789441463000,
     "session_window": null,
-    "freshness": "account-wide delayed snapshot; not task attribution",
+    "freshness": "account-wide delayed snapshot, not exact task attribution",
     "automatic_reset_performed": false
   },
   "history": "token-budget-history.json; historical numbers are not active limits",
@@ -54,7 +54,7 @@
       "result": "sandbox/input blocked; root performed final QA; terminal closed"
     }
   ],
-  "metering_note": "Historical account observations do not impose a round-2 stop line. Current actual usage unknown until observed.",
+  "metering_note": "Round2 observed account-wide remaining18% then13%; delayed snapshots and concurrent use prevent exact attribution. No token counts or savings ratio claimed. No automatic reset/purchase/account switch.",
   "round2": {
     "run": "run_934700e178d8",
     "token_and_percentage_limits": false,
@@ -121,6 +121,22 @@
         "effort": "medium",
         "same_terminal_reused": true
       }
-    ]
+    ],
+    "unique_workers": 5,
+    "model_counts": {
+      "gpt-5.6-terra medium": 3,
+      "gpt-5.6-luna low": 2
+    },
+    "ref_media_followup": {
+      "task_id": "task_4c995aa83624",
+      "dispatch": "ctx_99314c8eede3",
+      "same_luna_low_terminal": true
+    },
+    "review_phase2": {
+      "task_id": "task_019b1d936325",
+      "dispatch": "ctx_beba5f6d25c4",
+      "same_terra_medium_terminal": true,
+      "final_commit": "67ca950f7e7bc429ec85937a866ae4f7a3eeab53"
+    }
   }
 }

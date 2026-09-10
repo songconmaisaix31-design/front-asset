@@ -1,3 +1,11 @@
+# Second-round closeout (v0.4)
+
+The current conclusion is in README.md, round2-gaps.json and reviews/ROUND2.md. Independent Terra-medium review now establishes official-engine selection/persistence and Stellarium ground-exit interval [28,36]s. Commercial Cosmograph runtime, blank clearing, Star Atlas entry and complete ground-to-stars remain unproven. All old91 paths/hashes are retained; current152 indexed files validate, 10 unique indexed videos decode, 11 static files match normalized upstream text. Raw files remain local-only in the main checkout, not backed up by Git. No frontend/deployment/downloaded-project execution occurred.
+
+Orca stalled input receipts revoked some dispatch capabilities despite actual running terminals. Model/effort launch receipts and exact worktree commits were checked; manual task reconciliation is distinguished from native completion. Release-unknown resources and original worktrees were preserved; no broad cleanup. Quota/token stop policies from the text below are historical only.
+
+## Previous closeout (historical)
+
 # 资产库交付与限制
 
 本轮完成真实材料采集和带缺口归档，未开发前端。原先固定 Token 上限中止记录见 Git 历史及 token-budget-history.json；用户取消数量管控后已恢复采集。按难度选择模型，并保留余额百分比保护。
