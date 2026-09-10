@@ -1,0 +1,48 @@
+[
+  {
+    "id": "r2-cos-ai-model-atlas-loading-20260910",
+    "source": "Cosmograph public AI Model Atlas",
+    "url": "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+    "final_url": "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+    "captured_at": "2026-09-10T16:03:07.300Z",
+    "path": ".local-captures/R2-COS/default.png",
+    "type": "screenshot",
+    "state": "loading-establishing-database-connection-no-canvas",
+    "viewport": { "width": 1280, "height": 720, "devicePixelRatio": 1 },
+    "capture_id": "r2-cos-ai-model-atlas-default",
+    "sha256": "541b0afe6cb44f5fe3ce1f9a95d72e5ceb95ca99b4c8acfd594d115f542e6cb4",
+    "purpose": "Bounded failure evidence for the named public graph; not visual graph reference material.",
+    "license_basis": "Third-party public page; screenshot redistribution not cleared.",
+    "usage_scope": "blocked",
+    "acquisition_status": "captured-original",
+    "acquisition": "Fresh Playwright persistent context named R2-COS-attempt-2-profile; no authenticated/private browser state.",
+    "evidence_type": "Aligned browser screenshot, DOM text, critical computed CSS, and sanitized resource index; visually inspected.",
+    "usage": "Do not use in product, demo, or visual-reference selection. Retained only as private capture evidence.",
+    "gaps": [
+      "No canvas or WebGL context appeared after the bounded 180-second readiness window.",
+      "No rendered points, zoom, pan, hover, click, selection, second-node, or blank-click state is established.",
+      "The attempted continuous recording ended with the aborted run and is not a valid video asset."
+    ]
+  },
+  {
+    "id": "r2-cos-collection-script-20260910",
+    "source": "Original R2-COS collection work",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10T16:03:07.300Z",
+    "path": "references/cosmograph/parts/R2-COS/capture.mjs",
+    "type": "collection-script",
+    "state": "validated-syntax",
+    "viewport": null,
+    "capture_id": "r2-cos-collection-script",
+    "sha256": "837fcf5bf09110d422a0dd91d1d9d4e7ac94d59618f9a2b82b9ae5b20f57e809",
+    "purpose": "Repeatable bounded isolated-browser collection procedure.",
+    "license_basis": "Original work in this repository.",
+    "usage_scope": "reuse-cleared",
+    "acquisition_status": "authored",
+    "acquisition": "Written for this assigned capture only; uses preinstalled Playwright and Chrome paths supplied by the task.",
+    "evidence_type": "node --check passed before collection.",
+    "usage": "Collection/validation only; it does not execute downloaded project code or modify page content.",
+    "gaps": ["Script is not evidence that an external graph loaded; use only the recorded output and its stated state."]
+  }
+]
