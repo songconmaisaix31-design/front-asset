@@ -1,0 +1,24 @@
+[
+  {
+    "id": "cosmograph-home-launch",
+    "source": "Cosmograph official website",
+    "url": "https://cosmograph.app/",
+    "final_url": "https://cosmograph.app/",
+    "captured_at": "2026-09-10T13:56:00Z",
+    "path": null,
+    "type": "interactive-webgl-graph",
+    "state": "default",
+    "viewport": null,
+    "capture_id": null,
+    "sha256": null,
+    "purpose": "CAP-01 official public interactive graph reference",
+    "license_basis": "Official public website; no reuse permission established.",
+    "usage_scope": "reference-only",
+    "acquisition_status": "incomplete",
+    "gaps": [
+      "Isolated CAP-01 browser profile and page launch were verified, but no screenshot, DOM, CSS, HTML, or recording completed before the enforced budget stop.",
+      "No source asset file was acquired; path and sha256 are intentionally null.",
+      "The specific public showcase graph example was not selected."
+    ]
+  }
+]
