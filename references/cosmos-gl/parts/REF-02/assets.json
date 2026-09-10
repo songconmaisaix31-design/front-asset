@@ -1,0 +1,20 @@
+[
+  {
+    "id": "REF-02-cosmos-gl-static-index",
+    "source": "cosmosgl/graph pinned commit ce35edacf94dba1f02ef2b47957e937e4c9acf17",
+    "url": "https://github.com/cosmosgl/graph/tree/ce35edacf94dba1f02ef2b47957e937e4c9acf17",
+    "final_url": "https://github.com/cosmosgl/graph/tree/ce35edacf94dba1f02ef2b47957e937e4c9acf17",
+    "captured_at": "2026-09-10",
+    "path": "reusable/cosmos-gl/",
+    "type": "static source index",
+    "state": "audited immutable existing files",
+    "viewport": null,
+    "capture_id": "REF-02-static-audit",
+    "sha256": null,
+    "purpose": "scope and license audit for possible static reuse",
+    "license_basis": "reusable/cosmos-gl/LICENCE is MIT; no NOTICE file present",
+    "usage_scope": "reuse-candidate",
+    "acquisition_status": "existing files audited; no downloads or scripts run",
+    "gaps": "dependency licenses and transitive notices not audited; candidate requires downstream attribution review"
+  }
+]
