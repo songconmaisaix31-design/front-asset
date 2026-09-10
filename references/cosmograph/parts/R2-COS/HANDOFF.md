@@ -31,3 +31,30 @@ Official Cosmograph library documentation describes `onClick` / `onPointClick` a
 ## Usage boundary
 
 The screenshot, DOM/CSS, raw response, recording, and browser profile are ignored local originals.  Public files contain only original observation metadata and the collection script; `assets.json` marks the screenshot `blocked` and does not treat it as reusable or completed graph evidence.
+
+## Engine fallback — official cosmos.gl Actions (P0-C)
+
+The pinned `reusable/cosmos-gl/README.md` links the official Storybook **Actions** example. Its discovered final page was `https://cosmos.gl/?path=/story/examples-get-started--actions`; preview iframe `https://cosmos.gl/iframe.html?viewMode=story&id=examples-get-started--actions&globals=` rendered one WebGL canvas (980x380, background `rgb(45,49,58)`) in a fresh `R2-COS-engine-actions-profile`, without sign-in or private browser reuse.
+
+This is valid **engine-fallback** interaction evidence, not an AI Model Atlas success. The official source panel visibly states that `onPointClick` highlights/outlines the clicked point and calls `zoomToPointByIndex`, while `onBackgroundClick` clears highlighting; no local UI or data was injected.
+
+### Attributable recorded sequence
+
+The retained private original video is 47.600 seconds, VP8 WebM, 1280x720, and ffmpeg-decodable. It is continuous across the following offsets, with per-state DOM/CSS/screenshot metadata under `.local-captures/R2-COS/enginefallback/actions-run-20260911-i/`:
+
+| Video offset | Actual observation |
+|---:|---|
+| 32.463 s | mouse moved to rendered node candidate |
+| 33.323 s | official callback logged `Clicked point index: 3091` |
+| 35.826 s | click-node-1 state, then visible ring/layout response |
+| 37.888 s | pointer moved away; selection screenshot remains after hover leaves |
+| 40.446 s | official callback logged distinct `Clicked point index: 3568` |
+| 42.952 s | click-node-2 state; visibly distinct selected-ring location |
+| 44.420 s | example's own Pause control used only to stabilize the following read-only pixel observation |
+| 45.371 s | the supposed blank target instead logged `Clicked point index: 4344` |
+
+Thus click selection is distinct from hover: the first selected state persists after pointer departure, and each successful click has an official callback index plus a visible rendering response. The example has no human-readable node labels; its observable identifiers are the example-local callback indices `3091`, `3568`, and (failed blank attempt) `4344`.
+
+### Explicit remaining gap
+
+No blank-background clear is claimed. Multiple fresh runs preserved their originals; the dense moving graph repeatedly resolved candidates as points, including the final paused run's index `4344`, so the state file named `blank-clears-selection` is failure evidence only. The fallback collector now has `try/finally` closure, readiness/bounds guards, and retained valid recording even on a failure; it must not be used to imply that the commercial AI Model Atlas graph became available.
