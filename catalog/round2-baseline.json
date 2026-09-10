@@ -1,0 +1,15 @@
+{
+  "head": "b89ea7809b95f692d56227458cb81b51e8ba0c50",
+  "checked_at": "2026-09-10T15:51:58.761792+00:00",
+  "original_record_count": 91,
+  "all_paths_exist": true,
+  "all_sha256_match": true,
+  "originals_root": ".local-captures/",
+  "stable_main_worktree": true,
+  "hero": ".local-captures/REF-01/hero-original.png",
+  "previous_sheet": ".local-captures/INT-02/reference-contact-sheet.png",
+  "content_review": "pending independent R2-INT",
+  "remote_visibility": "PUBLIC",
+  "remote_head_verified": "b89ea7809b95f692d56227458cb81b51e8ba0c50",
+  "firecrawl": "not exposed in current tool registry; no paid service started"
+}

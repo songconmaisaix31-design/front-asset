@@ -13,12 +13,13 @@
     "reason": "User v0.4 cancels percentage and token stop lines; actual service limits still apply"
   },
   "latest_observed_quota": {
-    "source": "orca account list",
-    "updated_at_epoch_ms": 1789051419011,
-    "weekly_remaining_percent": 19,
+    "source": "orca account list rateLimits.codex",
+    "updated_at_epoch_ms": 1789055030827,
+    "weekly_remaining_percent": 18,
     "weekly_reset_epoch_ms": 1789441463000,
     "session_window": null,
-    "freshness": "last returned snapshot; not a guarantee of current remainder"
+    "freshness": "account-wide delayed snapshot; not task attribution",
+    "automatic_reset_performed": false
   },
   "history": "token-budget-history.json; historical numbers are not active limits",
   "tools_cost": "No new paid service/API/account or reset credit authorized or used; tool orchestration is not claimed free",
@@ -53,5 +54,40 @@
       "result": "sandbox/input blocked; root performed final QA; terminal closed"
     }
   ],
-  "metering_note": "Historical account observations do not impose a round-2 stop line. Current actual usage unknown until observed."
+  "metering_note": "Historical account observations do not impose a round-2 stop line. Current actual usage unknown until observed.",
+  "round2": {
+    "run": "run_934700e178d8",
+    "token_and_percentage_limits": false,
+    "actual_task_tokens": "unknown",
+    "coordinator_model": "inherited runtime; no supported live switch applied",
+    "workers": [
+      {
+        "task": "R2-COS",
+        "task_id": "task_388ab74e1093",
+        "dispatch": "ctx_0cb08d94aba1",
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "launch_effective_verified": true,
+        "state": "executing despite stalled input receipt"
+      },
+      {
+        "task": "R2-MOT",
+        "task_id": "task_0688fb154f2c",
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "dispatch": "ctx_b6c0346eb08c",
+        "launch_effective_verified": true,
+        "state": "ready"
+      },
+      {
+        "task": "R2-SRC",
+        "task_id": "task_112030c01822",
+        "model": "gpt-5.6-luna",
+        "effort": "low",
+        "dispatch": "ctx_3a70d3662428",
+        "launch_effective_verified": true,
+        "state": "executing despite stalled input receipt"
+      }
+    ]
+  }
 }

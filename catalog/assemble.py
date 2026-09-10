@@ -12,7 +12,7 @@ URLS = {'cosmograph': 'https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69
         'obsidian': 'https://help.obsidian.md/plugins/graph',
         'cosmos-gl': f'https://github.com/cosmosgl/graph/tree/{PIN}',
         '100000-stars': 'https://stars.chromeexperiments.com/',
-        'star-atlas': 'https://experience.staratlas.com/', 'owned': None, 'review': None}
+        'star-atlas': 'https://experience.staratlas.com/', 'owned': None, 'review': None, 'ground-sky': None}
 by_path = {}
 for part in sorted((ROOT / 'references').glob('*/parts/*/assets.json')):
     for asset in json.loads(part.read_text(encoding='utf-8-sig')):
@@ -44,8 +44,12 @@ for file in sorted(paths):
     rel = file.relative_to(ROOT).as_posix()
     if any('profile' in p.lower() for p in file.relative_to(ROOT).parts[:-1]):
         continue
-    sid = source_for(rel)
+    # Round-two files enter the asset index only through a reviewed fragment.
+    is_round2 = '/R2-' in rel
+    if is_round2 and rel not in by_path:
+        continue
     asset = by_path.get(rel, {})
+    sid = asset.get('source_id') or source_for(rel)
     stamp = datetime.fromtimestamp(file.stat().st_mtime, timezone.utc).isoformat()
     asset = {'id': 'asset-' + hashlib.sha256(rel.encode()).hexdigest()[:12],
              'source': sid, 'source_id': sid, 'url': URLS[sid], 'final_url': URLS[sid],
@@ -73,10 +77,10 @@ for file in sorted(paths):
         asset.update(license_basis='User supplied and approved visual; underlying third-party rights unverified',
                      purpose='Recommended natural Milky Way entrance hero; small figure right of center on mountain ridge',
                      state='user-confirmed original; unchanged', gaps='Local-only; no public redistribution clearance')
-    if sid == 'star-atlas':
+    if sid == 'star-atlas' and not is_round2:
         asset.update(state='blocked: loading screen', usage_scope='blocked',
                      gaps='No live scene or camera behavior acquired', purpose='Failure evidence only; not a visual recommendation')
-    if sid == 'cosmograph' and (file.suffix == '.html' or 'observation' in file.name or 'playwright-default' in file.name or '69ae2072' in file.name):
+    if sid == 'cosmograph' and not is_round2 and (file.suffix == '.html' or 'observation' in file.name or 'playwright-default' in file.name or '69ae2072' in file.name):
         asset.update(state='loading-phase evidence; not aligned to successful later graph',
                      gaps='No same-state DOM/CSS captured for loaded graph; never pair as aligned evidence')
     if 'select-attempt' in rel:
@@ -84,7 +88,7 @@ for file in sorted(paths):
                      purpose='Clean loaded graph showing clusters and open space; borrow density, not heavy yellow links')
     if 'zoom-attempt' in rel or file.name == 'cosmograph-zoom-15s.webm':
         asset.update(state='visually verified graph magnification', purpose='Actual graph zoom reference; source recording retained')
-    if sid == '100000-stars':
+    if sid == '100000-stars' and not is_round2:
         asset.update(state='live onboarding / entry into exploration; wheel issued, response unproven',
                      gaps='No ground-to-sky footage; onboarding motion does not prove wheel-caused zoom',
                      purpose='Space entry/onboarding and sparse star-field reference')
@@ -98,7 +102,9 @@ groups = {}
 for asset in assets:
     groups.setdefault(asset['sha256'], []).append(asset['path'])
 summary = {'asset_records': len(assets), 'unique_byte_hashes': len(groups),
-           'by_source': {s: sum(a['source_id'] == s for a in assets) for s in URLS},
+           'by_source': {s: sum(a['source_id'] == s for a in assets) for s in sorted({a['source_id'] for a in assets})},
+           'unique_file_paths': len({a['path'] for a in assets}),
+           'derived_records': sum(bool(a.get('derivation') or a.get('derived_from')) for a in assets),
            'by_usage_scope': {s: sum(a['usage_scope'] == s for a in assets) for s in ('reference-only', 'reuse-cleared', 'reuse-candidate', 'blocked')},
            'duplicate_groups': [v for v in groups.values() if len(v) > 1],
            'excluded': 'Browser profile/cache trees; not counted as assets',
