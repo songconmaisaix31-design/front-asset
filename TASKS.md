@@ -1,5 +1,22 @@
 # 唯一任务看板
 
+## 第二轮 v0.4 当前安排
+
+已核验基线 b89ea780，91 条旧记录文件存在且 SHA256 一致，主库稳定原件目录保留。用户取消全部 Token 及余额百分比停工线；旧规则仅历史。遵守实际服务限制，不自动购买、重置或切账号。
+
+|轨道|范围及互斥写域|模型|状态|
+|---|---|---|---|
+|R2-COS|运行态、节点交互；references/cosmograph/parts/R2-COS/；必要引擎补位同片段|Terra medium|待派发|
+|R2-MOT|Star Atlas 与地面到天空；references/star-atlas/parts/R2-MOT/、references/ground-sky/parts/R2-MOT/|Terra medium|待派发|
+|R2-SRC|固定源码入口；references/cosmos-gl/parts/R2-SRC/、reusable/cosmos-gl/ 必要补件|Luna low|待派发|
+|R2-INT|独立内容复核与整合；reviews/、recipes/|Terra medium|等待采样|
+|CONTROL|根文件、catalog/、最终验收|当前模型以运行器实际为准|执行中|
+
+每轨独立 Agent/worktree/branch；所有原件只写主库 .local-captures/对应任务目录。无 setup、无前端开发、无第三方项目运行。失败按证据诊断，不无理由循环。
+
+## 上轮历史（以下限制均已失效）
+
+
 ## 当前执行规则（用户更新，优先于下方历史）
 
 用户已取消固定 Token 数量管控；不再按总输入、总输出、E1/E2/E3 Token 配额暂停任务。按难度选模型，确定性处理优先工具。余额百分比保留规则未取消；最新周额度剩余 22%（Orca updatedAt 1789049637651）。

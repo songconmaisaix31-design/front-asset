@@ -1,5 +1,5 @@
 {
-  "status": "archived; no further collection or frontend work",
+  "status": "round 2 active",
   "token_limits_enabled": false,
   "model_policy": {
     "deterministic": "local tools",
@@ -9,9 +9,8 @@
     "current_coordinator": "gpt-6-astra high inherited active session; no live-switch capability used"
   },
   "quota_protection": {
-    "shrink_at_remaining_percent": 20,
-    "closeout_only_at_remaining_percent": 18,
-    "stop_new_pool_work_at_remaining_percent": 15
+    "enabled": false,
+    "reason": "User v0.4 cancels percentage and token stop lines; actual service limits still apply"
   },
   "latest_observed_quota": {
     "source": "orca account list",
@@ -54,5 +53,5 @@
       "result": "sandbox/input blocked; root performed final QA; terminal closed"
     }
   ],
-  "metering_note": "23% initial account observation to 19% latest returned observation; delayed account-wide meter, not exact task attribution"
+  "metering_note": "Historical account observations do not impose a round-2 stop line. Current actual usage unknown until observed."
 }

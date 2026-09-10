@@ -24,4 +24,4 @@
 
 仍缺 Star Atlas 有效场景、地面升入天空镜头、已证明的节点选择、窄屏观察与加载完成状态的 Cosmograph DOM/CSS。Canvas 容器不是图谱实现。本库没有源码运行、产品 API 或部署验收。
 
-离线检查：`python catalog/assemble.py`、`python catalog/verify.py`（需现有 Pillow）；采集工具仅做 `node --check`，未再次执行采集。用户已取消固定 Token 数量限制，按任务难度选模型；余额百分比保护仍保留。
+离线检查：`python catalog/assemble.py`、`python catalog/verify.py`（需现有 Pillow）；采集工具仅做 `node --check`，未再次执行采集。用户已取消固定 Token 数量限制，按任务难度选模型；第二轮 v0.4 同时取消余额百分比停工线；本页资产结论待本轮复核更新。
