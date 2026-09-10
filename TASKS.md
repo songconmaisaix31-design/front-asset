@@ -1,5 +1,13 @@
 # 唯一任务看板
 
+## 当前执行规则（用户更新，优先于下方历史）
+
+用户已取消固定 Token 数量管控；不再按总输入、总输出、E1/E2/E3 Token 配额暂停任务。按难度选模型，确定性处理优先工具。余额百分比保留规则未取消；最新周额度剩余 22%（Orca updatedAt 1789049637651）。
+
+恢复轨道：CAP-02 Terra medium（Cosmograph 实际首包，references/cosmograph/parts/CAP-02/）；REF-02 Luna low（Obsidian 官方图与来源许可复核，references/obsidian/parts/REF-02/、references/cosmos-gl/parts/REF-02/）；首包通过后 MOT-01 Terra low（镜头采集，独立来源 parts/MOT-01/）；最后 INT-02 Terra low（合并、reviews/、recipes/）。各轨独立 worktree/branch 与本地原件目录，不重复采集已有首图/源码。禁止产品开发规则不变。
+
+下方是上一轮历史，Token 预留与中止阈值已失效；不会删除或改写历史提交。
+
 目标：自然星空入口 → 点击进入 → 可探索 Agent 星群的证据资产库。
 
 |任务|责任/写域|执行与预算|状态|

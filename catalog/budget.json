@@ -34,7 +34,7 @@
     "closeout_only": 18,
     "stop_new_pool_work": 15
   },
-  "telemetry_snapshot_utc": "2026-09-10T14:05:22.917305+00:00",
+  "telemetry_snapshot_utc": "2026-09-10T22:05:22.917305+08:00",
   "sessions": [
     {
       "session": "01a08b78-7911-7142-96a1-f3098149ad6f",
@@ -89,11 +89,12 @@
       }
     }
   ],
-  "status": "budget-stopped; cumulative session input exceeded ceiling; safe closeout only",
+  "status": "resumed; token ceilings disabled by user",
   "accounting_note": "Session cumulative snapshot; cached input included in input, reasoning subset not added twice; final closeout tail not included; not provider billing or percentage conversion",
   "e3_observed_output_tokens": 11795,
   "budget_failures": [
     "Input ceiling exceeded before telemetry was inspected",
     "E3 ceiling exceeded during orchestration and closeout"
-  ]
+  ],
+  "policy_update": "User removed all token count controls. Choose models by task difficulty. Percentage quota protections retained. Previous numeric budgets are historical only."
 }
