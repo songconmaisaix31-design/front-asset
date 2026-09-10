@@ -1,0 +1,20 @@
+[
+  {
+    "id": "mot-01-star-atlas-loading-blocked",
+    "source": "Star Atlas Experience",
+    "url": "https://experience.staratlas.com/",
+    "final_url": "https://experience.staratlas.com/",
+    "captured_at": "2026-09-10T14:31:49Z",
+    "path": ".local-captures/MOT-01/star-atlas/entry.png",
+    "type": "image/png",
+    "state": "loading-only",
+    "viewport": "1440x900",
+    "capture_id": "MOT-01-star-atlas-ctx-01/MOT-01-star-atlas-page-01",
+    "sha256": "dfccf6b1e4672ba2b5dd6ab03423a1538b82b0f8f318c110b9d9ca0792a01272",
+    "purpose": "Blocked-evidence record only: official entry remained on its loading screen during the permitted attempt, so it is not camera or motion evidence.",
+    "license_basis": "Official public page observed; redistribution permission not verified.",
+    "usage_scope": "blocked",
+    "acquisition_status": "captured-live-local-only; unavailable for intended motion evidence",
+    "gaps": "No actual graph, camera motion, zoom state, or ground-to-sky content became available; no further source or retry attempted."
+  }
+]
