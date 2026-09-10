@@ -1,0 +1,881 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+import { D3ZoomEvent } from 'd3-zoom'
+import { D3DragEvent } from 'd3-drag'
+import { type Hovered } from '@/graph/modules/Store'
+import { defaultConfigValues } from '@/graph/variables'
+import { PointShape, LinkStyle } from '@/graph/modules/GraphData'
+import { type TransitionEasing } from '@/graph/modules/Transition'
+
+export interface GraphConfigInterface {
+  /**
+   * If set to `false`, the simulation will not run.
+   * Can be toggled at runtime using `setConfig` or `setConfigPartial`.
+   * Default value: `true`
+   */
+  enableSimulation: boolean;
+  /**
+   * Transition duration in milliseconds.
+   * Default value: `800`
+   * @note When a position transition is triggered via `setPointPositions()`, the simulation
+   * is automatically paused for the duration and remains paused afterwards so forces do not
+   * pull nodes away from the target layout. Call `unpause()` to resume the simulation explicitly.
+   */
+  transitionDuration: number;
+  /**
+   * Easing curve for transitions.
+   * Default value: `TransitionEasing.CubicInOut`
+   */
+  transitionEasing: TransitionEasing | `${TransitionEasing}`;
+  /**
+   * Callback function that will be called when a transition starts.
+   * Default value: `undefined`
+   */
+  onTransitionStart?: () => void;
+  /**
+   * Callback function that will be called on every transition frame.
+   * The `progress` value ranges from 0 to 1.
+   * Default value: `undefined`
+   */
+  onTransition?: (progress: number) => void;
+  /**
+   * Callback function that will be called when a transition ends.
+   * `interrupted` is `true` when a transition was replaced or aborted before completion.
+   * Default value: `undefined`
+   */
+  onTransitionEnd?: (interrupted: boolean) => void;
+  /**
+   * Canvas background color.
+   * Can be either a hex color string (e.g., '#b3b3b3') or an array of RGBA values.
+   * Default value: '#222222'
+   */
+  backgroundColor: string | [number, number, number, number];
+  /**
+   * Simulation space size.
+   * Default value: `4096` (larger values may crash on some devices, e.g. iOS; see https://github.com/cosmosgl/graph/issues/203).
+   */
+  spaceSize: number;
+
+  /**
+   * The default color to use for points when no point colors are provided,
+   * or if the color value in the array is `undefined` or `null`.
+   * This can be either a hex color string (e.g., '#b3b3b3') or an array of RGBA values
+   * in the format `[red, green, blue, alpha]` where each value is a number between 0 and 1.
+   * Default value: '#b3b3b3'
+   */
+  pointDefaultColor: string | [number, number, number, number];
+
+  /**
+   * The color to use for points when they are greyed out (when highlighting is active).
+   * This can be either a hex color string (e.g., '#b3b3b3') or an array of RGBA values
+   * in the format `[red, green, blue, alpha]` where each value is a number between 0 and 1.
+   *
+   * If not provided, the color will be the same as the point's original color,
+   * but darkened or lightened depending on the background color.
+   *
+   * If `pointGreyoutOpacity` is also defined, it will be multiplied with the final alpha
+   * of this color.
+   *
+   * Default value: `undefined`
+   */
+  pointGreyoutColor?: string | [number, number, number, number];
+
+  /**
+   * Opacity of greyed-out points when highlighting is active.
+   * Range: 0 (fully transparent) to 1 (fully opaque).
+   * When set, used instead of `pointOpacity` for greyed-out points.
+   * Default value: `undefined`
+   */
+  pointGreyoutOpacity?: number;
+
+  /**
+   * The default size value to use for points when no point sizes are provided or
+   * if the size value in the array is `undefined` or `null`.
+   * Default value: `4`
+  */
+  pointDefaultSize: number;
+
+  /**
+   * The default shape to use for points when no point shapes are provided via `setPointShapes()`,
+   * or if the shape value in the array is `undefined`, `null`, or invalid.
+   * Accepts a `PointShape` enum value (e.g., `PointShape.Circle`), a plain number (e.g., `2`), or a numeric string (e.g., `"2"`).
+   * Default value: `PointShape.Circle`
+   */
+  pointDefaultShape: PointShape | `${PointShape}`;
+
+  /**
+   * Universal opacity value applied to all points.
+   * This value multiplies with individual point alpha values (if set via setPointColors).
+   * Useful for dynamically controlling opacity of all points without updating individual RGBA arrays.
+   * Default value: `1.0`
+   */
+  pointOpacity: number;
+
+  /**
+   * Scale factor for the point size.
+   * Default value: `1`
+   */
+  pointSizeScale: number;
+
+  /**
+   * Depth-based occlusion culling: skips shading and blending of point
+   * fragments hidden underneath other opaque points. Greatly improves
+   * performance when many large opaque points overlap; rendering output stays
+   * visually identical (point edges remain antialiased and per-point
+   * translucent colors still blend correctly). Applies automatically only
+   * while it is safe: `pointOpacity` is `1` and `highlightedPointIndices` is
+   * not set. Set to `false` to always use the standard single-pass rendering.
+   * Default value: `true`
+   */
+  pointOcclusionCulling: boolean;
+
+  /**
+   * Cursor style to use when hovering over a point
+   * Default value: `auto`
+   */
+  hoveredPointCursor: string;
+
+  /**
+   * Cursor style to use when hovering over a link
+   * Default value: `auto`
+   */
+  hoveredLinkCursor: string;
+
+  /**
+   * Turns ring rendering around a point on hover on / off
+   * Default value: `false`
+   */
+  renderHoveredPointRing: boolean;
+
+  /**
+   * Hovered point ring color hex value.
+   * Can be either a hex color string (e.g., '#b3b3b3') or an array of RGBA values.
+   * Default value: `white`
+   */
+  hoveredPointRingColor: string | [number, number, number, number];
+
+  /**
+   * Focused point ring color hex value.
+   * Can be either a hex color string (e.g., '#b3b3b3') or an array of RGBA values.
+   * Default value: `white`
+   */
+  focusedPointRingColor: string | [number, number, number, number];
+
+  /**
+   * Set focus on a point by index. A ring will be rendered around the focused point.
+   * The focused ring is larger than outline rings to create a clear visual hierarchy.
+   * When set to `undefined`, no point is focused.
+   * Default value: `undefined`
+   */
+  focusedPointIndex?: number;
+
+  /**
+   * Array of point indices to highlight. When set, all points NOT in this array will be
+   * greyed out. An empty array `[]` activates highlighting with all points greyed out.
+   * Set to `undefined` to clear highlighting and show all points normally.
+   * Default value: `undefined`
+   */
+  highlightedPointIndices?: number[];
+
+  /**
+   * Array of point indices to draw an outline ring around. The outline ring is a circle
+   * rendered around the point regardless of the point's shape. When a point is both
+   * outlined and greyed out (not highlighted), the ring color is dimmed to match.
+   * Default value: `undefined`
+   */
+  outlinedPointIndices?: number[];
+
+  /**
+   * Color of the outline ring drawn around outlined points.
+   * Can be either a hex color string (e.g., '#b3b3b3') or an array of RGBA values.
+   * Default value: `'white'`
+   */
+  outlinedPointRingColor: string | [number, number, number, number];
+
+  /**
+   * Turns link rendering on / off.
+   * Default value: `true`
+   */
+  renderLinks: boolean;
+
+  /**
+   * The default color to use for links when no link colors are provided,
+   * or if the color value in the array is `undefined` or `null`.
+   * This can be either a hex color string (e.g., '#666666') or an array of RGBA values
+   * in the format `[red, green, blue, alpha]` where each value is a number between 0 and 1.
+   * Default value: '#666666'
+   */
+  linkDefaultColor: string | [number, number, number, number];
+
+  /**
+   * Universal opacity value applied to all links.
+   * This value multiplies with individual link alpha values (if set via setLinkColors).
+   * Useful for dynamically controlling opacity of all links without updating individual RGBA arrays.
+   * Default value: `1.0`
+   */
+  linkOpacity: number;
+
+  /**
+   * Greyed-out link opacity value when link highlighting is active.
+   * Default value: `0.1`
+  */
+  linkGreyoutOpacity: number;
+
+  /**
+   * Array of link indices to highlight. When set, all links NOT in this array will be
+   * greyed out. An empty array `[]` activates highlighting with all links greyed out.
+   * Set to `undefined` to clear highlighting and show all links normally.
+   * Link highlighting is independent of point highlighting.
+   * Default value: `undefined`
+   */
+  highlightedLinkIndices?: number[];
+
+  /**
+   * Set focus on a link by index. The focused link will be rendered with extra width.
+   * When set to `undefined`, no link is focused.
+   * Default value: `undefined`
+   */
+  focusedLinkIndex?: number;
+
+  /**
+   * Number of pixels to add to the link width when focused.
+   * The focused width is calculated as: originalWidth + focusedLinkWidthIncrease
+   * Default value: `5`
+   */
+  focusedLinkWidthIncrease: number;
+  /**
+   * The default width value to use for links when no link widths are provided or if the width value in the array is `undefined` or `null`.
+   * Default value: `1`
+  */
+  linkDefaultWidth: number;
+
+  /**
+   * The default style (stroke pattern) to use for links when no link styles are provided via `setLinkStyles()`,
+   * or if the style value in the array is `undefined`, `null`, or invalid.
+   * Accepts a `LinkStyle` enum value (e.g., `LinkStyle.Solid`), a plain number (e.g., `1`), or a numeric string (e.g., `"1"`).
+   * `0` = Solid, `1` = Dashed, `2` = Dotted.
+   * Default value: `LinkStyle.Solid`
+   */
+  linkDefaultStyle: LinkStyle | `${LinkStyle}`;
+  /**
+   * Dash length for dashed links (`LinkStyle.Dashed`).
+   * When `scaleLinksOnZoom` is `false` (default), this is a size in screen pixels: dashes keep a
+   * constant on-screen size, but the pattern shifts along a link as its on-screen length changes
+   * with zoom. When `scaleLinksOnZoom` is `true`, it is measured in graph space, which locks the
+   * pattern to the link so it scales with zoom instead of shifting.
+   * Default value: `8`
+   */
+  linkDashLength: number;
+  /**
+   * Gap between dashes (dashed links) or between dots (dotted links). Uses the same units as
+   * `linkDashLength` — screen pixels, or graph space when `scaleLinksOnZoom` is `true`.
+   * Default value: `4`
+   */
+  linkDashGap: number;
+  /**
+   * If `true`, each link's color is interpolated along its length from the color of its source point
+   * to the color of its target point (derived from the point colors set via `setPointColors()`).
+   * This overrides the per-link RGB color from `setLinkColors()` (link opacity, greyout, and hover still apply).
+   * It works orthogonally to the link stroke pattern, so a dashed or dotted link can also be a gradient.
+   * Note: on curved links the gradient (and dash/dot spacing) is approximate.
+   * Default value: `false`
+   */
+  linkColorInterpolateFromEndpoints: boolean;
+
+  /**
+   * The color to use for links when they are hovered.
+   * This can be either a hex color string (e.g., '#ff3333') or an array of RGBA values
+   * in the format `[red, green, blue, alpha]` where each value is a number between 0 and 1.
+   * Default value: `undefined`
+   */
+  hoveredLinkColor?: string | [number, number, number, number];
+  /**
+   * Number of pixels to add to the link width when hovered.
+   * The hovered width is calculated as: originalWidth + hoveredLinkWidthIncrease
+   * Default value: `5`
+   */
+  hoveredLinkWidthIncrease: number;
+  /**
+   * Scale factor for the link width.
+   * Default value: `1`
+   */
+  linkWidthScale: number;
+  /**
+   * Increase or decrease the size of the links when zooming in or out.
+   * Default value: `false`
+   */
+  scaleLinksOnZoom: boolean;
+  /**
+   * Controls alpha blending for link rendering.
+   *
+   * When `true` (default), links are drawn with standard source-over alpha blending
+   * for transparency and soft antialiased edges.
+   * When `false`, links are drawn as opaque hard edges (faster for dense graphs),
+   * and greyed-out links (`highlightedLinkIndices`) are hidden entirely instead
+   * of dimmed — dash gaps stay transparent.
+   * Default value: `true`
+   */
+  linkBlending: boolean;
+  /**
+   * If set to true, links are rendered as curved lines.
+   * Otherwise as straight lines.
+   * Default value: `false`
+   */
+  curvedLinks: boolean;
+  /**
+   * Number of segments in a curved line.
+   * Default value: `19`.
+   */
+  curvedLinkSegments: number;
+  /**
+   * Weight affects the shape of the curve.
+   * Default value: `0.8`.
+   */
+  curvedLinkWeight: number;
+  /**
+   * Defines the position of the control point of the curve on the normal from the centre of the line.
+   * If set to 1 then the control point is at a distance equal to the length of the line.
+   * Default value: `0.5`
+   */
+  curvedLinkControlPointDistance: number;
+  /**
+   * The default link arrow value that controls whether or not to display link arrows.
+   * Default value: `false`
+   */
+  linkDefaultArrows: boolean;
+
+  /**
+   * Scale factor for the link arrows size.
+   * Default value: `1`
+   */
+  linkArrowsSizeScale: number;
+  /**
+   * The range defines the minimum and maximum link visibility distance in pixels.
+   * The link will be fully opaque when its length is less than the first number in the array,
+   * and will have `linkVisibilityMinTransparency` transparency when its length is greater than
+   * the second number in the array.
+   * This distance is defined in screen space coordinates and will change as you zoom in and out
+   * (e.g. links become longer when you zoom in, and shorter when you zoom out).
+   * Default value: `[50, 150]`
+   */
+  linkVisibilityDistanceRange: number[];
+  /**
+   * The transparency value that the link will have when its length reaches
+   * the maximum link distance value from `linkVisibilityDistanceRange`.
+   * Default value: `0.25`
+   */
+  linkVisibilityMinTransparency: number;
+
+  /**
+   * Decay coefficient. Use smaller values if you want the simulation to "cool down" slower.
+   * Default value: `5000`
+   */
+  simulationDecay: number;
+    /**
+   * Gravity force coefficient.
+   * Default value: `0.25`
+   */
+  simulationGravity: number;
+  /**
+   * Centering to center mass force coefficient.
+   * Default value: `0`
+   */
+  simulationCenter: number;
+  /**
+   * Repulsion force coefficient.
+   * Default value: `1.0`
+   */
+  simulationRepulsion: number;
+  /**
+   * @deprecated No longer used. The many-body force now repels close points
+   * individually — a grid pyramid closed by an unbiased Monte-Carlo near field
+   * that stays exact while cells are sparse and only approximates once a cell
+   * holds more points than sampling slots — so there is no theta approximation
+   * to tune. This option is kept for backward compatibility and has no effect.
+   * Default value: `1.15`
+   */
+  simulationRepulsionTheta: number;
+  /**
+   * Link spring force coefficient.
+   * Default value: `1`
+   */
+  simulationLinkSpring: number;
+  /**
+   * Minimum link distance.
+   * Default value: `10`
+   */
+  simulationLinkDistance: number;
+  /**
+   * Range of random link distance values.
+   * Default value: `[1, 1.2]`
+   */
+  simulationLinkDistRandomVariationRange: number[];
+  /**
+   * Repulsion coefficient from mouse position.
+   * The repulsion force is activated by pressing the right mouse button.
+   * Default value: `2`
+   */
+  simulationRepulsionFromMouse: number;
+  /**
+   * Enable or disable the repulsion force from mouse when right-clicking.
+   * When set to `true`, holding the right mouse button will activate the mouse repulsion force.
+   * When set to `false`, right-clicking will not trigger any repulsion force.
+   * Default value: `false`
+   */
+  enableRightClickRepulsion: boolean;
+  /**
+   * Friction coefficient.
+   * Values range from 0 (high friction, stops quickly) to 1 (no friction, keeps moving).
+   * Default value: `0.85`
+   */
+  simulationFriction: number;
+  /**
+   * Cluster coefficient.
+   * Default value: `0.1`
+   */
+  simulationCluster: number;
+  /**
+   * Collision force coefficient. When set to a value greater than 0,
+   * points will push each other apart when they overlap.
+   * Uses a spatial-hash grid, so it scales better than naive O(n²) collision.
+   * Default value: `0`
+   */
+  simulationCollision: number;
+  /**
+   * Collision radius. When set to undefined or 0, the collision radius is derived from
+   * point sizes (half of the point size). When set to a positive value,
+   * all points use this fixed collision radius.
+   * Default value: `undefined`
+   */
+  simulationCollisionRadius: number | undefined;
+  /**
+   * Extra padding added to each point's collision radius, in space units.
+   * Without padding, points settle just touching; with padding, two points
+   * keep a gap of twice this value between their visual edges.
+   * Default value: `0`
+   */
+  simulationCollisionPadding: number;
+
+  /**
+   * Callback function that will be called when the simulation starts.
+   * Default value: `undefined`
+   */
+  onSimulationStart?: () => void;
+  /**
+   * Callback function that will be called on every simulation tick.
+   * The value of the first argument `alpha` will decrease over time as the simulation "cools down".
+   * If there's a point under the mouse pointer, its index will be passed as the second argument
+   * and position as the third argument:
+   * `(alpha: number, hoveredIndex: number | undefined, pointPosition: [number, number] | undefined) => void`.
+   * Default value: `undefined`
+   */
+  onSimulationTick?: (
+    alpha: number, hoveredIndex?: number, pointPosition?: [number, number]
+    ) => void;
+  /**
+   * Callback function that will be called when the simulation stops.
+   * Default value: `undefined`
+   */
+  onSimulationEnd?: () => void;
+  /**
+   * Callback function that will be called when the simulation gets paused.
+   * Default value: `undefined`
+   */
+  onSimulationPause?: () => void;
+
+  /**
+   * Callback function that will be called when the simulation is unpaused.
+   * Default value: `undefined`
+   */
+  onSimulationUnpause?: () => void;
+
+  /**
+   * Callback function that will be called on every canvas click.
+   * If clicked on a point, its index will be passed as the first argument,
+   * position as the second argument and the corresponding mouse event as the third argument:
+   * `(index: number | undefined, pointPosition: [number, number] | undefined, event: MouseEvent) => void`.
+   * Default value: `undefined`
+   */
+  onClick?: (
+    index: number | undefined, pointPosition: [number, number] | undefined, event: MouseEvent
+  ) => void;
+
+  /**
+   * Callback function that will be called when a point is clicked.
+   * The point index will be passed as the first argument,
+   * position as the second argument and the corresponding mouse event as the third argument:
+   * `(index: number, pointPosition: [number, number], event: MouseEvent) => void`.
+   * Default value: `undefined`
+   */
+  onPointClick?: (
+    index: number,
+    pointPosition: [number, number],
+    event: MouseEvent
+  ) => void;
+
+  /**
+   * Callback function that will be called when a link is clicked.
+   * The link index will be passed as the first argument and the corresponding mouse event as the second argument:
+   * `(linkIndex: number, event: MouseEvent) => void`.
+   * Default value: `undefined`
+   */
+  onLinkClick?: (
+    linkIndex: number,
+    event: MouseEvent
+  ) => void;
+
+  /**
+   * Callback function that will be called when the background (empty space) is clicked.
+   * The mouse event will be passed as the first argument:
+   * `(event: MouseEvent) => void`.
+   * Default value: `undefined`
+   */
+  onBackgroundClick?: (
+    event: MouseEvent
+  ) => void;
+
+  /**
+   * Callback function that will be called when a context menu trigger (typically right click) happens on the canvas.
+   * If triggered on a point, its index will be passed as the first argument,
+   * position as the second argument and the corresponding mouse event as the third argument:
+   * `(index: number | undefined, pointPosition: [number, number] | undefined, event: MouseEvent) => void`.
+   * Default value: `undefined`
+   */
+  onContextMenu?: (
+    index: number | undefined, pointPosition: [number, number] | undefined, event: MouseEvent
+  ) => void;
+
+  /**
+   * Callback function that will be called when a context menu trigger (typically right click) happens on a point.
+   * The point index will be passed as the first argument,
+   * position as the second argument and the corresponding mouse event as the third argument:
+   * `(index: number, pointPosition: [number, number], event: MouseEvent) => void`.
+   * Default value: `undefined`
+   */
+  onPointContextMenu?: (
+    index: number,
+    pointPosition: [number, number],
+    event: MouseEvent
+  ) => void;
+
+  /**
+   * Callback function that will be called when a context menu trigger (typically right click) happens on a link.
+   * The link index will be passed as the first argument and the corresponding mouse event as the second argument:
+   * `(linkIndex: number, event: MouseEvent) => void`.
+   * Default value: `undefined`
+   */
+  onLinkContextMenu?: (
+    linkIndex: number,
+    event: MouseEvent
+  ) => void;
+
+  /**
+   * Callback function that will be called when a context menu trigger (typically right click) happens on the background (empty space).
+   * The mouse event will be passed as the first argument:
+   * `(event: MouseEvent) => void`.
+   * Default value: `undefined`
+   */
+  onBackgroundContextMenu?: (
+    event: MouseEvent
+  ) => void;
+
+  /**
+   * Callback function that will be called when mouse movement happens.
+   * If the mouse moves over a point, its index will be passed as the first argument,
+   * position as the second argument and the corresponding mouse event as the third argument:
+   * `(index: number | undefined, pointPosition: [number, number] | undefined, event: MouseEvent) => void`.
+   * Default value: `undefined`
+   */
+  onMouseMove?: (
+    index: number | undefined, pointPosition: [number, number] | undefined, event: MouseEvent
+  ) => void;
+
+  /**
+   * Callback function that will be called when a point appears under the mouse
+   * as a result of a mouse event, zooming and panning, or movement of points.
+   * The point index will be passed as the first argument, position as the second argument,
+   * the corresponding mouse event or D3's zoom event as the third argument,
+   * whether the hovered point is highlighted as the fourth argument,
+   * and whether the hovered point is outlined as the fifth argument:
+   * `(index, pointPosition, event, isHighlighted, isOutlined) => void`.
+   * Default value: `undefined`
+   */
+  onPointMouseOver?: (
+    index: number,
+    pointPosition: [number, number],
+    event: MouseEvent | D3DragEvent<HTMLCanvasElement, undefined, Hovered> | D3ZoomEvent<HTMLCanvasElement, undefined> | undefined,
+    isHighlighted: boolean,
+    isOutlined: boolean
+  ) => void;
+
+  /**
+   * Callback function that will be called when a point is no longer underneath
+   * the mouse pointer because of a mouse event, zoom/pan event, or movement of points.
+   * The corresponding mouse event or D3's zoom event will be passed as the first argument:
+   * `(event: MouseEvent | D3ZoomEvent<HTMLCanvasElement, undefined> | D3DragEvent<HTMLCanvasElement, undefined, Hovered> | undefined) => void`.
+   * Default value: `undefined`
+   */
+  onPointMouseOut?: (event: MouseEvent | D3ZoomEvent<HTMLCanvasElement, undefined> | D3DragEvent<HTMLCanvasElement, undefined, Hovered> | undefined) => void;
+
+  /**
+   * Callback function that will be called when the mouse moves over a link.
+   * The link index will be passed as the first argument:
+   * `(linkIndex: number) => void`.
+   * Default value: `undefined`
+   */
+  onLinkMouseOver?: (linkIndex: number) => void;
+
+  /**
+   * Callback function that will be called when the mouse moves out of a link.
+   * The event will be passed as the first argument:
+   * `(event: MouseEvent | D3ZoomEvent<HTMLCanvasElement, undefined> | D3DragEvent<HTMLCanvasElement, undefined, Hovered> | undefined) => void`.
+   * Default value: `undefined`
+   */
+  onLinkMouseOut?: (event: MouseEvent | D3ZoomEvent<HTMLCanvasElement, undefined> | D3DragEvent<HTMLCanvasElement, undefined, Hovered> | undefined) => void;
+
+  /**
+   * Callback function that will be called when zooming or panning starts.
+   * First argument is a D3 Zoom Event and second indicates whether
+   * the event has been initiated by a user interaction (e.g. a mouse event):
+   * `(event: D3ZoomEvent, userDriven: boolean) => void`.
+   * Default value: `undefined`
+   */
+  onZoomStart?: (e: D3ZoomEvent<HTMLCanvasElement, undefined>, userDriven: boolean) => void;
+
+  /**
+   * Callback function that will be called continuously during zooming or panning.
+   * First argument is a D3 Zoom Event and second indicates whether
+   * the event has been initiated by a user interaction (e.g. a mouse event):
+   * `(event: D3ZoomEvent, userDriven: boolean) => void`.
+   * Default value: `undefined`
+   */
+  onZoom?: (e: D3ZoomEvent<HTMLCanvasElement, undefined>, userDriven: boolean) => void;
+
+  /**
+   * Callback function that will be called when zooming or panning ends.
+   * First argument is a D3 Zoom Event and second indicates whether
+   * the event has been initiated by a user interaction (e.g. a mouse event):
+   * `(event: D3ZoomEvent, userDriven: boolean) => void`.
+   * Default value: `undefined`
+   */
+  onZoomEnd?: (e: D3ZoomEvent<HTMLCanvasElement, undefined>, userDriven: boolean) => void;
+
+  /**
+   * Callback function that will be called when dragging starts.
+   * First argument is a D3 Drag Event:
+   * `(event: D3DragEvent) => void`.
+   * Default value: `undefined`
+   */
+  onDragStart?: (e: D3DragEvent<HTMLCanvasElement, undefined, Hovered>) => void;
+
+  /**
+   * Callback function that will be called continuously during dragging.
+   * First argument is a D3 Drag Event:
+   * `(event: D3DragEvent) => void`.
+   * Default value: `undefined`
+   */
+  onDrag?: (e: D3DragEvent<HTMLCanvasElement, undefined, Hovered>) => void;
+
+  /**
+   * Callback function that will be called when dragging ends.
+   * First argument is a D3 Drag Event:
+   * `(event: D3DragEvent) => void`.
+   * Default value: `undefined`
+   */
+  onDragEnd?: (e: D3DragEvent<HTMLCanvasElement, undefined, Hovered>) => void;
+
+  /**
+   * Show WebGL performance monitor.
+   * Default value: `false`
+   */
+  showFPSMonitor: boolean;
+  /**
+   * Pixel ratio for the canvas. Higher values use more GPU memory but provide better quality on high-DPI displays.
+   * Default value: `window.devicePixelRatio || 2`
+   */
+  pixelRatio: number;
+  /**
+   * Increase or decrease the size of the points when zooming in or out.
+   * Default value: `false`
+   */
+  scalePointsOnZoom: boolean;
+  /**
+   * Initial zoom level. This property will be applied only on component initialization and it
+   * can't be changed using the `setConfig` or `setConfigPartial` methods.
+   * If set, `fitViewOnInit` value will be ignored.
+   * Default value: `undefined`
+   */
+  initialZoomLevel?: number;
+  /**
+   * Enables or disables zooming in and out.
+   * Default value: `true`
+   */
+  enableZoom: boolean;
+  /**
+   * Controls whether the simulation remains active during interactive (user-driven) zoom operations.
+   * When set to `true`, the simulation continues running while zooming.
+   * When set to `false`, the simulation pauses during zoom operations.
+   * Programmatic zoom methods (e.g., `zoomToPointByIndex`, `fitView`) default to running the simulation
+   * regardless of this setting, but can be controlled via their `enableSimulation` parameter.
+   * Default value: `false`
+   */
+  enableSimulationDuringZoom: boolean;
+  /**
+   * Enables or disables dragging of points in the graph.
+   * Default value: `false`
+   */
+  enableDrag: boolean;
+  /**
+   * Whether to center and zoom the view to fit all points in the scene on initialization or not.
+   * Ignored if `initialZoomLevel` is set.
+   * Default: `true`
+   */
+  fitViewOnInit: boolean;
+  /**
+   * Delay in milliseconds before fitting the view when `fitViewOnInit` is enabled.
+   * Useful if you want the layout to stabilize a bit before fitting.
+   * Default: `250`
+   */
+  fitViewDelay: number;
+  /**
+   * Padding to apply when fitting the view to show all points.
+   * This value should be between 0 and 1, and is added to the calculated bounding box to provide some extra space around the points.
+   * This is used when the `fitViewOnInit` option is enabled.
+   * Default: `0.1`
+   */
+  fitViewPadding: number;
+  /**
+   * Duration in milliseconds for fitting the view to show all points when fitViewOnInit is enabled.
+   * Default: `250`
+   */
+  fitViewDuration: number;
+  /**
+   * When `fitViewOnInit` is set to `true`, fits the view to show the points within a rectangle
+   * defined by its two corner coordinates `[[left, bottom], [right, top]]` in the scene space.
+   * Default: `undefined`
+   */
+  fitViewByPointsInRect?: [[number, number], [number, number]] | [number, number][];
+  /**
+   * When `fitViewOnInit` is set to `true`, fits the view to show only the specified points by their indices.
+   * Takes precedence over `fitViewByPointsInRect` when both are provided.
+   * Default: `undefined`
+   */
+  fitViewByPointIndices?: number[];
+  /**
+   * Providing a `randomSeed` value allows you to control
+   * the randomness of the layout across different simulation runs.
+   * It is useful when you want the graph to always look the same on same datasets.
+   * This property will be applied only on component initialization and it
+   * can't be changed using the `setConfig` or `setConfigPartial` methods.
+   * Default value: undefined
+   */
+  randomSeed?: number | string;
+  /**
+   * Point sampling distance in pixels between neighboring points when calling the `getSampledPointPositionsMap` method.
+   * This parameter determines how many points will be included in the sample.
+   * Default value: `100`
+  */
+  pointSamplingDistance: number;
+  /**
+   * Link sampling distance in pixels between neighboring links when calling the `getSampledLinks` method.
+   * This parameter determines how many links will be included in the sample (based on link midpoints in screen space).
+   * Default value: `100`
+   */
+  linkSamplingDistance: number;
+  /**
+   * Controls automatic position adjustment of points in the visible space.
+   *
+   * When `undefined` (default):
+   * - If simulation is disabled (`enableSimulation: false`), points will be automatically
+   *   repositioned to fit within the visible space
+   * - If simulation is enabled, points will not be rescaled
+   *
+   * When explicitly set:
+   * - `true`: Forces points positions to be rescaled
+   * - `false`: Forces points positions to not be rescaled
+   *
+   * Default value: `undefined`
+   */
+  rescalePositions?: boolean | undefined;
+  /**
+   * Controls the text shown in the bottom right corner.
+   * - When a non-empty string is provided: Displays the string as HTML
+   * - When empty string or not provided: No text is displayed
+   *
+   * This property is applied only on component initialization and
+   * can't be changed using the `setConfig` or `setConfigPartial` methods.
+   *
+   * Default value: `''`
+   */
+  attribution: string;
+}
+
+/**
+ * Requires all keys from T to be present, while preserving
+ * the original value types (including `| undefined` for optional properties).
+ */
+export type Complete<T> = { [K in keyof Required<T>]: T[K] }
+
+/**
+ * Configuration options for the Graph constructor and `setConfig()` method.
+ * All properties are optional — any omitted properties will use their default values.
+ *
+ * Note: calling `setConfig()` fully resets the configuration to defaults before
+ * applying the provided values. Properties not included in the call will revert
+ * to their defaults, not retain their previous values.
+ */
+export type GraphConfig = Partial<GraphConfigInterface>
+
+/**
+ * Returns a fresh copy of `defaultConfigValues` with arrays cloned so each Graph instance
+ * gets its own copy rather than sharing array references with it.
+ * `defaultConfigValues` is a module-level object — one instance shared across the entire codebase.
+ * Called at construction time to initialise `Graph.config`, and via `resetConfigToDefaults` on every `setConfig()` call.
+ */
+export function createDefaultConfig (): GraphConfigInterface {
+  const defaults: Record<string, unknown> = {}
+  for (const [key, value] of Object.entries(defaultConfigValues)) {
+    defaults[key] = Array.isArray(value) ? [...value] : value
+  }
+  return defaults as unknown as GraphConfigInterface
+}
+
+/**
+ * Resets the config object to default values in place, preserving the object reference
+ * so that modules (Zoom, Store, etc.) that hold a reference to it stay in sync.
+ * Called at the start of `setConfig()` to wipe previous values before applying the new ones.
+ */
+export function resetConfigToDefaults (target: GraphConfigInterface): void {
+  Object.assign(target, createDefaultConfig())
+}
+
+/**
+ * Applies `source` values onto `target` in place, leaving absent keys unchanged.
+ *
+ * Mutates in place rather than returning a new object, because multiple modules
+ * (Zoom, Store, etc.) hold a reference to the same config object and need to
+ * see updates immediately.
+ *
+ * Called in three places:
+ * - Constructor: applies the optional initial config on top of defaults.
+ * - `setConfig()`: applies a full replacement after `resetConfigToDefaults`.
+ * - `setConfigPartial()`: with `useDefaultsForUndefined = true`, so explicit
+ *   `undefined` values reset that property to its default.
+ *
+ * Arrays from `source` are stored by reference — callers must not mutate them after passing.
+ */
+export function applyConfig (
+  target: GraphConfigInterface,
+  source: GraphConfig,
+  useDefaultsForUndefined = false
+): void {
+  const overrides: Record<string, unknown> = {}
+  for (const [key, value] of Object.entries(source)) {
+    if (value !== undefined) { // skip explicit undefined; handled below if useDefaultsForUndefined
+      overrides[key] = value
+    } else if (useDefaultsForUndefined) { // explicit undefined → reset to default
+      const def = (defaultConfigValues as Record<string, unknown>)[key]
+      overrides[key] = Array.isArray(def) ? [...def] : def // clone so target doesn't share the array with defaultConfigValues
+    }
+  }
+  Object.assign(target, overrides)
+}

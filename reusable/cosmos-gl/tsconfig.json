@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/graph": ["src/"],
+      "@/graph/*": ["src/*"],
+      "@cosmos.gl/graph": ["src/"],
+      "@cosmos.gl/graph/*": ["src/*"],
+    },
+    "target": "es2019",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": ["es2019", "es2017", "es7", "es6", "dom"],
+    "declaration": true,
+    "outDir": "dist",
+
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+
+    "esModuleInterop": true
+  },
+  "include": [
+    "./src/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/stories"
+  ]
+}
