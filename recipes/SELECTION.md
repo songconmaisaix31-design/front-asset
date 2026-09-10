@@ -1,11 +1,14 @@
-# Asset selection
+# Round 2 asset selection
 
-- **Natural entrance:** `.local-captures/REF-01/hero-original.png`. Use the user-confirmed composition; preserve the small figure and broad sky. Original is local-only pending underlying-rights clarification.
-- **Fine points, links and local emphasis:** `.local-captures/REF-02-obsidian-graph.png`. Borrow restrained background relationships and local highlighting. It is an official indirect image, not live app evidence.
-- **Clusters and spacing:** `.local-captures/CAP-02/ai-model-atlas-select-attempt.png`. Borrow density variation and separated populations; do not copy its heavy yellow links, large nodes or informational sidebar.
-- **Actual graph magnification:** `.local-captures/INT-02/cosmograph-zoom-15s.webm`; source recording [77,92). Selection success is still unproven. Initial DOM/CSS represent a loading phase and cannot reproduce the graph.
-- **Space entry into exploration:** `.local-captures/INT-02/stars-entry-to-ui-18s.webm`; source recording [33,51). This is the existing site's onboarding/entry flow. It is not terrestrial flight footage or proof of wheel-controlled zoom.
-- **Static source starting points:** `reusable/cosmos-gl/src/index.ts` for Graph API; `src/config.ts` for configurable rendering/interaction; `docs/picking/README.md` for picking; `src/stories/showcase/full-mesh.ts` for example usage. Fixed commit `ce35edacf94dba1f02ef2b47957e937e4c9acf17`, MIT notice in LICENCE. Missing imported modules and dependencies must be resolved and licensed during a later implementation task; nothing was run here.
-- **Do not use as successful reference:** Star Atlas loading captures; Cosmograph loading DOM/CSS; unverified selection or ground-to-sky claims.
+Select exactly one main graph reference: the official cosmos.gl **Actions** example recording `.local-captures/R2-COS/enginefallback/actions-run-20260911-i/video/page@ada5412c81a79e3ffeb5909431c534f0.webm`, source interval **[32.463, 43.476] seconds**. It contains the candidate hover, callback index `3091`, first selected state, pointer departure with selection retained, callback index `3568`, and a distinct second selected state. It is engine-fallback interaction evidence only, not a loaded AI Model Atlas scene; the final [45.371, 47.229] blank attempt hit index `4344` and is excluded.
 
-The internal contact sheet is `.local-captures/INT-02/reference-contact-sheet.png`. Screenshots, movies and source-page snapshots are reference-only/local-only unless separately cleared; the public repository contains indexes and the permitted static source text. This file is selection guidance only, not an implementation plan or new PRD.
+Sparse auxiliary references:
+
+- Natural entrance: `.local-captures/REF-01/hero-original.png`, local-only user original; preserve the small figure and broad sky, with no redistribution clearance.
+- Zoom composition only: `.local-captures/INT-02/cosmograph-080s.png`, a historic real magnified AI Model Atlas frame. Its DOM is not aligned and selection is unproven, so it is not the main interaction reference.
+- Ground-to-sky failure boundary: `.local-captures/R2-MOT/ground/page@3838c13202d197df037180fd89e59408.webm` is 43.84 seconds, but its end is daylight Sun/Moon/planet content, not stellar takeover. Do not select a movement clip from it.
+- Do not select Star Atlas loading/marketing-shell footage, the DEPT case image (bright core style rejected), target AI Model Atlas loading capture, or the purported blank-clear state.
+
+Static source entry points are fixed to `cosmosgl/graph@ce35edacf94dba1f02ef2b47957e937e4c9acf17`: `Graph` at `src/index.ts:32`, `GraphConfigInterface` at `src/config.ts:9`, `onPointClick` at `src/config.ts:509`, `onBackgroundClick` at `src/config.ts:532`, `zoomToPointByIndex` at `src/index.ts:1015`, `createCosmos` at `src/stories/create-cosmos.ts:18`, and `generateMeshData` at `src/stories/generate-mesh-data.ts:30`. The retained checkout copies are content-equivalent after line-ending normalization but not byte-equal to upstream LF bytes; the exact upstream raw helper and `LICENCE` bytes live in local-only `.local-captures/R2-INT/upstream-source-check/`.
+
+The internal contact sheet is `.local-captures/R2-INT/reference-contact-sheet.png`. It contains only real source frames plus one honest missing tile; it is local-only, reference-only guidance rather than a product implementation plan.
