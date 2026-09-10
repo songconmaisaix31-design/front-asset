@@ -24,6 +24,12 @@ for part in sorted((ROOT / 'references').glob('*/parts/*/assets.json')):
             asset['source_id'] = part.relative_to(ROOT).parts[1]
             by_path[path] = asset
 
+supplement = ROOT / 'catalog/supplemental-assets.json'
+if supplement.exists():
+    for asset in json.loads(supplement.read_text(encoding='utf-8-sig')):
+        if asset.get('path') and (ROOT / asset['path']).is_file():
+            by_path[asset['path']] = asset
+
 review_fragment = ROOT / 'reviews/round2-assets.json'
 if review_fragment.exists():
     for asset in json.loads(review_fragment.read_text(encoding='utf-8-sig')):
@@ -70,6 +76,9 @@ for file in sorted(paths):
              'license_basis': 'No redistribution clearance; local-only reference',
              'usage_scope': 'reference-only', 'acquisition_status': 'acquired-local-only',
              'gaps': 'Container/response files do not establish rendered behavior', **asset}
+    if '/' not in asset.get('type', ''):
+        asset['fragment_type'] = asset.get('type')
+        asset['type'] = mimetypes.guess_type(file.name)[0] or 'application/octet-stream'
     actual_sha = hashlib.sha256(file.read_bytes()).hexdigest()
     reported_sha = asset.get('sha256')
     if reported_sha and reported_sha.lower() != actual_sha:
@@ -119,7 +128,7 @@ for file in sorted(paths):
     provenance = file.with_name(file.name + '.provenance.json')
     if provenance.exists():
         asset['derivation'] = json.loads(provenance.read_text(encoding='utf-8'))
-    is_media = asset['type'].startswith(('image/', 'video/'))
+    is_media = file.suffix.lower() in ('.png', '.jpg', '.jpeg', '.webp', '.gif', '.webm', '.mp4', '.mov')
     is_derived = bool(asset.get('derivation') or asset.get('derived_from') or (is_media and ('/INT-02/' in rel or '/R2-INT/' in rel or 'actions-15s' in rel)))
     asset['record_role'] = ('derived-media' if is_derived else 'original-media') if is_media else ('licensed-static-source' if rel.startswith('reusable/') else 'page-or-metadata-evidence')
     assets.append(asset)
