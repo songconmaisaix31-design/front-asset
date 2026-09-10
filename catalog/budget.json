@@ -1,0 +1,15 @@
+{
+  "policy": "Shared soft budgets; no token to percentage conversion; no paid services or reset credits",
+  "generation_target": 30000,
+  "generation_stop_new_dispatch": 50000,
+  "input_reminder": 160000,
+  "input_ceiling": 200000,
+  "e3_ceiling": 8000,
+  "initial_worker_reserved": 7000,
+  "coordinator_reserved": 4000,
+  "actual_tokens": null,
+  "current_coordinator_model": "unverified; conservatively accounted E3; no live switch capability exposed",
+  "quota": {"provider":"codex","source":"orca account list","updated_at_epoch_ms":1789048470543,"weekly_used_percent":77,"weekly_remaining_percent":23,"weekly_reset_epoch_ms":1789441463000,"session":null},
+  "tools": {"firecrawl":"not exposed; not used","browser":"Orca isolated profile; runtime 1.4.188","python":"3.13; Pillow available; playwright Python absent","paid_api":"not authorized or used"},
+  "thresholds": {"shrink":20,"closeout_only":18,"stop_new_pool_work":15}
+}

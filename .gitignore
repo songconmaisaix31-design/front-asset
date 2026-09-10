@@ -1,0 +1,7 @@
+.local-captures/
+__pycache__/
+*.pyc
+node_modules/
+.env
+.env.*
+!.env.example
