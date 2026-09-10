@@ -1,0 +1,183 @@
+{
+  "files": [
+    {
+      "path": "references/cosmograph/parts/CAP-01/assets.json",
+      "bytes": 953,
+      "sha256": "c8b76bfab7503abd624db200af4251dbb6c8584286ed5d730f94e114e5a3c8e9",
+      "local_only": false
+    },
+    {
+      "path": "references/cosmograph/parts/CAP-01/HANDOFF.md",
+      "bytes": 1562,
+      "sha256": "da752a1f4e2d0d314d2ee0d4d3b4956492e6bbbbfd77390e228192fbafa636ee",
+      "local_only": false
+    },
+    {
+      "path": "references/cosmos-gl/parts/SRC-01/assets.json",
+      "bytes": 2006,
+      "sha256": "fe7a08b6fd72b309bffcd29b402930340e11b63ccf3a6bf3f6d0879fd70e8193",
+      "local_only": false
+    },
+    {
+      "path": "references/cosmos-gl/parts/SRC-01/HANDOFF.md",
+      "bytes": 821,
+      "sha256": "a9a49bf3a2685af3ff08540e41bb796121f579dc42fea6be5c0bbd64c74d41ea",
+      "local_only": false
+    },
+    {
+      "path": "references/obsidian/parts/REF-01/assets.json",
+      "bytes": 1722,
+      "sha256": "b415735ac287b57053ca2039d1df0738e55d301d8a79406cd0da1ac1d4ae4b4a",
+      "local_only": false
+    },
+    {
+      "path": "references/obsidian/parts/REF-01/HANDOFF.md",
+      "bytes": 1251,
+      "sha256": "402d940a674216952183c14c16ed89a2e9792e9ffb112dd84ee6320116f3efba",
+      "local_only": false
+    },
+    {
+      "path": "reusable/cosmos-gl/docs/picking/README.md",
+      "bytes": 2334,
+      "sha256": "b29e48d314293f946ebd7c3f63dee1508234d08dfeb1a7afb5c92d648e210570",
+      "local_only": false
+    },
+    {
+      "path": "reusable/cosmos-gl/LICENCE",
+      "bytes": 1105,
+      "sha256": "21908e420bc31a24562bed00436e2c9d684403e5326e19617f891a6bf76429de",
+      "local_only": false
+    },
+    {
+      "path": "reusable/cosmos-gl/package.json",
+      "bytes": 2965,
+      "sha256": "e53a11544501dda67094bcdff04c19d4cad4700befd2c890732a39a0101ba670",
+      "local_only": false
+    },
+    {
+      "path": "reusable/cosmos-gl/README.md",
+      "bytes": 9163,
+      "sha256": "a6b61e660fabd9df306499a2d49ce7db1b5ea136621afd1c4e954f0492c23773",
+      "local_only": false
+    },
+    {
+      "path": "reusable/cosmos-gl/src/config.ts",
+      "bytes": 35311,
+      "sha256": "9e255ec37c9719f6bb149c3863e11db7159c17c75b15b44fdc15454f37d2a75d",
+      "local_only": false
+    },
+    {
+      "path": "reusable/cosmos-gl/src/index.ts",
+      "bytes": 124057,
+      "sha256": "3ddfc8aa2c71b68e273b90beb54b5b46736089ae20ebaea7c303f5c541b70364",
+      "local_only": false
+    },
+    {
+      "path": "reusable/cosmos-gl/src/stories/showcase/full-mesh.ts",
+      "bytes": 415,
+      "sha256": "75fc1e6ee2840740ff72a5f77d3d45bed38f69c39e32da6c49cc6b8774cea09f",
+      "local_only": false
+    },
+    {
+      "path": "reusable/cosmos-gl/tsconfig.json",
+      "bytes": 869,
+      "sha256": "b7dcec75c606038fd3feabf24d374c5ff61d990b13dcc463856042b1fcb3efb6",
+      "local_only": false,
+      "format_note": "Upstream JSONC with trailing commas; preserved, not strict JSON validated."
+    },
+    {
+      "path": "reusable/cosmos-gl/vite.config.ts",
+      "bytes": 1086,
+      "sha256": "1005d59a4f9ff2ecc164a96f4cb1d8681770dc84fabcf80c15f79f3749a8889d",
+      "local_only": false
+    },
+    {
+      "path": "owned/hero/README.md",
+      "bytes": 492,
+      "sha256": "dbdca8b4952d8d1bfcafeaab4a6acfdd9436671158de6a8a94d917a305fe50d3",
+      "local_only": false
+    },
+    {
+      "path": ".local-captures/REF-01/hero-original.png",
+      "bytes": 2747761,
+      "sha256": "4fc6838cfef7cc802264728b222c97e4090acc882aecfdb6f9cec1a315bb6825",
+      "local_only": true,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/REF-01/obsidian-graph-page.raw.html",
+      "bytes": 3978,
+      "sha256": "c42f5c254e304f2825732d2261dbacb7fdbccc68e03502e184bda0c5c04945bd",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/REF-01/obsidian-graph.cleaned.html",
+      "bytes": 1624,
+      "sha256": "484762099916d54d08b4f7335eeaa9dee7f1783664a232eb3b4459a8bb5d8cfc",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/REF-01/obsidian-graph.raw.html",
+      "bytes": 2779,
+      "sha256": "e4f91d3a533f20864ecdff6c256667e650c9750d9bebf610d3bc90fcef86a34c",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/SRC-01/originals/docs/picking/README.md",
+      "bytes": 2297,
+      "sha256": "0898bf643b290cae96a82a76ca5b04da777861697313975caa2bd5be73f73e8c",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/SRC-01/originals/package.json",
+      "bytes": 2866,
+      "sha256": "a6b64eae7c8f4c22f0d0719e91948e6415ff54778e2ef2aec9a76cefabc5d237",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/SRC-01/originals/README.md",
+      "bytes": 9006,
+      "sha256": "477b367d2f5c69df91cf6a1b146a864e8f3fe8a1aef70a7c157f9419d8dcee44",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/SRC-01/originals/src/config.ts",
+      "bytes": 34430,
+      "sha256": "aa59cdc9a8af2a9a0eca8402edd0a816ecf6854d29efac5d0a102890b94c5e8d",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/SRC-01/originals/src/index.ts",
+      "bytes": 121331,
+      "sha256": "bb3548259736bef41c5adb65e8d92b68635a952d8146518075d839a5ccc05a39",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/SRC-01/originals/src/stories/showcase/full-mesh.ts",
+      "bytes": 402,
+      "sha256": "3498ab925ee44fdd67987ce0c0d0bf8a243cc51c2d30e13f966e2d9d3990790a",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/SRC-01/originals/tsconfig.json",
+      "bytes": 832,
+      "sha256": "520223506604e78ace83fc82c56e479b896bf1d3debb3687841b5c2b4904d741",
+      "local_only": true,
+      "format_note": "Upstream JSONC with trailing commas; preserved, not strict JSON validated."
+    },
+    {
+      "path": ".local-captures/SRC-01/originals/vite.config.ts",
+      "bytes": 1046,
+      "sha256": "95c23865b5e5bf6a1ebabd7053b5c19ee7e58cda68c82aa9c3e5d0d723292123",
+      "local_only": true
+    }
+  ],
+  "file_count": 28,
+  "errors": [],
+  "duplicates": [],
+  "limits": "Integrity and decoding only; not visual authenticity, permission clearance, or video validation."
+}

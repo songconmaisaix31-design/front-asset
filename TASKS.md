@@ -13,3 +13,16 @@
 首批 Worker 生成预占 7000，属于全任务共享总账，不是硬限额。根文件由主控唯一维护。Worker 独立 worktree/branch，实际 ID 与 SHA 后续补记。最多一次有新依据的返修。不递归拆分。镜头任务只在首包通过及额度允许后追加。
 
 顺序：基线提交 → CAP-01 实际模型验证 → 独立任务并行 → 首包审查 → 必要补缺 → INT-01 → 主控总索引与推送。每轨只提交已审查可公开材料；普通 push 已由用户总协议授权，原件永不推送；不创建远端、不改可见性。
+
+
+## 最终状态：预算中止
+
+|任务|实际分支 / Commit|结果|
+|---|---|---|
+|CAP-01|songconmaisaix31-design/asset-cap-01 / aab6beaeaa8f70598c6a4810e1d356eeeccb28e9|仅失败/缺口元数据，无视觉包|
+|SRC-01|songconmaisaix31-design/asset-src-01 / 84f801f（前序 58df384）|8 个静态文件 + MIT；修正首轮漏许可证问题|
+|REF-01|songconmaisaix31-design/asset-ref-01 / b6e552e5e4bfac357c0966bb5e60f6f919232722|首图与官方文本；Orca 完成回执被拒绝|
+|INT-01|未派发|预算上限禁止新增；主控仅保全/合并/许可补正/总索引|
+|镜头/补位|未派发|预算停止|
+
+基线 2c9904b561e0704d7360a8ed327be8b9b6c7cf05。全部 Worker worktree 保留于 Orca 的 front-asset 工作树目录，主库 .local-captures 已核对复制 12 原件。预算记录以 catalog/budget.json 为准；原定预留不等于实际使用。主控发现遥测过晚，超出输入上限；收尾额外消耗亦计入，不能声称预算合规。未创建独立 Kernel、新调度器或产品代码。

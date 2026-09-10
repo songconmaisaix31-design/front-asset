@@ -1,0 +1,62 @@
+[
+  {
+    "task": "SRC-01",
+    "path": ".local-captures/SRC-01/originals/package.json",
+    "sha256": "a6b64eae7c8f4c22f0d0719e91948e6415ff54778e2ef2aec9a76cefabc5d237"
+  },
+  {
+    "task": "SRC-01",
+    "path": ".local-captures/SRC-01/originals/README.md",
+    "sha256": "477b367d2f5c69df91cf6a1b146a864e8f3fe8a1aef70a7c157f9419d8dcee44"
+  },
+  {
+    "task": "SRC-01",
+    "path": ".local-captures/SRC-01/originals/tsconfig.json",
+    "sha256": "520223506604e78ace83fc82c56e479b896bf1d3debb3687841b5c2b4904d741"
+  },
+  {
+    "task": "SRC-01",
+    "path": ".local-captures/SRC-01/originals/vite.config.ts",
+    "sha256": "95c23865b5e5bf6a1ebabd7053b5c19ee7e58cda68c82aa9c3e5d0d723292123"
+  },
+  {
+    "task": "SRC-01",
+    "path": ".local-captures/SRC-01/originals/src/config.ts",
+    "sha256": "aa59cdc9a8af2a9a0eca8402edd0a816ecf6854d29efac5d0a102890b94c5e8d"
+  },
+  {
+    "task": "SRC-01",
+    "path": ".local-captures/SRC-01/originals/src/index.ts",
+    "sha256": "bb3548259736bef41c5adb65e8d92b68635a952d8146518075d839a5ccc05a39"
+  },
+  {
+    "task": "SRC-01",
+    "path": ".local-captures/SRC-01/originals/src/stories/showcase/full-mesh.ts",
+    "sha256": "3498ab925ee44fdd67987ce0c0d0bf8a243cc51c2d30e13f966e2d9d3990790a"
+  },
+  {
+    "task": "SRC-01",
+    "path": ".local-captures/SRC-01/originals/docs/picking/README.md",
+    "sha256": "0898bf643b290cae96a82a76ca5b04da777861697313975caa2bd5be73f73e8c"
+  },
+  {
+    "task": "REF-01",
+    "path": ".local-captures/REF-01/hero-original.png",
+    "sha256": "4fc6838cfef7cc802264728b222c97e4090acc882aecfdb6f9cec1a315bb6825"
+  },
+  {
+    "task": "REF-01",
+    "path": ".local-captures/REF-01/obsidian-graph-page.raw.html",
+    "sha256": "c42f5c254e304f2825732d2261dbacb7fdbccc68e03502e184bda0c5c04945bd"
+  },
+  {
+    "task": "REF-01",
+    "path": ".local-captures/REF-01/obsidian-graph.cleaned.html",
+    "sha256": "484762099916d54d08b4f7335eeaa9dee7f1783664a232eb3b4459a8bb5d8cfc"
+  },
+  {
+    "task": "REF-01",
+    "path": ".local-captures/REF-01/obsidian-graph.raw.html",
+    "sha256": "e4f91d3a533f20864ecdff6c256667e650c9750d9bebf610d3bc90fcef86a34c"
+  }
+]
