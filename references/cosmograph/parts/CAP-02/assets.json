@@ -1,0 +1,24 @@
+[
+  {
+    "id": "cosmograph-ai-model-atlas-default",
+    "source": "Cosmograph official public showcase",
+    "url": "https://cosmograph.app/",
+    "final_url": "https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0",
+    "captured_at": "2026-09-10T14:25:22Z",
+    "path": ".local-captures/CAP-02/ai-model-atlas-default.png",
+    "type": "interactive-webgl-graph screenshot",
+    "state": "default",
+    "viewport": "2363x1626 browser window; stored screenshot 786x541 at observed scale 0.332628",
+    "capture_id": "cap-02-ai-model-atlas-20260910-default",
+    "sha256": "8b9c16e90e4368f75d6dae8fbcedf867a1866669d9c04348b43af1cd61a0eb98",
+    "purpose": "Reference-only evidence of one official public, loaded Cosmograph interactive graph.",
+    "license_basis": "Official public webpage. No reuse permission was established.",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired",
+    "gaps": [
+      "No selected, zoomed, or detail screenshot is claimed.",
+      "The desktop capture route delivered a valid visual graph but not an exportable browser-DOM or computed-CSS attachment aligned to this screenshot.",
+      "No 10-20 second operation recording is claimed; a screenshot sequence is not a recording."
+    ]
+  }
+]
