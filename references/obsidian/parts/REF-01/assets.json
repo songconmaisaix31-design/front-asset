@@ -1,0 +1,38 @@
+[
+  {
+    "id": "REF-01-hero-original",
+    "source": "user-provided local image",
+    "url": null,
+    "final_url": null,
+    "captured_at": "2026-09-10",
+    "path": null,
+    "type": "image/png",
+    "state": "visually inspected; preserved unchanged in ignored local capture area",
+    "viewport": "unknown",
+    "capture_id": "REF-01-user-original",
+    "sha256": "4FC6838CFEF7CC802264728B222C97E4090ACC882AECFDB6F9CEC1A315BB6825",
+    "purpose": "hero visual reference: night sky, mountain ridge, centered silhouette",
+    "license_basis": "user-approved use; underlying third-party rights unverified",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired from user-provided local path",
+    "gaps": "not committed to public Git; no redistribution clearance"
+  },
+  {
+    "id": "REF-01-obsidian-graph-doc",
+    "source": "official Obsidian Help",
+    "url": "https://help.obsidian.md/plugins/graph",
+    "final_url": "https://help.obsidian.md/plugins/graph",
+    "captured_at": "2026-09-10",
+    "path": null,
+    "type": "text/html; markdown response",
+    "state": "raw and cleaned response preserved locally",
+    "viewport": "unknown",
+    "capture_id": "REF-01-obsidian-static-http",
+    "sha256": "C42F5C254E304F2825732D2261DBACB7FDBCCC68E03502E184BDA0C5C04945BD",
+    "purpose": "official reference for nodes, links, labels, groups, filters and local graph",
+    "license_basis": "official documentation; reuse terms not independently confirmed",
+    "usage_scope": "reference-only",
+    "acquisition_status": "acquired via static HTTP GET",
+    "gaps": "no real Obsidian app DOM or interaction capture; no screenshot obtained; viewport unknown"
+  }
+]
