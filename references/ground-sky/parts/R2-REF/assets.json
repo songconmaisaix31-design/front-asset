@@ -1,0 +1,22 @@
+[
+  {
+    "id": "r2-ref-spaceengine-ground-to-space-capability",
+    "source": "SpaceEngine official website",
+    "url": "https://spaceengine.org/",
+    "final_url": "https://spaceengine.org/",
+    "captured_at": "2026-09-11T00:00:00Z",
+    "path": ".local-captures/R2-REF/ground-sky/spaceengine-official.html",
+    "type": "text/html",
+    "state": "official-capability-claim",
+    "viewport": null,
+    "capture_id": "R2-REF-http-spaceengine-home-01",
+    "sha256": "8fe829e5bb90db8493cb06372e383c55b73b33bd276bf6c075f7940eb95dfd90",
+    "purpose": "Official source states seamless transition from a planet surface to distant galaxies; optional secondary ground-to-space reference only, not a captured demonstration.",
+    "source_original": true,
+    "evidence_type": "official_product_capability",
+    "license_basis": "Official FAQ states non-commercial use of SpaceEngine videos/screenshots requires citation; this HTML capture is retained for reference and no media is redistributed.",
+    "usage_scope": "reference-only",
+    "acquisition_status": "public HTML response captured locally",
+    "gaps": "No video or screenshot captured; no verified transition timestamp; claim remains untested runtime evidence."
+  }
+]
