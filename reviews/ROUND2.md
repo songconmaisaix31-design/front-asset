@@ -9,14 +9,14 @@ This is an independent integration review of merged R2-SRC `9cc778c`, R2-MOT `2c
 | Check | Independent result | Classification |
 |---|---|---|
 | Natural entrance | Local user original shows small figure and broad Milky Way sky; rights unresolved. | Direct visual |
-| Graph default | Official cosmos.gl Actions iframe has WebGL canvas; AI Model Atlas is loading-only. | Direct fallback; target missing |
-| Graph zoom | Historic AI Model Atlas 80s frame is magnified; DOM/CSS were loading-phase. | Segmented |
-| Hover | Candidate pointer move at 32.463s; hover-only visual effect not separately attributable. | Indirect |
-| First selection | Callback index `3091` at 33.323s, then selected-node-1 response. | Direct fallback |
-| Persistent selection | Pointer departed 37.888s; selection remained at video 38.387s. | Direct fallback |
-| Other selection | Callback `3568` at 40.446s, distinct second selected state at 43.476s. | Direct fallback |
-| Blank clear | Purported blank action produced index `4344`; no background callback. | Missing / failed candidate |
-| Ground-to-stars | Stellarium ends on daylight solar-system objects; Star Atlas is loading/marketing shell. | Segmented / missing stellar condition |
+| Graph default, zoom, and selection lifecycle | Official Actions fallback supplies WebGL default, callbacks `3091`/`3568`, persistence after pointer departure, and a distinct second state; hover alone is indirect and blank clear failed at `4344`. Target AI Model Atlas is loading-only; historic 80s zoom frame has loading-phase DOM. | Direct fallback; target segmented/missing |
+| Segmented ground-up motion | Raw 43.84s video has black ground/horizon at 28–32s and it is absent by 36s, so `[28,36]` is usable for upward ground exit only. | Direct visual segment |
+| Separate starfield scale | 100,000 Stars remains a separate historic reference; Stellarium's post-exit frames show daylight planets, not stellar takeover. | Indirect / separate |
+| DOM-stage alignment | Fallback Actions screenshots, iframe DOM/CSS, and video state align; AI Model Atlas DOM/CSS align only to its loading dialog, never its historic graph frame. | Directly bounded |
+| Stable paths and hashes | Reviewed source paths and hashes match current manifests for MOT, final COS, and current DEPT HTML; missing pre/post bytes make the reported historical DEPT discrepancy non-diagnostic. | Direct current check |
+| Licence and public scope | Public-page observation is not redistribution permission; user/Obsidian/media references remain local/reference-only. MIT applies to copied upstream source text, not linked media. | Direct scope boundary |
+| Dependency completeness | Exact helper symbols are present at `createCosmos:18` and `generateMeshData:30`, but their imports require `@cosmos.gl/graph`, `d3-scale`, and `d3-scale-chromatic`; dependency licences/runtime completeness remain unaudited. | Partial |
+| No frontend/product work | This lane only merged evidence, reviewed originals, and wrote reviews/recipes/local derivatives; no frontend or downloaded project was executed. | Direct process check |
 
 ## P0 A–F disposition
 
@@ -24,7 +24,7 @@ This is an independent integration review of merged R2-SRC `9cc778c`, R2-MOT `2c
 - **P0-B:** target graph is segmented: historic visual frames exist, current AI Model Atlas R2 capture is loading-only.
 - **P0-C:** direct only for official cosmos.gl engine fallback: point click, persistence, and distinct second selection; not the target graph.
 - **P0-D:** missing: Star Atlas never reached exploration/camera/runtime.
-- **P0-E:** segmented/missing: 43.84s decoded video begins blank, is loading around 21s, then ends daylight. The 81-second session span (`15:55:44.229Z`–`15:57:05.174Z`) is not video duration or stellar-takeover proof.
+- **P0-E:** segmented: decoded video shows black ground/horizon at 28–32s and it leaves the frame by 36s, so `[28,36]` is usable for the actual upward ground-exit gesture. It then ends daylight; pair a separate starfield-scale reference if desired, but do not call the combined idea a single observed stellar takeover. The 81-second session span (`15:55:44.229Z`–`15:57:05.174Z`) is not video duration.
 - **P0-F:** partial direct: downloaded upstream LF helpers and LICENCE have exact raw hashes, while checkout files have CRLF byte drift. Stable old originals omit these helpers/LICENCE, so local-original byte equality is unavailable; dependencies/media are not cleared.
 
 ## COS ordering and visual conclusion
