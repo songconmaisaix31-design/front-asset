@@ -2,11 +2,13 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-const { chromium } = require('C:/Users/DW/AppData/Roaming/npm/node_modules/@playwright/cli/node_modules/playwright');
+const playwrightModule = process.env.PLAYWRIGHT_MODULE;
+if (!playwrightModule || !process.env.CAPTURE_OUTPUT_DIR || !process.env.CHROME_EXECUTABLE) throw new Error('Set PLAYWRIGHT_MODULE, CAPTURE_OUTPUT_DIR and CHROME_EXECUTABLE to existing task-local tools/paths.');
+const { chromium } = require(playwrightModule);
 
 const task = 'MOT-01';
-const rawRoot = 'C:/Users/DW/orca/front-asset/.local-captures/MOT-01';
-const chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+const rawRoot = process.env.CAPTURE_OUTPUT_DIR;
+const chrome = process.env.CHROME_EXECUTABLE;
 const viewport = { width: 1440, height: 900 };
 const pages = [
   { id: 'star-atlas', url: 'https://experience.staratlas.com/', selector: 'canvas, main, body' },
@@ -70,5 +72,5 @@ const cleanHTML = html => html.replace(/<script[\s\S]*?<\/script>/gi, '<script r
     if (video) { const vpath = await video.path(); const target = path.join(dir, `${spec.id}-motion.webm`); fs.renameSync(vpath, target); all[all.length - 1].video = { file: path.basename(target), sha256: sha(target) }; }
   }
   await browser.close();
-  write(path.join(rawRoot, 'capture-result.json'), { task, tool: { playwright: require('C:/Users/DW/AppData/Roaming/npm/node_modules/@playwright/cli/node_modules/playwright/package.json').version, chrome_executable: chrome }, actions: ['goto official source', 'wait for live rendering', 'entry screenshot', 'wheel zoom-in screenshot', 'wheel zoom-out screenshot', 'recorded real page interaction'], captures: all });
+  write(path.join(rawRoot, 'capture-result.json'), { task, tool: { playwright: require(path.join(playwrightModule, 'package.json')).version, chrome_executable: chrome }, actions: ['goto official source', 'wait for live rendering', 'entry screenshot', 'wheel zoom-in screenshot', 'wheel zoom-out screenshot', 'recorded real page interaction'], captures: all });
 })().catch(error => { console.error(error); process.exitCode = 1; });

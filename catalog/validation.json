@@ -1,0 +1,9 @@
+{
+  "canonical_asset_records": 91,
+  "schema_and_hash_match": true,
+  "public_standard_json_files_parsed": 17,
+  "sensitive_pattern_findings": [],
+  "source_comparisons_passed": 8,
+  "recommended_videos_fully_decoded": 2,
+  "scope": "Heuristic sensitive scan; JSONC deliberately retained; no third-party code execution or live production tests"
+}

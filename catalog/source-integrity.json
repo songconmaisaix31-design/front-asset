@@ -1,0 +1,34 @@
+[
+  {
+    "file": "reusable/cosmos-gl/package.json",
+    "matches_retained_original_modulo_line_endings": true
+  },
+  {
+    "file": "reusable/cosmos-gl/README.md",
+    "matches_retained_original_modulo_line_endings": true
+  },
+  {
+    "file": "reusable/cosmos-gl/tsconfig.json",
+    "matches_retained_original_modulo_line_endings": true
+  },
+  {
+    "file": "reusable/cosmos-gl/vite.config.ts",
+    "matches_retained_original_modulo_line_endings": true
+  },
+  {
+    "file": "reusable/cosmos-gl/src/config.ts",
+    "matches_retained_original_modulo_line_endings": true
+  },
+  {
+    "file": "reusable/cosmos-gl/src/index.ts",
+    "matches_retained_original_modulo_line_endings": true
+  },
+  {
+    "file": "reusable/cosmos-gl/src/stories/showcase/full-mesh.ts",
+    "matches_retained_original_modulo_line_endings": true
+  },
+  {
+    "file": "reusable/cosmos-gl/docs/picking/README.md",
+    "matches_retained_original_modulo_line_endings": true
+  }
+]

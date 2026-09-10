@@ -3,17 +3,17 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const require = createRequire(import.meta.url);
-const playwrightModule = process.env.PLAYWRIGHT_MODULE
-  ?? 'C:/Users/DW/AppData/Roaming/npm/node_modules/@playwright/cli/node_modules/playwright';
+const playwrightModule = process.env.PLAYWRIGHT_MODULE;
+if (!playwrightModule || !process.env.CAPTURE_OUTPUT_DIR || !process.env.CHROME_EXECUTABLE) throw new Error('Set PLAYWRIGHT_MODULE, CAPTURE_OUTPUT_DIR and CHROME_EXECUTABLE to existing task-local tools/paths.');
 const { chromium } = require(playwrightModule);
 
-const output = 'C:/Users/DW/orca/front-asset/.local-captures/CAP-02';
+const output = process.env.CAPTURE_OUTPUT_DIR;
 const url = 'https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69-b707c633aef0';
 const viewport = { width: 1280, height: 720 };
 await mkdir(output, { recursive: true });
 
 const browser = await chromium.launch({
-  executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  executablePath: process.env.CHROME_EXECUTABLE,
   headless: true,
 });
 const context = await browser.newContext({

@@ -1,6 +1,18 @@
 {
   "files": [
     {
+      "path": "references/100000-stars/parts/MOT-01/assets.json",
+      "bytes": 4085,
+      "sha256": "d28b7eb9c3d25e0759c7e47c942cc7ffc51a8e727709101193fe5683f0e7cd78",
+      "local_only": false
+    },
+    {
+      "path": "references/100000-stars/parts/MOT-01/HANDOFF.md",
+      "bytes": 1475,
+      "sha256": "1f0757833d6a51bc25dcd4074f01bdea93fd7893cd6d1b14fe6abf087faa758b",
+      "local_only": false
+    },
+    {
       "path": "references/cosmograph/parts/CAP-01/assets.json",
       "bytes": 953,
       "sha256": "c8b76bfab7503abd624db200af4251dbb6c8584286ed5d730f94e114e5a3c8e9",
@@ -10,6 +22,36 @@
       "path": "references/cosmograph/parts/CAP-01/HANDOFF.md",
       "bytes": 1562,
       "sha256": "da752a1f4e2d0d314d2ee0d4d3b4956492e6bbbbfd77390e228192fbafa636ee",
+      "local_only": false
+    },
+    {
+      "path": "references/cosmograph/parts/CAP-02/assets.json",
+      "bytes": 1287,
+      "sha256": "bcaa572693c7894c1287768100e0dd7334a17097f6991276a11808743175ca61",
+      "local_only": false
+    },
+    {
+      "path": "references/cosmograph/parts/CAP-02/capture.mjs",
+      "bytes": 4477,
+      "sha256": "1dc7931fcd711aca4d600a0df785a64cdcdc89000bb92b32f56fd3c979fe81d9",
+      "local_only": false
+    },
+    {
+      "path": "references/cosmograph/parts/CAP-02/HANDOFF.md",
+      "bytes": 2809,
+      "sha256": "6d9b0887a72c77a6882ce81bf461116f116ada2328e1fde3a2b634bcc6d8fd5f",
+      "local_only": false
+    },
+    {
+      "path": "references/cosmos-gl/parts/REF-02/assets.json",
+      "bytes": 979,
+      "sha256": "08e591cf32be76a6873d694fd570efdfa028383a13f60cf7616d9fb0ac5b56dd",
+      "local_only": false
+    },
+    {
+      "path": "references/cosmos-gl/parts/REF-02/HANDOFF.md",
+      "bytes": 1717,
+      "sha256": "c5824c6341235b0e2f88c2f69a44d7957aa4533718e73dac2abd364169ed4c92",
       "local_only": false
     },
     {
@@ -34,6 +76,36 @@
       "path": "references/obsidian/parts/REF-01/HANDOFF.md",
       "bytes": 1251,
       "sha256": "402d940a674216952183c14c16ed89a2e9792e9ffb112dd84ee6320116f3efba",
+      "local_only": false
+    },
+    {
+      "path": "references/obsidian/parts/REF-02/assets.json",
+      "bytes": 1997,
+      "sha256": "f996b42288d8437d0f1b788adc709f6d1f5e39e5ffebd9a962415e3b7df14e7f",
+      "local_only": false
+    },
+    {
+      "path": "references/obsidian/parts/REF-02/HANDOFF.md",
+      "bytes": 979,
+      "sha256": "c175188b79392d9f20629c01e35be7019ba4431575677a8489ba2969631e8b7b",
+      "local_only": false
+    },
+    {
+      "path": "references/star-atlas/parts/MOT-01/assets.json",
+      "bytes": 1082,
+      "sha256": "2c8ef72c76e49a28bdb0e5eb268a96356c0d8fa9eb7edf9a9469e0d12f232a83",
+      "local_only": false
+    },
+    {
+      "path": "references/star-atlas/parts/MOT-01/capture-motion.js",
+      "bytes": 5938,
+      "sha256": "303f41efc3ae8e1979338b2c7a8f14988684f56c138d186cee4f7e28fc2622e0",
+      "local_only": false
+    },
+    {
+      "path": "references/star-atlas/parts/MOT-01/HANDOFF.md",
+      "bytes": 912,
+      "sha256": "718b22170c304f5d4a59472aaa5e361cfef5415baf5fecb6ca08447b45825fe3",
       "local_only": false
     },
     {
@@ -98,6 +170,584 @@
       "local_only": false
     },
     {
+      "path": ".local-captures/CAP-02/ai-model-atlas-browser-dom.html",
+      "bytes": 94297,
+      "sha256": "a5835b493fea44fa521298773cc613983cddf93160a5ab9d6d62222fb52dce5c",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/CAP-02/ai-model-atlas-cleaned.html",
+      "bytes": 91176,
+      "sha256": "81043de04ed4d0f0a775cfca651bd177a6a463ac2fb865b20dfc45fea9521456",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/CAP-02/ai-model-atlas-default-observation.json",
+      "bytes": 8139,
+      "sha256": "736891dc08c3fba3c7e2943b013bdef977ba7e016be68d9c60dbf15d9cf866c2",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/CAP-02/ai-model-atlas-default.png",
+      "bytes": 720763,
+      "sha256": "8b9c16e90e4368f75d6dae8fbcedf867a1866669d9c04348b43af1cd61a0eb98",
+      "local_only": true,
+      "dimensions": [
+        786,
+        541
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/CAP-02/ai-model-atlas-playwright-default.png",
+      "bytes": 178787,
+      "sha256": "5a71706aafb84b6f1b597e77193e34f320f00faba5d286b66cfa5e058f96a94f",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/CAP-02/ai-model-atlas-raw-response.html",
+      "bytes": 3532,
+      "sha256": "5765691085a10e3b7914e3cc91037e3f570aeec75b487a6a144492469bd3d561",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/CAP-02/ai-model-atlas-select-attempt.png",
+      "bytes": 1313162,
+      "sha256": "0fc0a089a1b48d38475424a8903500a1b08e98ac921c70c031f191c9fb3591ad",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/CAP-02/ai-model-atlas-zoom-attempt.png",
+      "bytes": 1243027,
+      "sha256": "da055486951086f925770d5a736bb9c706ce90f5ecf78ce10042ed315f0fc1d0",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/CAP-02/video/page@69ae2072cd92b068e3f6c411fc9496c3.webm",
+      "bytes": 436059,
+      "sha256": "d1ceebba3df51fe65cd9ecbc9a13e8e41a9e9c20ba9800bc25f1423268f7a859",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/CAP-02/video/page@c3193c8a6525a53b285a148e65a0b7f6.webm",
+      "bytes": 3041592,
+      "sha256": "c8dc871d8aa2bb5c4fe0df7b18fef421dae67ba2b9650fed3f88fc82247b78b6",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/INT-02/cosmograph-060s.png",
+      "bytes": 28338,
+      "sha256": "acfc65f06bd3194f2224962b6e37d62eadad751e3414f1d3e0f5ddfe778b4e1d",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmograph-070s.png",
+      "bytes": 28000,
+      "sha256": "1b6b2245a786c7518e68bb0350401756e9ec1717e63fb51854a15c62967c0218",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmograph-075s.png",
+      "bytes": 65337,
+      "sha256": "448d78d9834e50fa06842a697686c9b6975d41370e511fee79c38120e159cbff",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmograph-080s.png",
+      "bytes": 1761009,
+      "sha256": "ab2488da241c29c26d97a64e0ac53b3f1daaf5a8be2c1dabd300ad7b4679166c",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmograph-085s.png",
+      "bytes": 1762114,
+      "sha256": "61a9be5fe3f7ecaaac82224cdce6d94077cb0f1b1c3bed8addff938f2a97a087",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmograph-090s.png",
+      "bytes": 1826502,
+      "sha256": "f4557d4dfd627759e6b96355ca38c2a5e71529fcb937b59edf6d5636280c59a8",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmograph-zoom-15s.webm",
+      "bytes": 856747,
+      "sha256": "a801cc3db630244e350c2cfcf2cad1daaaff71dc4cf5ec235837c3c07506a154",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/INT-02/cosmograph-zoom-15s.webm.provenance.json",
+      "bytes": 472,
+      "sha256": "a7a2cb4878dfdde58bc90791d5d2fbcfc745af48a4695afabc46aa1dc032b5c9",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/INT-02/cosmos-ready-76s.png",
+      "bytes": 201764,
+      "sha256": "7d7f9add8f465283cfabc8854a13e342a824b1c3d429cbc344a6e893d9593500",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmos-ready-77s.png",
+      "bytes": 1558237,
+      "sha256": "342da5a5b50a35d113d4105aec8b6b9276674768b7274cf08940b521bf08c50a",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmos-ready-78s.png",
+      "bytes": 1688709,
+      "sha256": "5edb5774b3aacd311b354d3d7167faae155256c69042cb79edc576fbef88ca19",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/cosmos-ready-79s.png",
+      "bytes": 1690859,
+      "sha256": "2a72a42994051203f71a81f3f0f9483cbc9c53244e57c8779892536a83123b92",
+      "local_only": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/reference-contact-sheet.png",
+      "bytes": 1269814,
+      "sha256": "4ccd8f31a51dae62a24266b8104f6f2f116d3ce764262ca37e245378aca42350",
+      "local_only": true,
+      "dimensions": [
+        1500,
+        760
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-000s.png",
+      "bytes": 1520568,
+      "sha256": "46e41efd578a69e6f93ac72d8d3a31963a4da548e3063e2bbe2f4553bbf52a37",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-003s.png",
+      "bytes": 1520205,
+      "sha256": "6fcb840649b8344a93b9acd6f618f1276f108c6eca6029a5278cd61d53291073",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-006s.png",
+      "bytes": 1294129,
+      "sha256": "1dcaedc8a850364c181ed6fa6e0155068374f12cf6460df85ec8d8947ba7f614",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-009s.png",
+      "bytes": 1464094,
+      "sha256": "ae147d6edfc983932da1dbcbc45e66be62db3069f02f13dc5d04f2eb8c8b7edd",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-012s.png",
+      "bytes": 1452890,
+      "sha256": "35d458ed8e24e513e9ccfdd23e3b8e154de7879cdcbdac846bb1e637fd1c30e7",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-014s.png",
+      "bytes": 1515364,
+      "sha256": "36ca3f37fca1d9f964a1612fcc032e49e9e14f2a19bb5f2c374fc0a8af4ad0ca",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-entry-to-ui-18s.webm",
+      "bytes": 1978090,
+      "sha256": "3cbd2f9ee94b981a16de72edc4578745efb243fee130fb4f563064a50e9f06ea",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/INT-02/stars-entry-to-ui-18s.webm.provenance.json",
+      "bytes": 463,
+      "sha256": "99c6e058621f3c1763bf0d450fc8c75011179190dbeebf1c4ee50d2e7fc90d02",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/INT-02/stars-full-33s.png",
+      "bytes": 1397772,
+      "sha256": "2d6d8ddebcc0825a282fce85efbd20031ee7ce59100e18b470c81953d12f8fcb",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-full-38s.png",
+      "bytes": 1415837,
+      "sha256": "4aeb37c490c2e133ef62877ebd58a88dc278b07b8b316fdf6422b35925a4fecf",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-full-43s.png",
+      "bytes": 1342946,
+      "sha256": "cbc05e89f5da159e82f43379c4bce180f05be6c33098d85072792800ece8ccad",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/stars-full-48s.png",
+      "bytes": 1581539,
+      "sha256": "27951aa403611790a4d6d731b37a11d7da2990956b25624a7fc553aed4491bc5",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/timing-review.png",
+      "bytes": 790165,
+      "sha256": "e51d4b350ae03e9f5371d2392afbe6df10bba54dc173908b2b5b8a34d5d7182d",
+      "local_only": true,
+      "dimensions": [
+        1600,
+        520
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/INT-02/video-review-sheet.png",
+      "bytes": 1192928,
+      "sha256": "afa3635b8638db6fc35244f56248ebfe63dd3e8eaa66e092ee1aa3aeb0072459",
+      "local_only": true,
+      "dimensions": [
+        1200,
+        1040
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/100000-stars-motion-actions-15s.webm",
+      "bytes": 2423696,
+      "sha256": "f10457dd032a84f7dc24204da47ba3304568aa8f3e960da17c0f865714c2c5c1",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/100000-stars-motion.webm",
+      "bytes": 3918300,
+      "sha256": "0e33c2bb9c0a8a7ad7a2e7017f7c0e50eefe9068ea4259d378809e4b0616fbd0",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/actions-15s-review-frame.png",
+      "bytes": 1421708,
+      "sha256": "8c3b175640468d43170c3332249a93784ff35acb2d5e2ba7836d4da6ce510817",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/document.cleaned.html",
+      "bytes": 8658,
+      "sha256": "aa32e977283f8521677460434d41580079b7817af805fe5eece4cce9990bd0fc",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/document.raw.html",
+      "bytes": 10499,
+      "sha256": "1c8b64dfd56b4b57bf2dd091c51a091930640207301b3126c9f557a96f2901d4",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/entry.css.json",
+      "bytes": 189,
+      "sha256": "ade330b6fcd28945200655ece589054e345b21952e1467fbdaf6a2db1913141b",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/entry.dom.html",
+      "bytes": 62367,
+      "sha256": "39d708f0d95552249594bf988e5d2c574edd9f6bd51ccb6f377fe8e04fba7feb",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/entry.png",
+      "bytes": 1347859,
+      "sha256": "cda99716ebe12484568b143311d9f3089a842f0e8a86741d87cd950736296736",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/resources.sanitized.json",
+      "bytes": 6111,
+      "sha256": "9b3619fbacbbd37572da67bbfc3926b2aa037d4d773c042a4a1276620a50be96",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/zoom-in.css.json",
+      "bytes": 189,
+      "sha256": "ade330b6fcd28945200655ece589054e345b21952e1467fbdaf6a2db1913141b",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/zoom-in.dom.html",
+      "bytes": 62347,
+      "sha256": "d0887baa7d30514025cf834d06f35f7c51c07342be961e1f66822be27c5acf59",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/zoom-in.png",
+      "bytes": 1348341,
+      "sha256": "fe0cb63413a4c554fbd091b3094dc43faea61b6b49cf0c2cc5e248f870e042f3",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/zoom-out.css.json",
+      "bytes": 189,
+      "sha256": "ade330b6fcd28945200655ece589054e345b21952e1467fbdaf6a2db1913141b",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/zoom-out.dom.html",
+      "bytes": 62496,
+      "sha256": "513faeb276a3d30c6fa7c60b1f45e30b814bd4bc524c3cad18aedaf1a3a13278",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/100000-stars/zoom-out.png",
+      "bytes": 1493630,
+      "sha256": "b5fa587f13f3954c3ea84f4bf02c312718ab2a25d5c2a931d2123b48f04f0655",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/MOT-01/capture-result.json",
+      "bytes": 1859,
+      "sha256": "6eed31bf12bfbe66a07bb4889dc596cfff300a773f2ae91ebe1564ce589c903a",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/retry.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/retry.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/document.cleaned.html",
+      "bytes": 70254,
+      "sha256": "868d12273e72ee2ca10be731eaeb4fb3a999ac99e82257b4a6747552fcc123c0",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/document.raw.html",
+      "bytes": 72745,
+      "sha256": "988cda9de45087c074c087e9ab8301194ff890a33ce444e52e6a2af944755459",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/entry.css.json",
+      "bytes": 195,
+      "sha256": "d13a31e466c37b7618346e9546e31c54f017d7be6727a152d67dab255500eb19",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/entry.dom.html",
+      "bytes": 81574,
+      "sha256": "54312d70eafa341a06df1b54592ce2fd334a2b72fc14a9edbfca722360e41697",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/entry.png",
+      "bytes": 76232,
+      "sha256": "dfccf6b1e4672ba2b5dd6ab03423a1538b82b0f8f318c110b9d9ca0792a01272",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/resources.sanitized.json",
+      "bytes": 2464,
+      "sha256": "bcd03d816ee6f427d8d4bf43c9f1063e9aafaf7f794c04ca7ffc1e871d3a19de",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/star-atlas-motion.webm",
+      "bytes": 1306343,
+      "sha256": "e872335691d03816328b3034983fd04947cd8772b2fb040e55d754ed0e3e9105",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/zoom-in.css.json",
+      "bytes": 195,
+      "sha256": "d13a31e466c37b7618346e9546e31c54f017d7be6727a152d67dab255500eb19",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/zoom-in.dom.html",
+      "bytes": 81574,
+      "sha256": "54312d70eafa341a06df1b54592ce2fd334a2b72fc14a9edbfca722360e41697",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/zoom-in.png",
+      "bytes": 76232,
+      "sha256": "dfccf6b1e4672ba2b5dd6ab03423a1538b82b0f8f318c110b9d9ca0792a01272",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/zoom-out.css.json",
+      "bytes": 195,
+      "sha256": "d13a31e466c37b7618346e9546e31c54f017d7be6727a152d67dab255500eb19",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/zoom-out.dom.html",
+      "bytes": 81614,
+      "sha256": "d243f108c1d2d90f398dafdc8fdda77af9cf4745af959e96eba101bccad9c73a",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/MOT-01/star-atlas/zoom-out.png",
+      "bytes": 76232,
+      "sha256": "dfccf6b1e4672ba2b5dd6ab03423a1538b82b0f8f318c110b9d9ca0792a01272",
+      "local_only": true,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "format": "PNG"
+    },
+    {
       "path": ".local-captures/REF-01/hero-original.png",
       "bytes": 2747761,
       "sha256": "4fc6838cfef7cc802264728b222c97e4090acc882aecfdb6f9cec1a315bb6825",
@@ -125,6 +775,23 @@
       "bytes": 2779,
       "sha256": "e4f91d3a533f20864ecdff6c256667e650c9750d9bebf610d3bc90fcef86a34c",
       "local_only": true
+    },
+    {
+      "path": ".local-captures/REF-02-graph.md",
+      "bytes": 3978,
+      "sha256": "c42f5c254e304f2825732d2261dbacb7fdbccc68e03502e184bda0c5c04945bd",
+      "local_only": true
+    },
+    {
+      "path": ".local-captures/REF-02-obsidian-graph.png",
+      "bytes": 83340,
+      "sha256": "70d2b9f8aef3428fea490a9cdaf6fdc1b8071d95296b38d8e8d17c72a3e2f276",
+      "local_only": true,
+      "dimensions": [
+        1989,
+        1331
+      ],
+      "format": "PNG"
     },
     {
       "path": ".local-captures/SRC-01/originals/docs/picking/README.md",
@@ -176,8 +843,36 @@
       "local_only": true
     }
   ],
-  "file_count": 28,
+  "file_count": 110,
   "errors": [],
-  "duplicates": [],
-  "limits": "Integrity and decoding only; not visual authenticity, permission clearance, or video validation."
+  "duplicates": [
+    [
+      ".local-captures/MOT-01/100000-stars/entry.css.json",
+      ".local-captures/MOT-01/100000-stars/zoom-in.css.json",
+      ".local-captures/MOT-01/100000-stars/zoom-out.css.json"
+    ],
+    [
+      ".local-captures/MOT-01/retry.stderr.log",
+      ".local-captures/MOT-01/retry.stdout.log"
+    ],
+    [
+      ".local-captures/MOT-01/star-atlas/entry.css.json",
+      ".local-captures/MOT-01/star-atlas/zoom-in.css.json",
+      ".local-captures/MOT-01/star-atlas/zoom-out.css.json"
+    ],
+    [
+      ".local-captures/MOT-01/star-atlas/entry.dom.html",
+      ".local-captures/MOT-01/star-atlas/zoom-in.dom.html"
+    ],
+    [
+      ".local-captures/MOT-01/star-atlas/entry.png",
+      ".local-captures/MOT-01/star-atlas/zoom-in.png",
+      ".local-captures/MOT-01/star-atlas/zoom-out.png"
+    ],
+    [
+      ".local-captures/REF-01/obsidian-graph-page.raw.html",
+      ".local-captures/REF-02-graph.md"
+    ]
+  ],
+  "limits": "Integrity and decoding only; browser profile state excluded; not visual authenticity, permission clearance, or video validation."
 }

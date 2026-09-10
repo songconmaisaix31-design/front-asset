@@ -1,0 +1,50 @@
+{
+  "asset_records": 91,
+  "unique_byte_hashes": 82,
+  "by_source": {
+    "cosmograph": 22,
+    "obsidian": 4,
+    "cosmos-gl": 17,
+    "100000-stars": 27,
+    "star-atlas": 13,
+    "owned": 1,
+    "review": 7
+  },
+  "by_usage_scope": {
+    "reference-only": 61,
+    "reuse-cleared": 17,
+    "reuse-candidate": 0,
+    "blocked": 13
+  },
+  "duplicate_groups": [
+    [
+      ".local-captures/MOT-01/100000-stars/entry.css.json",
+      ".local-captures/MOT-01/100000-stars/zoom-in.css.json",
+      ".local-captures/MOT-01/100000-stars/zoom-out.css.json"
+    ],
+    [
+      ".local-captures/MOT-01/retry.stderr.log",
+      ".local-captures/MOT-01/retry.stdout.log"
+    ],
+    [
+      ".local-captures/MOT-01/star-atlas/entry.css.json",
+      ".local-captures/MOT-01/star-atlas/zoom-in.css.json",
+      ".local-captures/MOT-01/star-atlas/zoom-out.css.json"
+    ],
+    [
+      ".local-captures/MOT-01/star-atlas/entry.dom.html",
+      ".local-captures/MOT-01/star-atlas/zoom-in.dom.html"
+    ],
+    [
+      ".local-captures/MOT-01/star-atlas/entry.png",
+      ".local-captures/MOT-01/star-atlas/zoom-in.png",
+      ".local-captures/MOT-01/star-atlas/zoom-out.png"
+    ],
+    [
+      ".local-captures/REF-01/obsidian-graph-page.raw.html",
+      ".local-captures/REF-02-graph.md"
+    ]
+  ],
+  "excluded": "Browser profile/cache trees; not counted as assets",
+  "status": "bounded collection archived with explicit gaps; not full interaction or ground-to-sky coverage"
+}

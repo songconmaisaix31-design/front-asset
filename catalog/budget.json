@@ -1,5 +1,5 @@
 {
-  "status": "active collection; token count controls removed by user",
+  "status": "archived; no further collection or frontend work",
   "token_limits_enabled": false,
   "model_policy": {
     "deterministic": "local tools",
@@ -15,8 +15,8 @@
   },
   "latest_observed_quota": {
     "source": "orca account list",
-    "updated_at_epoch_ms": 1789049637651,
-    "weekly_remaining_percent": 22,
+    "updated_at_epoch_ms": 1789051419011,
+    "weekly_remaining_percent": 19,
     "weekly_reset_epoch_ms": 1789441463000,
     "session_window": null,
     "freshness": "last returned snapshot; not a guarantee of current remainder"
@@ -44,6 +44,15 @@
       "dispatch": "ctx_6ef69d83c8c8",
       "model": "gpt-5.6-terra",
       "effort": "low"
+    },
+    {
+      "task": "INT-02",
+      "task_id": "task_6bcb7de45515",
+      "dispatch": "ctx_31ca3853cc53",
+      "model": "gpt-5.6-terra",
+      "effort": "medium",
+      "result": "sandbox/input blocked; root performed final QA; terminal closed"
     }
-  ]
+  ],
+  "metering_note": "23% initial account observation to 19% latest returned observation; delayed account-wide meter, not exact task attribution"
 }

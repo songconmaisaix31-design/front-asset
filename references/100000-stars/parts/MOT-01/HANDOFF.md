@@ -1,3 +1,5 @@
+> 阶段交接记录：最终分类与后续视频复核以 catalog/assets.json、reviews/REVIEW.md 为准。
+
 # MOT-01 — 100,000 Stars motion evidence
 
 Collected from the one official interactive page in a new Playwright 1.62.0-alpha-1783623505000 context (`MOT-01-100000-stars-ctx-01`) using installed Chrome and a 1440x900 viewport. The first short observation remained at `Fetching stellar data`; the single justified alternate waited for `#loadtext` to become hidden (up to 120 seconds), after which the reviewed entry, zoom-in, and zoom-out frames show the live WebGL star field.

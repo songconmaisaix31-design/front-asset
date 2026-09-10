@@ -34,3 +34,13 @@
 |镜头/补位|未派发|预算停止|
 
 基线 2c9904b561e0704d7360a8ed327be8b9b6c7cf05。全部 Worker worktree 保留于 Orca 的 front-asset 工作树目录，主库 .local-captures 已核对复制 12 原件。预算记录以 catalog/budget.json 为准；原定预留不等于实际使用。主控发现遥测过晚，超出输入上限；收尾额外消耗亦计入，不能声称预算合规。未创建独立 Kernel、新调度器或产品代码。
+
+
+## 本轮最终交付（恢复采集后）
+
+- CAP-02：0e915281f95031fd20118fd3eab4221bed81f098，已归档；主控后续复核恢复有效放大帧与视频。
+- REF-02：cf36c50d587b5ec4b660cefb1a259f13ef53ff3a，已归档；实际成果分支 asset-ref-02，已移回专属 worktree。
+- MOT-01：924b19cca1fcaf338cccda6d905ab00ca851c022，Stars 成功进入场景，Star Atlas 阻塞。
+- INT-02：独立工作树已合并三个来源至 f2895ca；终端沙箱/投递受阻，主控完成最终验收和提交，非独立审查通过。
+- 91 条资产记录，2 段推荐短片，内部参考联系表；具体范围和差异以 catalog/CLOSEOUT.md、reviews/REVIEW.md、catalog/assets.json 为准。
+- 固定 Token 管控已取消。最新可见周余额 19%，数据可能延迟；停止新增采集和模型任务，未开发前端。

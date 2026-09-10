@@ -1,3 +1,5 @@
+> 阶段交接记录：最终分类与后续视频复核以 catalog/assets.json、reviews/REVIEW.md 为准。
+
 # CAP-02 — Cosmograph official interactive capture
 
 ## Result
@@ -24,4 +26,4 @@ The fallback browser context reached only its database-connection loading screen
 
 ## Validation
 
-`Get-FileHash -Algorithm SHA256 C:/Users/DW/orca/front-asset/.local-captures/CAP-02/ai-model-atlas-default.png` produced the digest in `assets.json`. The PNG was loaded and visually inspected by the worker model; the ignored local-original directory is covered by `.gitignore` and public metadata uses only a repository-relative path.
+`Get-FileHash -Algorithm SHA256 .local-captures/CAP-02/ai-model-atlas-default.png` produced the digest in `assets.json`. The PNG was loaded and visually inspected by the worker model; the ignored local-original directory is covered by `.gitignore` and public metadata uses only a repository-relative path.
