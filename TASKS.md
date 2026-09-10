@@ -9,10 +9,12 @@
 |R2-COS|运行态、节点交互；references/cosmograph/parts/R2-COS/；必要引擎补位同片段|Terra medium|执行中|
 |R2-MOT|Star Atlas 与地面到天空；references/star-atlas/parts/R2-MOT/、references/ground-sky/parts/R2-MOT/|Terra medium|执行中|
 |R2-SRC|固定源码入口；references/cosmos-gl/parts/R2-SRC/、reusable/cosmos-gl/ 必要补件|Luna low|执行中|
-|R2-INT|独立内容复核与整合；reviews/、recipes/|Terra medium|等待采样|
+|R2-INT|独立内容复核与整合；reviews/、recipes/|Terra medium|独立复核执行中|
 |CONTROL|根文件、catalog/、最终验收|当前模型以运行器实际为准|执行中|
 
 每轨独立 Agent/worktree/branch；所有原件只写主库 .local-captures/对应任务目录。无 setup、无前端开发、无第三方项目运行。失败按证据诊断，不无理由循环。
+
+补充轨 R2-REF：Luna low，task_720f015e0a6d / ctx_9d2cc3dc6e96，独立 asset-r2-REF 工作树；仅 references/star-atlas/parts/R2-REF/ 与 references/ground-sky/parts/R2-REF/，官方案例间接资料。R2-INT task_32debf059bcf / ctx_696597792060，Terra medium 独立复核。SRC 原文修复 9cc778c；MOT 候选 2cafeae；COS 首次受阻 fdf37a9，原执行者继续官方引擎交互补位 task_374f3fc4b53a / ctx_b4b7a8d7975c，不重试数据库加载路径。
 
 运行 run_934700e178d8；基线 21a8e65。R2-COS task_388ab74e1093 / ctx_0cb08d94aba1；R2-MOT task_0688fb154f2c / ctx_b6c0346eb08c；R2-SRC task_112030c01822 / ctx_3a70d3662428。分支均为 songconmaisaix31-design/asset-r2-对应代号，独立工作树在 Orca front-asset 工作树目录。三个 model/effort 生效回执已核对；COS/SRC 回执 stalled 但实际执行已核实，未重复启动。
 

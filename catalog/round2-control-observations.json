@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-10T16:26:51.371161+00:00",
+  "official_player": {
+    "url": "https://player.vimeo.com/video/718320881",
+    "discovery": "DEPT official case HTML embed query preserved in R2-REF fragment",
+    "tool": "PowerShell Invoke-WebRequest; unauthenticated normal HTTP",
+    "status": 404,
+    "scope": "Only first embedded player checked with this tool; no playback or motion observed"
+  },
+  "rejected_still": {
+    "url": "https://www.deptagency.com/wp-content/uploads/2022/06/Star-Atlas.png",
+    "path": ".local-captures/CONTROL-R2/dept-Star-Atlas.png",
+    "sha256": "ad9e0a4ba2a426c279f6060bd901be9c3517dc85c2fbd9e1fab25d3de6c0523c",
+    "dimensions": [
+      1792,
+      869
+    ],
+    "usage_scope": "reference-only; local-only",
+    "acquisition_status": "acquired; excluded from recommendation",
+    "evidence_type": "official production-case still",
+    "observation": "Dominant huge bright center contradicts target; no movement proven. Not counted as added target coverage.",
+    "derivative": {
+      "path": ".local-captures/CONTROL-R2/dept-Star-Atlas-decoded.png",
+      "method": "Pillow PNG decode/re-save only; original preserved"
+    }
+  }
+}

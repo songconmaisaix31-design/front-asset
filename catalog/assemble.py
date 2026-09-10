@@ -14,12 +14,22 @@ URLS = {'cosmograph': 'https://run.cosmograph.app/public/ca9fd1ad-fe83-4238-8b69
         '100000-stars': 'https://stars.chromeexperiments.com/',
         'star-atlas': 'https://experience.staratlas.com/', 'owned': None, 'review': None, 'ground-sky': None}
 by_path = {}
+link_only = []
 for part in sorted((ROOT / 'references').glob('*/parts/*/assets.json')):
     for asset in json.loads(part.read_text(encoding='utf-8-sig')):
         path = asset.get('path')
+        if not path:
+            link_only.append({**asset, 'source_id': part.relative_to(ROOT).parts[1]})
         if path and (ROOT / path).is_file():
             asset['source_id'] = part.relative_to(ROOT).parts[1]
             by_path[path] = asset
+
+review_fragment = ROOT / 'reviews/round2-assets.json'
+if review_fragment.exists():
+    for asset in json.loads(review_fragment.read_text(encoding='utf-8-sig')):
+        if asset.get('path') and (ROOT / asset['path']).is_file():
+            asset.setdefault('source_id', 'review')
+            by_path[asset['path']] = asset
 
 def source_for(path):
     if 'hero-original' in path:
@@ -45,14 +55,14 @@ for file in sorted(paths):
     if any('profile' in p.lower() for p in file.relative_to(ROOT).parts[:-1]):
         continue
     # Round-two files enter the asset index only through a reviewed fragment.
-    is_round2 = '/R2-' in rel
+    is_round2 = '/R2-' in rel or '/CONTROL-R2/' in rel
     if is_round2 and rel not in by_path:
         continue
     asset = by_path.get(rel, {})
     sid = asset.get('source_id') or source_for(rel)
     stamp = datetime.fromtimestamp(file.stat().st_mtime, timezone.utc).isoformat()
     asset = {'id': 'asset-' + hashlib.sha256(rel.encode()).hexdigest()[:12],
-             'source': sid, 'source_id': sid, 'url': URLS[sid], 'final_url': URLS[sid],
+             'source': sid, 'source_id': sid, 'url': URLS.get(sid), 'final_url': URLS.get(sid),
              'captured_at': stamp, 'timestamp_basis': 'filesystem mtime; exact capture time unverified',
              'path': rel, 'type': mimetypes.guess_type(file.name)[0] or 'text/plain',
              'state': 'retained static evidence', 'viewport': None, 'capture_id': 'retained-' + sid,
@@ -60,12 +70,26 @@ for file in sorted(paths):
              'license_basis': 'No redistribution clearance; local-only reference',
              'usage_scope': 'reference-only', 'acquisition_status': 'acquired-local-only',
              'gaps': 'Container/response files do not establish rendered behavior', **asset}
-    asset['sha256'] = hashlib.sha256(file.read_bytes()).hexdigest()
+    actual_sha = hashlib.sha256(file.read_bytes()).hexdigest()
+    reported_sha = asset.get('sha256')
+    if reported_sha and reported_sha.lower() != actual_sha:
+        asset['fragment_reported_sha256'] = reported_sha
+        asset['integrity_note'] = 'Fragment hash differs from current retained file; final index hashes actual bytes. See reviews/ROUND2.md for newline/provenance assessment; this is not an assertion of original byte identity.'
+    asset['sha256'] = actual_sha
+    if is_round2 and asset.get('captured_at'):
+        try:
+            claimed = datetime.fromisoformat(asset['captured_at'].replace('Z', '+00:00'))
+            if claimed.tzinfo and claimed > datetime.now(timezone.utc):
+                asset['fragment_reported_captured_at'] = asset['captured_at']
+                asset['captured_at'] = stamp
+                asset['timestamp_basis'] = 'filesystem mtime; corrected future-dated fragment timestamp, exact capture time unknown'
+        except ValueError:
+            pass
     asset['bytes'] = file.stat().st_size
     if file.suffix.lower() == '.png':
         with Image.open(file) as image:
             asset['dimensions'] = list(image.size)
-    if sid == 'cosmos-gl':
+    if sid == 'cosmos-gl' and (rel.startswith('reusable/') or '/SRC-01/' in rel):
         source_rel = rel.split('reusable/cosmos-gl/', 1)[-1] if rel.startswith('reusable/') else rel.split('/originals/', 1)[-1]
         asset.update(url=f'https://github.com/cosmosgl/graph/blob/{PIN}/{source_rel}',
                      final_url=f'https://raw.githubusercontent.com/cosmosgl/graph/{PIN}/{source_rel}',
@@ -95,15 +119,22 @@ for file in sorted(paths):
     provenance = file.with_name(file.name + '.provenance.json')
     if provenance.exists():
         asset['derivation'] = json.loads(provenance.read_text(encoding='utf-8'))
+    is_media = asset['type'].startswith(('image/', 'video/'))
+    is_derived = bool(asset.get('derivation') or asset.get('derived_from') or (is_media and ('/INT-02/' in rel or '/R2-INT/' in rel or 'actions-15s' in rel)))
+    asset['record_role'] = ('derived-media' if is_derived else 'original-media') if is_media else ('licensed-static-source' if rel.startswith('reusable/') else 'page-or-metadata-evidence')
     assets.append(asset)
 
+(ROOT / 'catalog/links.json').write_text(json.dumps(link_only, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
 (ROOT / 'catalog/assets.json').write_text(json.dumps(assets, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
 groups = {}
 for asset in assets:
     groups.setdefault(asset['sha256'], []).append(asset['path'])
-summary = {'asset_records': len(assets), 'unique_byte_hashes': len(groups),
+summary = {'link_only_records': len(link_only), 'asset_records': len(assets), 'unique_byte_hashes': len(groups),
            'by_source': {s: sum(a['source_id'] == s for a in assets) for s in sorted({a['source_id'] for a in assets})},
            'unique_file_paths': len({a['path'] for a in assets}),
+           'record_roles': {r: sum(a['record_role'] == r for a in assets) for r in sorted({a['record_role'] for a in assets})},
+           'unique_original_media_hashes': len({a['sha256'] for a in assets if a['record_role'] == 'original-media'}),
+           'unique_derived_media_hashes': len({a['sha256'] for a in assets if a['record_role'] == 'derived-media'}),
            'derived_records': sum(bool(a.get('derivation') or a.get('derived_from')) for a in assets),
            'by_usage_scope': {s: sum(a['usage_scope'] == s for a in assets) for s in ('reference-only', 'reuse-cleared', 'reuse-candidate', 'blocked')},
            'duplicate_groups': [v for v in groups.values() if len(v) > 1],

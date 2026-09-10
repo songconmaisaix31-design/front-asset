@@ -87,6 +87,39 @@
         "dispatch": "ctx_3a70d3662428",
         "launch_effective_verified": true,
         "state": "executing despite stalled input receipt"
+      },
+      {
+        "task": "R2-INT",
+        "task_id": "task_32debf059bcf",
+        "dispatch": "ctx_696597792060",
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "launch_effective_verified": true
+      },
+      {
+        "task": "R2-REF",
+        "task_id": "task_720f015e0a6d",
+        "dispatch": "ctx_9d2cc3dc6e96",
+        "model": "gpt-5.6-luna",
+        "effort": "low",
+        "launch_effective_verified": true
+      },
+      {
+        "task": "R2-SRC-FIX",
+        "task_id": "task_5c19dd2734ad",
+        "dispatch": "ctx_3e8680d90edb",
+        "model": "gpt-5.6-luna",
+        "effort": "low",
+        "same_terminal_reused": true,
+        "commit": "9cc778c"
+      },
+      {
+        "task": "R2-COS-INTERACT",
+        "task_id": "task_374f3fc4b53a",
+        "dispatch": "ctx_b4b7a8d7975c",
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "same_terminal_reused": true
       }
     ]
   }
