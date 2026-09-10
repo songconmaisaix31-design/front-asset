@@ -1,100 +1,49 @@
 {
-  "policy": "Shared soft budgets; no token to percentage conversion; no paid services or reset credits",
-  "generation_target": 30000,
-  "generation_stop_new_dispatch": 50000,
-  "input_reminder": 160000,
-  "input_ceiling": 200000,
-  "e3_ceiling": 8000,
-  "initial_worker_reserved": 7000,
-  "coordinator_reserved": 4000,
-  "actual_tokens": {
-    "input_tokens": 4523994,
-    "cached_input_tokens": 4292608,
-    "output_tokens": 24302,
-    "reasoning_output_tokens": 3240
+  "status": "active collection; token count controls removed by user",
+  "token_limits_enabled": false,
+  "model_policy": {
+    "deterministic": "local tools",
+    "extraction": "gpt-5.6-luna low",
+    "browser": "gpt-5.6-terra low or medium according to difficulty",
+    "complex_escalation": "Astra only for a concrete unresolved complex issue",
+    "current_coordinator": "gpt-6-astra high inherited active session; no live-switch capability used"
   },
-  "current_coordinator_model": "gpt-6-astra high, verified session telemetry",
-  "quota": {
-    "provider": "codex",
+  "quota_protection": {
+    "shrink_at_remaining_percent": 20,
+    "closeout_only_at_remaining_percent": 18,
+    "stop_new_pool_work_at_remaining_percent": 15
+  },
+  "latest_observed_quota": {
     "source": "orca account list",
-    "updated_at_epoch_ms": 1789048470543,
-    "weekly_used_percent": 77,
-    "weekly_remaining_percent": 23,
+    "updated_at_epoch_ms": 1789049637651,
+    "weekly_remaining_percent": 22,
     "weekly_reset_epoch_ms": 1789441463000,
-    "session": null
+    "session_window": null,
+    "freshness": "last returned snapshot; not a guarantee of current remainder"
   },
-  "tools": {
-    "firecrawl": "not exposed; not used",
-    "browser": "Orca isolated profile; runtime 1.4.188",
-    "python": "3.13; Pillow available; playwright Python absent",
-    "paid_api": "not authorized or used"
-  },
-  "thresholds": {
-    "shrink": 20,
-    "closeout_only": 18,
-    "stop_new_pool_work": 15
-  },
-  "telemetry_snapshot_utc": "2026-09-10T22:05:22.917305+08:00",
-  "sessions": [
+  "history": "token-budget-history.json; historical numbers are not active limits",
+  "tools_cost": "No new paid service/API/account or reset credit authorized or used; tool orchestration is not claimed free",
+  "dispatches": [
     {
-      "session": "01a08b78-7911-7142-96a1-f3098149ad6f",
-      "model": "gpt-6-astra",
-      "effort": "high",
-      "usage": {
-        "input_tokens": 2946684,
-        "cached_input_tokens": 2846976,
-        "cache_write_input_tokens": 0,
-        "output_tokens": 11795,
-        "reasoning_output_tokens": 1193,
-        "total_tokens": 2958479
-      }
-    },
-    {
-      "session": "01a08b9b-5156-7bb3-b2e1-32a8b5dae72d",
+      "task": "CAP-02",
+      "task_id": "task_28dc0ca44188",
+      "dispatch": "ctx_e589ddb58c0f",
       "model": "gpt-5.6-terra",
-      "effort": "low",
-      "usage": {
-        "input_tokens": 590435,
-        "cached_input_tokens": 547072,
-        "cache_write_input_tokens": 0,
-        "output_tokens": 3955,
-        "reasoning_output_tokens": 845,
-        "total_tokens": 594390
-      }
+      "effort": "medium"
     },
     {
-      "session": "01a08b9b-f4de-7aa2-8dbd-6b94bb9cfe73",
+      "task": "REF-02",
+      "task_id": "task_e14d5c2d5006",
+      "dispatch": "ctx_b7a46d96cf80",
       "model": "gpt-5.6-luna",
-      "effort": "low",
-      "usage": {
-        "input_tokens": 483392,
-        "cached_input_tokens": 431104,
-        "cache_write_input_tokens": 0,
-        "output_tokens": 4071,
-        "reasoning_output_tokens": 525,
-        "total_tokens": 487463
-      }
+      "effort": "low"
     },
     {
-      "session": "01a08b9c-4f07-7a91-8147-a77dc2d9ba74",
-      "model": "gpt-5.6-luna",
-      "effort": "low",
-      "usage": {
-        "input_tokens": 503483,
-        "cached_input_tokens": 467456,
-        "cache_write_input_tokens": 0,
-        "output_tokens": 4481,
-        "reasoning_output_tokens": 677,
-        "total_tokens": 507964
-      }
+      "task": "MOT-01",
+      "task_id": "task_9f7b7d780098",
+      "dispatch": "ctx_6ef69d83c8c8",
+      "model": "gpt-5.6-terra",
+      "effort": "low"
     }
-  ],
-  "status": "resumed; token ceilings disabled by user",
-  "accounting_note": "Session cumulative snapshot; cached input included in input, reasoning subset not added twice; final closeout tail not included; not provider billing or percentage conversion",
-  "e3_observed_output_tokens": 11795,
-  "budget_failures": [
-    "Input ceiling exceeded before telemetry was inspected",
-    "E3 ceiling exceeded during orchestration and closeout"
-  ],
-  "policy_update": "User removed all token count controls. Choose models by task difficulty. Percentage quota protections retained. Previous numeric budgets are historical only."
+  ]
 }

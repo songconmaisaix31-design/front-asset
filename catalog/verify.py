@@ -12,6 +12,8 @@ for folder in ('references', 'reusable', 'owned', '.local-captures'):
     for path in sorted(base.rglob('*')):
         if not path.is_file():
             continue
+        if folder == '.local-captures' and any('profile' in part.lower() for part in path.relative_to(base).parts[:-1]):
+            continue  # Isolated browser runtime state is not an asset or public inventory.
         data = path.read_bytes()
         record = {'path': path.relative_to(root).as_posix(), 'bytes': len(data),
                   'sha256': hashlib.sha256(data).hexdigest(),
@@ -34,7 +36,7 @@ for record in files:
     groups.setdefault(record['sha256'], []).append(record['path'])
 result = {'files': files, 'file_count': len(files), 'errors': errors,
           'duplicates': [v for v in groups.values() if len(v) > 1],
-          'limits': 'Integrity and decoding only; not visual authenticity, permission clearance, or video validation.'}
+          'limits': 'Integrity and decoding only; browser profile state excluded; not visual authenticity, permission clearance, or video validation.'}
 (root / 'catalog' / 'file-inventory.json').write_text(
     json.dumps(result, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
 print(json.dumps({'files': len(files), 'errors': len(errors)}))
